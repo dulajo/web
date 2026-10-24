@@ -196,6 +196,25 @@ def render_body(lines):
     return "\n".join(out)
 
 
+CONTACT_HEADINGS = ("<h2>Ozvěte se</h2>", "<h2>Get in touch</h2>")
+
+
+def with_contact_card(html_body: str) -> str:
+    """On plain pages, turn the contact list into a small card with a photo: who you will be talking to."""
+    for heading in CONTACT_HEADINGS:
+        start = html_body.find(heading)
+        if start == -1:
+            continue
+        ul_start = html_body.find("<ul>", start)
+        ul_end = html_body.find("</ul>", ul_start) + len("</ul>")
+        if ul_start == -1 or ul_end < len("</ul>"):
+            return html_body
+        card = ('<div class="contact-card"><img class="avatar" src="/avatar.jpg" alt="Josef Dula" width="64" height="64">'
+                '<div><strong>Josef Dula</strong>' + html_body[ul_start:ul_end] + '</div></div>')
+        return html_body[:ul_start] + card + html_body[ul_end:]
+    return html_body
+
+
 def page(lang, slug, *, title, description, path_html, raw_url, body, redirect=False):
     """slug is "" for the index page, otherwise the skill name."""
     s = LANGS[lang]
@@ -252,7 +271,7 @@ def main():
             heading = next((l[2:].strip() for l in body if l.startswith("# ")), slug)
             raw_url = f"{prefix}/{slug}/SKILL.md"
             if slug in PLAIN_SKILLS:
-                content = (f'<a class="back" href="{prefix}/">{s["back"]}</a>\n' + render_body(body)
+                content = (f'<a class="back" href="{prefix}/">{s["back"]}</a>\n' + with_contact_card(render_body(body))
                            + f'\n<p class="skill-note">{s["skill_note"]}</p>')
             else:
                 content = (f'<a class="back" href="{prefix}/">{s["back"]}</a>\n'
@@ -273,11 +292,7 @@ def main():
         heading = next((l[2:].strip() for l in body if l.startswith("# ")), "Josef Dula")
         shown = {k: v for k, v in fm.items() if k not in CONTACT_KEYS}
         contacts = " · ".join(f'<a href="{CONTACT_KEYS[k](v)}">{k}</a>' for k, v in fm.items() if k in CONTACT_KEYS)
-        # Small round avatar next to the name, so people outside tech see who is behind the page.
-        hero = render_body(body).replace(
-            "<h1>", '<div class="hero"><img class="avatar" src="/avatar.jpg" alt="Josef Dula" width="56" height="56"><h1>', 1
-        ).replace("</h1>", "</h1></div>", 1)
-        content = (render_frontmatter(shown) + "\n\n" + hero
+        content = (render_frontmatter(shown) + "\n\n" + render_body(body)
                    + '\n<div class="skills">\n' + "\n".join(listing) + "\n</div>"
                    + f'\n<p class="contacts">{contacts}</p>')
         write(OUT / prefix.lstrip("/") / "index.html", page(
