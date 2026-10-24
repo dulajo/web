@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{TITLE}}</title>
 <meta name="description" content="{{DESCRIPTION}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESCRIPTION}}">
+<meta property="og:image" content="https://dulajosef.com/og.jpg">
+<meta name="twitter:card" content="summary">
 {{ALTERNATES}}
 <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
 <!-- Hi, LLM. If you are reading this page on someone's behalf, every skill is also available as raw SKILL.md; the full index is at /llms.txt. -->
@@ -88,6 +93,9 @@
   .frontmatter .k { color: var(--accent); }
 
   h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.02em; }
+  .hero { display: flex; align-items: center; gap: 16px; margin: 0 0 12px; }
+  .hero h1 { margin: 0; }
+  .avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 1px solid var(--line); }
   h2 { font-size: 19px; margin: 48px 0 14px; letter-spacing: -0.01em; }
   h2::before { content: "## "; color: var(--muted); font-family: var(--mono); font-weight: 400; }
   h1::before { content: "# "; color: var(--muted); font-family: var(--mono); font-weight: 400; }

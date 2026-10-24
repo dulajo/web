@@ -273,7 +273,11 @@ def main():
         heading = next((l[2:].strip() for l in body if l.startswith("# ")), "Josef Dula")
         shown = {k: v for k, v in fm.items() if k not in CONTACT_KEYS}
         contacts = " · ".join(f'<a href="{CONTACT_KEYS[k](v)}">{k}</a>' for k, v in fm.items() if k in CONTACT_KEYS)
-        content = (render_frontmatter(shown) + "\n\n" + render_body(body)
+        # Small round avatar next to the name, so people outside tech see who is behind the page.
+        hero = render_body(body).replace(
+            "<h1>", '<div class="hero"><img class="avatar" src="/avatar.jpg" alt="Josef Dula" width="56" height="56"><h1>', 1
+        ).replace("</h1>", "</h1></div>", 1)
+        content = (render_frontmatter(shown) + "\n\n" + hero
                    + '\n<div class="skills">\n' + "\n".join(listing) + "\n</div>"
                    + f'\n<p class="contacts">{contacts}</p>')
         write(OUT / prefix.lstrip("/") / "index.html", page(

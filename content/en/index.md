@@ -9,4 +9,6 @@ github: https://github.com/dulajo
 
 # Josef Dula
 
+By day I build card systems and AI at a bank. In the evenings I tune my own smart home, automate boring paperwork and keep bees.
+
 Three skills, three reasons you might be here. If none fits, you probably misclicked. Thanks for stopping by anyway.
