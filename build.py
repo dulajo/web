@@ -247,7 +247,7 @@ def main():
                        + render_frontmatter(fm) + "\n\n" + render_body(body))
             write(OUT / prefix.lstrip("/") / slug / "index.html", page(
                 lang, slug, title=f"{heading} — {slug}/SKILL.md", description=fm.get("description", ""),
-                path_html=f'{host}<a href="{prefix}/">skills</a> / <a href="{prefix}/{slug}/">{slug}</a><span class="file"> / <b>SKILL.md</b></span>', raw_url=raw_url, body=content))
+                path_html=f'{host}<a href="{prefix}/">skills</a> / <b>{slug}</b>', raw_url=raw_url, body=content))
             shutil.copy(src, OUT / prefix.lstrip("/") / slug / "SKILL.md")
             llms_skills.setdefault(lang, []).append((slug, raw_url, fm.get("description", "")))
             listing.append(
@@ -266,7 +266,7 @@ def main():
                    + f'\n<p class="contacts">{contacts}</p>')
         write(OUT / prefix.lstrip("/") / "index.html", page(
             lang, "", title=f"{heading} — skills", description=fm.get("description", ""),
-            path_html=f"{host}<b>skills/</b>", raw_url="/llms.txt", body=content,
+            path_html=f"{host}<b>skills</b>", raw_url="/llms.txt", body=content,
             redirect=(lang == "en")))
         if lang == "en":
             index_fm = fm
