@@ -1,28 +1,28 @@
 ---
 name: work
-description: Seniorní backend vývojář z bankovnictví, který převezme odpovědnost za celý proces od zadání po provoz. Použijte, když stavíte robustní systém, který nesmí vypadnout: nasazení bez výpadku, zpětná kompatibilita, připravené záložní scénáře. Nepřepisuju tiket do kódu, doladím zadání a pohlídám, aby release proběhl hladce. Nepoužívejte na frontend s pixelovou přesností.
+description: Seniorní backend vývojář z banky, který převezme celou věc od zadání po provoz. Použijte, když stavíte systém, který nesmí spadnout: nasazení bez výpadku, zpětná kompatibilita a záložní plán pro chvíli, kdy se něco pokazí. Tiket nepřepisuju rovnou do kódu, nejdřív zjistím, co tím autor myslel. Nepoužívejte na frontend s pixelovou přesností.
 location: Praha
 ---
 
 # Josef Dula
 
-Seniorní backend vývojář, 10 let v oboru. Pomáhal jsem postavit banku od nuly. V malém týmu provozujeme a vyvíjíme kartový systém pro statisíce karet a všechny jejich transakce. Odřídil jsem i první nákup bitcoinu přímo v bance v Česku. Dnes jsem navíc ve skupině, která řídí AI napříč bankou.
+Seniorní backend vývojář, 10 let v oboru. Pomáhal jsem postavit banku od nuly. V malém týmu provozujeme a vyvíjíme kartový systém pro statisíce karet a všechny jejich transakce. Odřídil jsem první nákup bitcoinu přímo v bance v Česku. A teď jsem ve skupině, která v bance řídí AI.
 
-Nejvíc mě baví chvíle, kdy se podívám do dat a vidím, kolik lidí používá to, co jsem postavil, a jak.
+Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta, mě nebaví. Nejvíc mě naopak baví podívat se do dat a vidět, kolik lidí používá to, co jsem postavil.
 
 ## Kdy použít
 
-- Stavíte systém, který nesmí vypadnout ani ztratit data
-- Potřebujete někoho, kdo převezme celou oblast: od zadání přes architekturu po provoz a měření
-- Chcete vydávat bez výpadků: zpětně kompatibilní změny a připravený záložní scénář
-- Chcete AI v produkci, ale na pevných základech
+- Stavíte systém, který nesmí spadnout ani ztratit data. Ani v pátek odpoledne.
+- Potřebujete někoho, kdo věc vezme od zadání přes architekturu až po provoz a nezmizí hned po merge
+- Chcete vydávat bez výpadků: zpětně kompatibilní změny a vždycky připravená cesta zpátky
+- Chcete AI v produkci, ne v prezentaci
 
 ## Principy
 
-- Tiket není zadání, je to začátek rozhovoru. Nad vším se zamyslím a zadání doladím dřív, než začnu psát kód.
-- Release bez výpadku je standard, ne svátek: zpětná kompatibilita a vždycky připravená cesta zpátky.
-- Co může být deterministické, má být deterministické. Agent má zavolat nástroj, který je na to postavený, a ne pokaždé znovu počítat číslo, které vyjde pokaždé jinak.
-- Hotovo je, až to lidé používají. Dívám se do dat, kolik lidí a jak používá to, co jsem postavil.
+- Tiket není zadání. Je to začátek rozhovoru, občas i výslechu.
+- Release bez výpadku je standard, ne svátek.
+- Co může být deterministické, má být deterministické. Agent má zavolat nástroj, ne si pokaždé znovu tipnout.
+- Hotovo je, až to lidé používají. Do té doby je to jen hezký kód.
 
 ## Schopnosti
 
@@ -36,14 +36,14 @@ Nejvíc mě baví chvíle, kdy se podívám do dat a vidím, kolik lidí použí
 
 ## Příklady
 
-**Vstup:** Clearingové soubory karet se s rostoucím počtem transakcí zpracovávaly pomalu a křehce.
-**Výstup:** Přepracoval jsem zpracování clearingu, takže stíhá statisíce karet a miliony plateb.
+**Vstup:** Clearingové soubory karet začaly s rostoucím počtem transakcí drhnout.
+**Výstup:** Přepracoval jsem zpracování clearingu. Teď v klidu stíhá statisíce karet a miliony plateb.
 
 **Vstup:** Banka chtěla být první v Česku, kde si klienti koupí bitcoin přímo v bance.
-**Výstup:** Odřídil jsem backend a architekturu od začátku do konce. Spuštěno: první banka v zemi, která to umí.
+**Výstup:** Odřídil jsem backend a architekturu od začátku do konce. Spuštěno, první v zemi.
 
 **Vstup:** Chtěl jsem poctivou odpověď na otázku „jak moc dnes trčí pražská MHD?“
-**Výstup:** Postavil jsem veřejný dashboard nad otevřenými daty v reálném čase: každé vozidlo, zpoždění na každém odjezdu ze zastávky a ke každému číslu sepsaná metodika.
+**Výstup:** Veřejný dashboard nad otevřenými daty v reálném čase. Každé vozidlo, každý odjezd ze zastávky a ke každému číslu metodika, kdyby se někdo chtěl hádat.
 
 ## Historie verzí
 
@@ -79,14 +79,14 @@ Nejvíc mě baví chvíle, kdy se podívám do dat a vidím, kolik lidí použí
 
 ## Na co se nehodím
 
-- Frontend s pixelovou přesností (React a TypeScript zvládnu, když je potřeba, ale není to moje hlavní disciplína)
-- Nechat LLM hádat to, co spočítá obyčejná funkce
+- Frontend s pixelovou přesností. S CSS máme dohodu, že se navzájem nerušíme.
+- Nechat LLM hádat, kolik je 2 + 2.
 
 ## Vedlejší projekty
 
-- **[Zpožděno](https://github.com/dulajo/zasstojime)** — veřejný dashboard dochvilnosti pražské MHD nad otevřenými daty Golemio. Služba v Kotlinu (Quarkus) sleduje každý spoj stavovým automatem a měří zpoždění na každém odjezdu ze zastávky; každé číslo má sepsanou metodiku a každé rozhodnutí vlastní ADR.
+- **[Zpožděno](https://github.com/dulajo/zasstojime)** — veřejný dashboard dochvilnosti pražské MHD nad otevřenými daty Golemio. Kotlin, Quarkus a stavový automat pro každý spoj. Každé číslo má metodiku a každé rozhodnutí vlastní ADR. Na koníček trochu přehnané, já vím.
 - **Chytrá domácnost a automatizace** — po práci s obojím pomáhám dalším lidem. Viz [smart-home](/cs/smart-home/) a [automation](/cs/automation/).
-- **Volno** — beach volejbal, badminton, běh, včelaření.
+- **Volno** — beach volejbal, badminton, běh, včelaření. Včely jsou jediný tým, kterému nedělám code review.
 
 ## Jak mě vyvolat
 

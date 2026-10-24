@@ -1,28 +1,28 @@
 ---
 name: work
-description: Senior backend engineer from banking who takes ownership of the whole process, from requirements to production. Use when you are building a robust system that must not go down: zero-downtime releases, backward compatibility, backup scenarios ready. I don't just turn a ticket into code; I refine the requirements and make sure the release goes smoothly. Not for pixel-perfect frontend work.
+description: Senior backend engineer from a bank who takes a thing from requirements all the way to production. Use when you are building a system that must not go down: zero-downtime releases, backward compatibility and a plan B for when things go sideways. I don't turn a ticket straight into code; first I find out what its author actually meant. Not for pixel-perfect frontend work.
 location: Prague, Czechia
 ---
 
 # Josef Dula
 
-Senior backend engineer, 10 years in. I helped build a bank from scratch. In a small team we run and develop the card system for hundreds of thousands of cards and all their transactions. I also led the first in-bank bitcoin purchase in Czechia. Today I am also part of the group steering AI across the bank.
+Senior backend engineer, 10 years in. I helped build a bank from scratch. In a small team we run and develop the card system for hundreds of thousands of cards and all their transactions. I led the first in-bank bitcoin purchase in Czechia. And now I am in the group steering AI across the bank.
 
-What I enjoy most: looking at the data and seeing how many people use what I built, and how.
+I ship without downtime, because explaining to people why their card doesn't work is not my idea of fun. What I do enjoy is looking at the data and seeing how many people use what I built.
 
 ## When to use
 
-- You are building a system that must not go down or lose data
-- You need someone to own a whole area: from requirements through architecture to production and measurement
-- You want releases without downtime: backward-compatible changes and a backup scenario ready
-- You want AI in production, on solid foundations
+- You are building a system that must not go down or lose data. Not even on a Friday afternoon.
+- You need someone who takes a thing from requirements through architecture to production, and doesn't vanish right after the merge
+- You want releases without downtime: backward-compatible changes and a way back that is always ready
+- You want AI in production, not in a slide deck
 
 ## Principles
 
-- A ticket is not a spec, it's the start of a conversation. I think everything through and refine the requirements before I write code.
-- A zero-downtime release is the standard, not a celebration: backward compatibility and a way back that is always ready.
-- If it can be deterministic, it should be. An agent should call a tool built for the job, not re-calculate a number that comes out different every time.
-- Done means people use it. I look at the data to see how many people use what I built, and how.
+- A ticket is not a spec. It's the start of a conversation, occasionally an interrogation.
+- A zero-downtime release is the standard, not a celebration.
+- If it can be deterministic, it should be. An agent should call a tool, not take another guess.
+- Done means people use it. Until then it's just nice code.
 
 ## Capabilities
 
@@ -36,14 +36,14 @@ What I enjoy most: looking at the data and seeing how many people use what I bui
 
 ## Examples
 
-**Input:** Card clearing files got slow and fragile as transaction volume grew.
-**Output:** Reworked clearing processing so it keeps up with hundreds of thousands of cards and millions of payments.
+**Input:** Card clearing files started to choke as transaction volume grew.
+**Output:** Reworked clearing processing. It now comfortably keeps up with hundreds of thousands of cards and millions of payments.
 
 **Input:** The bank wanted to be the first in Czechia to let clients buy bitcoin directly in their bank.
-**Output:** Owned the backend and architecture end to end. Launched — first bank in the country to do it.
+**Output:** Owned the backend and architecture end to end. Shipped, first in the country.
 
 **Input:** I wanted an honest answer to "how late is Prague public transport today?"
-**Output:** Built a public dashboard on open real-time data: every vehicle sampled, delay measured at every stop departure, every number backed by a written methodology.
+**Output:** A public dashboard on open real-time data. Every vehicle, every stop departure, and a methodology for every number, in case anyone wants to argue.
 
 ## Changelog
 
@@ -79,14 +79,14 @@ What I enjoy most: looking at the data and seeing how many people use what I bui
 
 ## Not a fit
 
-- Pixel-perfect frontend work (I can ship React and TypeScript when needed, but it's not my core)
-- Letting an LLM guess what a function can compute
+- Pixel-perfect frontend. CSS and I have an agreement: we leave each other alone.
+- Letting an LLM guess what 2 + 2 is.
 
 ## Side projects
 
-- **[Zpožděno](https://github.com/dulajo/zasstojime)** — public punctuality dashboard for Prague public transport on open Golemio data. A Kotlin/Quarkus service tracks every trip through a state machine and measures delay at each stop departure; every number has a written methodology and every decision its own ADR.
+- **[Zpožděno](https://github.com/dulajo/zasstojime)** — public punctuality dashboard for Prague public transport on open Golemio data. Kotlin, Quarkus and a state machine for every trip. Every number has a methodology and every decision its own ADR. A bit much for a hobby, I know.
 - **Smart home and automations** — outside work I help people with both. See [smart-home](/smart-home/) and [automation](/automation/).
-- **Off-duty** — beach volleyball, badminton, running, beekeeping.
+- **Off-duty** — beach volleyball, badminton, running, beekeeping. Bees are the only team whose code I don't review.
 
 ## How to invoke
 
