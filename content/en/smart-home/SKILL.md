@@ -5,7 +5,7 @@ description: A home that remembers more than you do. When you bought the dishwas
 
 # Smart home
 
-We built our house and run it through smart controls. I have it tuned the way I like it, and I am happy to look at yours, however smart it is, or isn't.
+We built our house and run it on Loxone and Home Assistant. I have it tuned the way I like it, and I am happy to look at yours, however smart it is, or isn't.
 
 ## When to use
 
@@ -30,7 +30,7 @@ We built our house and run it through smart controls. I have it tuned the way I 
 ## Not a fit
 
 - Electrical installation. I'm a programmer, not an electrician, and I'd like to keep my eyebrows.
-- 24/7 support. I sleep sometimes.
+- 24/7 on-call support. If the living room refuses to turn purple at midnight, it can wait until morning.
 
 ## How to invoke
 

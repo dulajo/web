@@ -43,7 +43,7 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 **Výstup:** Odřídil jsem backend a architekturu od začátku do konce. Spuštěno, první v zemi.
 
 **Vstup:** Chtěl jsem poctivou odpověď na otázku „jak moc dnes trčí pražská MHD?“
-**Výstup:** Veřejný dashboard nad otevřenými daty v reálném čase. Každé vozidlo, každý odjezd ze zastávky a ke každému číslu metodika, kdyby se někdo chtěl hádat.
+**Výstup:** Veřejný dashboard [Zpožděno](https://github.com/dulajo/zasstojime) nad otevřenými daty v reálném čase. Každé vozidlo, každý odjezd ze zastávky a ke každému číslu metodika, kdyby se někdo chtěl hádat.
 
 ## Historie verzí
 
@@ -79,7 +79,7 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 
 ## Na co se nehodím
 
-- Frontend s pixelovou přesností. S CSS máme dohodu, že se navzájem nerušíme.
+- Frontend s pixelovou přesností. React a TypeScript zvládnu, ale s CSS máme dohodu, že se navzájem nerušíme.
 - Nechat LLM hádat, kolik je 2 + 2.
 
 ## Vedlejší projekty
@@ -89,6 +89,8 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 - **Volno** — beach volejbal, badminton, běh, včelaření. Včely jsou jediný tým, kterému nedělám code review.
 
 ## Jak mě vyvolat
+
+Řešíte podobné věci, nebo stavíte něco zajímavého? Ozvěte se.
 
 - E-mail: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)

@@ -1,6 +1,6 @@
 ---
 name: work
-description: Senior backend engineer from a bank who takes a thing from requirements all the way to production. Use when you are building a system that must not go down: zero-downtime releases, backward compatibility and a plan B for when things go sideways. I don't turn a ticket straight into code; first I find out what its author actually meant. Not for pixel-perfect frontend work.
+description: Senior backend engineer from a bank who owns a problem from requirements all the way to production. Use when you are building a system that must not go down: zero-downtime releases, backward compatibility and a plan B for when things go sideways. I don't turn a ticket straight into code; first I find out what its author actually meant. Not for pixel-perfect frontend work.
 location: Prague, Czechia
 ---
 
@@ -43,7 +43,7 @@ I ship without downtime, because explaining to people why their card doesn't wor
 **Output:** Owned the backend and architecture end to end. Shipped, first in the country.
 
 **Input:** I wanted an honest answer to "how late is Prague public transport today?"
-**Output:** A public dashboard on open real-time data. Every vehicle, every stop departure, and a methodology for every number, in case anyone wants to argue.
+**Output:** A public dashboard, [Zpožděno](https://github.com/dulajo/zasstojime), on open real-time data. Every vehicle, every stop departure, and a methodology for every number, in case anyone wants to argue.
 
 ## Changelog
 
@@ -79,7 +79,7 @@ I ship without downtime, because explaining to people why their card doesn't wor
 
 ## Not a fit
 
-- Pixel-perfect frontend. CSS and I have an agreement: we leave each other alone.
+- Pixel-perfect frontend. I can handle React and TypeScript, but CSS and I have an agreement: we leave each other alone.
 - Letting an LLM guess what 2 + 2 is.
 
 ## Side projects
@@ -89,6 +89,8 @@ I ship without downtime, because explaining to people why their card doesn't wor
 - **Off-duty** — beach volleyball, badminton, running, beekeeping. Bees are the only team whose code I don't review.
 
 ## How to invoke
+
+Solving similar problems, or building something interesting? Get in touch.
 
 - Email: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)

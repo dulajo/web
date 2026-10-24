@@ -1,6 +1,6 @@
 ---
 name: automation
-description: Doing the same thing over and over? Let's make a computer do it. No AI that occasionally makes things up: exactly what you need, the same way every time. Use when you keep repeating the same steps, just with different data. Mainly for sole traders and small businesses, households too. Not for companies with hundreds of people.
+description: Doing the same thing over and over? Let's make a computer do it. Where strict rules are needed, I build a tool without AI that occasionally makes things up. And where AI makes sense, I'll help you set it up in plain human terms — no stiff corporate training where you learn nothing. Mainly for sole traders, small businesses and households. Not for companies with hundreds of people.
 ---
 
 # Automation
@@ -12,7 +12,8 @@ Excel is a great tool. Just not for spending your Sundays in. I am a backend eng
 - You keep doing the same steps over and over, just with different data
 - You retype, check or keep an eye on things a computer would handle better, and without complaining
 - Every month you put together the same overview, invoice or report by hand
-- Not sure whether it can be automated? Ask. I don't bite.
+- You want practical, human help with AI on your actual work — not a stiff paid training where you learn nothing
+- Not sure whether it calls for AI or automation? Ask. I don't bite.
 
 ## Who it's for
 
@@ -24,7 +25,8 @@ Excel is a great tool. Just not for spending your Sundays in. I am a backend eng
 
 - First I understand what you do by hand and why. Then I suggest the simplest solution. Simplest, not most expensive.
 - It runs by rules, not by a language model's mood: same input, same result, every time. If it works without AI, it gets done without AI. AI only where it really helps.
-- You end up with a simple tool you can run yourself. No 100-page manual.
+- Sometimes no coding is needed at all: we just sit down with your actual work, set up AI to fit it and skip the fluff.
+- You end up with a simple tool or workflow you can run yourself. No 100-page manual.
 
 ## Examples
 
