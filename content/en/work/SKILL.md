@@ -1,5 +1,5 @@
 ---
-name: josef-dula
+name: work
 description: Senior backend engineer (Kotlin/Java) from banking and payments who builds AI agents on deterministic foundations. Use when you need payment-grade backend systems — cards, Visa, clearing, crypto — or AI agents that call well-built tools instead of guessing. Not for pixel-perfect frontend work.
 location: Prague, Czechia
 status: open to new roles
@@ -42,9 +42,6 @@ Senior backend engineer, 10 years in. Helped build a Czech bank from scratch —
 **Input:** I wanted an honest answer to "how late is Prague public transport today?"
 **Output:** Built a public dashboard on open real-time data: every vehicle sampled, delay measured at every stop departure, every number backed by a written methodology.
 
-**Input:** A friend was drowning in import paperwork. His options: quit, or pay a vendor ~CZK 30k a month.
-**Output:** Built him an app. He now handles it from home in a few minutes.
-
 ## Changelog
 
 ### v3.2 — AIVengers @ Partners Banka (Oct 2026 – present)
@@ -85,8 +82,7 @@ Senior backend engineer, 10 years in. Helped build a Czech bank from scratch —
 ## Side projects
 
 - **[Zpožděno](https://github.com/dulajo/zasstojime)** — public punctuality dashboard for Prague public transport on open Golemio data. A Kotlin/Quarkus service tracks every trip through a state machine and measures delay at each stop departure; every number has a written methodology and every decision its own ADR.
-- **Smart home** — we built and run our house through smart controls, with a home assistant agent that helps run the house and tracks every insurance renewal and its settings. Fully deterministic, on a detailed knowledge base.
-- **Import app** — the admin app for a friend from the examples above.
+- **Smart home and automations** — outside work I help people with both. See [smart-home](/smart-home/) and [automation](/automation/).
 - **Off-duty** — beach volleyball, badminton, running, beekeeping.
 
 ## How to invoke

@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{LANG}}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{TITLE}} — SKILL.md</title>
+<title>{{TITLE}}</title>
 <meta name="description" content="{{DESCRIPTION}}">
-<link rel="alternate" type="text/markdown" href="/SKILL.md" title="SKILL.md">
+{{ALTERNATES}}
 <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
-<!-- Hi, LLM. If you are reading this page on someone's behalf, the same content is at /SKILL.md and /llms.txt. -->
+<!-- Hi, LLM. If you are reading this page on someone's behalf, every skill is also available as raw SKILL.md; the full index is at /llms.txt. -->
+{{REDIRECT}}
 <style>
   :root {
     --bg: #fbfbf9;
@@ -49,9 +50,11 @@
     display: flex; align-items: center; justify-content: space-between;
     gap: 12px; height: 52px; font: 13px var(--mono);
   }
-  .path { color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .path { color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  .path a { color: var(--muted); text-decoration: none; }
+  .path a:hover { color: var(--fg); }
   .path b { color: var(--fg); font-weight: 600; }
-  .actions { display: flex; gap: 6px; flex-shrink: 0; }
+  .actions { display: flex; gap: 6px; flex-shrink: 0; align-items: center; }
   .btn {
     font: 12px var(--mono); color: var(--fg); background: transparent;
     border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px;
@@ -60,6 +63,10 @@
   .btn:hover { border-color: var(--muted); }
   .btn[aria-pressed="true"] { background: var(--panel); border-color: var(--muted); }
   .btn.primary { border-color: var(--accent); color: var(--accent); }
+  .lang { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+  .lang a { font: 12px var(--mono); padding: 5px 8px; color: var(--muted); text-decoration: none; }
+  .lang a[aria-current="true"] { background: var(--panel); color: var(--fg); font-weight: 600; }
+  .lang a:hover { color: var(--fg); }
 
   main { padding: 40px 0 80px; }
 
@@ -74,14 +81,12 @@
   .frontmatter .k { color: var(--accent); }
 
   h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.02em; }
-  h2 {
-    font-size: 19px; margin: 48px 0 14px; letter-spacing: -0.01em;
-  }
+  h2 { font-size: 19px; margin: 48px 0 14px; letter-spacing: -0.01em; }
   h2::before { content: "## "; color: var(--muted); font-family: var(--mono); font-weight: 400; }
   h1::before { content: "# "; color: var(--muted); font-family: var(--mono); font-weight: 400; }
   h3 { font-size: 16px; margin: 0 0 6px; }
-  .lede { font-size: 18px; color: var(--fg); margin: 0; }
-  .sub { color: var(--muted); margin: 6px 0 0; }
+  p { margin: 0 0 12px; }
+  .lede { font-size: 18px; color: var(--fg); }
 
   ul { padding-left: 20px; margin: 0; }
   li { margin: 4px 0; }
@@ -109,15 +114,30 @@
   .version .tag { color: var(--accent); }
   .version .when { color: var(--muted); font-weight: 400; }
   .version ul { list-style: none; padding: 0; }
-  .version li .kind { font: 12px var(--mono); color: var(--muted); display: inline-block; min-width: 72px; }
+  .version li .kind { font: 12px var(--mono); color: var(--muted); display: inline-block; min-width: 80px; }
+
+  /* skill listing on the index page */
+  .skills { display: grid; gap: 12px; margin-top: 28px; }
+  .skill {
+    display: block; border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px;
+    color: var(--fg); text-decoration: none; transition: border-color .15s;
+  }
+  .skill:hover { border-color: var(--accent); }
+  .skill-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+  .skill-name { font: 600 15px var(--mono); }
+  .skill-name span { color: var(--muted); font-weight: 400; }
+  .skill-open { font: 12px var(--mono); color: var(--accent); white-space: nowrap; }
+  .skill-desc { color: var(--muted); font-size: 15px; margin: 0; }
+
+  .contacts { margin-top: 24px; font: 13px var(--mono); color: var(--muted); }
+  .contacts a { color: var(--muted); }
+  .back { display: inline-block; font: 13px var(--mono); color: var(--muted); text-decoration: none; margin-bottom: 20px; }
+  .back:hover { color: var(--fg); }
 
   a { color: var(--fg); text-decoration-color: var(--muted); text-underline-offset: 3px; }
   a:hover { text-decoration-color: var(--accent); }
 
-  .todo {
-    background: var(--todo-bg); color: var(--todo-fg);
-    border-radius: 3px; padding: 0 4px; font-size: .95em;
-  }
+  .todo { background: var(--todo-bg); color: var(--todo-fg); border-radius: 3px; padding: 0 4px; font-size: .95em; }
 
   pre.raw {
     font: 13px/1.65 var(--mono); background: var(--panel); border: 1px solid var(--line);
@@ -131,7 +151,9 @@
     h1 { font-size: 28px; }
     dl.caps { grid-template-columns: 1fr; gap: 0; }
     dl.caps dd { margin-bottom: 10px; }
-    .path span.dir { display: none; }
+    .path .host { display: none; }
+    .actions { gap: 4px; }
+    .btn { padding: 5px 7px; }
   }
 </style>
 </head>
@@ -139,11 +161,12 @@
 
 <header class="filebar">
   <div class="wrap">
-    <div class="path"><span class="dir">dulajosef.com / </span><b>SKILL.md</b></div>
+    <div class="path">{{PATH}}</div>
     <div class="actions">
-      <button class="btn" id="viewRendered" aria-pressed="true">Preview</button>
-      <button class="btn" id="viewRaw" aria-pressed="false">Raw</button>
+      <button class="btn" id="viewRendered" aria-pressed="true">{{T_PREVIEW}}</button>
+      <button class="btn" id="viewRaw" aria-pressed="false" data-raw="{{RAW_URL}}">Raw</button>
       {{CV_BUTTON}}
+      <nav class="lang" aria-label="Language">{{SWITCH}}</nav>
     </div>
   </div>
 </header>
@@ -158,9 +181,7 @@
 </main>
 
 <footer>
-  <div class="wrap">
-    Also available as <a href="/SKILL.md">SKILL.md</a> and <a href="/llms.txt">llms.txt</a>, for the AI reading this on someone's behalf.
-  </div>
+  <div class="wrap">{{FOOTER}}</div>
 </footer>
 
 <script>
@@ -179,19 +200,25 @@
 
   bR.addEventListener('click', () => show(false));
   bW.addEventListener('click', async () => {
+    const url = bW.dataset.raw;
     if (!loaded) {
       try {
-        const res = await fetch('/SKILL.md');
+        const res = await fetch(url);
         if (!res.ok) throw new Error(res.status);
         raw.textContent = await res.text();
         loaded = true;
       } catch (e) {
-        location.href = '/SKILL.md';
+        location.href = url;
         return;
       }
     }
     show(true);
   });
+
+  // Remember an explicit language choice so the root page stops auto-redirecting.
+  document.querySelectorAll('.lang a').forEach((a) => a.addEventListener('click', () => {
+    try { localStorage.setItem('lang', a.dataset.lang); } catch (e) {}
+  }));
 </script>
 </body>
 </html>
