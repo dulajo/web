@@ -1,0 +1,11 @@
+// Cloudflare Workers config for dulajosef.com: a static site, no server code.
+// Cloudflare runs `python3 build.py` (set in the dashboard), then deploys ./site.
+{
+  "name": "web",
+  "compatibility_date": "2026-10-24",
+  "assets": {
+    "directory": "./site",
+    // /work and /work/ both serve /work/index.html
+    "html_handling": "auto-trailing-slash"
+  }
+}
