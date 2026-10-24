@@ -4,7 +4,7 @@ Personal site written as three `SKILL.md` files, in English and Czech.
 
 | Skill | For |
 |---|---|
-| `work` | hiring: backend engineer from banking who builds AI |
+| `work` | professional profile: backend engineer from banking who builds AI |
 | `smart-home` | people building or tuning a smart home |
 | `automation` | sole traders, small businesses and households drowning in paperwork |
 

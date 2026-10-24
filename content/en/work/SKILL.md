@@ -2,7 +2,6 @@
 name: work
 description: Senior backend engineer from banking who takes ownership of the whole process, from requirements to production. Use when you are building a robust system that must not go down: zero-downtime releases, backward compatibility, backup scenarios ready. I don't just turn a ticket into code; I refine the requirements and make sure the release goes smoothly. Not for pixel-perfect frontend work.
 location: Prague, Czechia
-status: open to new roles
 ---
 
 # Josef Dula
