@@ -230,7 +230,6 @@ def main():
 
     for lang, s in LANGS.items():
         prefix = s["prefix"]
-        lang_crumb = f'<a href="{prefix}/">{lang}</a> / ' if prefix else ""
         host = f'<span class="host"><a href="{prefix}/">dulajosef.com</a> / </span>'
         listing = []
 
@@ -244,7 +243,7 @@ def main():
                        + render_frontmatter(fm) + "\n\n" + render_body(body))
             write(OUT / prefix.lstrip("/") / slug / "index.html", page(
                 lang, slug, title=f"{heading} — {slug}/SKILL.md", description=fm.get("description", ""),
-                path_html=f"{host}{lang_crumb}{slug} / <b>SKILL.md</b>", raw_url=raw_url, body=content))
+                path_html=f"{host}{slug} / <b>SKILL.md</b>", raw_url=raw_url, body=content))
             shutil.copy(src, OUT / prefix.lstrip("/") / slug / "SKILL.md")
             llms_skills.setdefault(lang, []).append((slug, raw_url, fm.get("description", "")))
             listing.append(
@@ -263,7 +262,7 @@ def main():
                    + f'\n<p class="contacts">{contacts}</p>')
         write(OUT / prefix.lstrip("/") / "index.html", page(
             lang, "", title=f"{heading} — skills", description=fm.get("description", ""),
-            path_html=f"{host}{lang_crumb}<b>skills/</b>", raw_url="/llms.txt", body=content,
+            path_html=f"{host}<b>skills/</b>", raw_url="/llms.txt", body=content,
             redirect=(lang == "en")))
         if lang == "en":
             index_fm = fm
