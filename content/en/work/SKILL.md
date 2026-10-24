@@ -6,7 +6,7 @@ location: Prague, Czechia
 
 # Josef Dula
 
-Senior backend engineer, 10 years in. I helped build a bank from scratch, in a small team I run and develop card operations for hundreds of thousands of cards and all their transactions, and I led the first in-bank bitcoin purchase in Czechia. Today I am also part of the small team steering AI across the bank.
+Senior backend engineer, 10 years in. I helped build a bank from scratch. In a small team we run and develop the card system for hundreds of thousands of cards and all their transactions. I also led the first in-bank bitcoin purchase in Czechia. Today I am also part of the group steering AI across the bank.
 
 What I enjoy most: looking at the data and seeing how many people use what I built, and how.
 
