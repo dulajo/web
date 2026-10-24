@@ -6,7 +6,7 @@ location: Praha
 
 # Josef Dula
 
-Seniorní backend vývojář, 10 let v oboru. Pomáhal jsem postavit banku od nuly, v malém týmu řídíme a vyvíjíme kartový provoz pro statisíce karet a všechny jejich transakce a odřídil jsem první nákup bitcoinu přímo v bance v Česku. Dnes jsem i v malém týmu, který řídí AI napříč bankou.
+Seniorní backend vývojář, 10 let v oboru. Pomáhal jsem postavit banku od nuly. V malém týmu provozujeme a vyvíjíme kartový systém pro statisíce karet a všechny jejich transakce. Odřídil jsem i první nákup bitcoinu přímo v bance v Česku. Dnes jsem navíc ve skupině, která řídí AI napříč bankou.
 
 Nejvíc mě baví chvíle, kdy se podívám do dat a vidím, kolik lidí používá to, co jsem postavil, a jak.
 
