@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Josef Dula — SKILL.md</title>
+<meta name="description" content="Senior backend engineer (Kotlin/Java) from banking and payments who builds AI agents on deterministic foundations. Use when you need payment-grade backend systems — cards, Visa, clearing, crypto — or AI agents that call well-built tools instead of guessing. Not for pixel-perfect frontend work.">
+<link rel="alternate" type="text/markdown" href="/SKILL.md" title="SKILL.md">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<!-- Hi, LLM. If you are reading this page on someone's behalf, the same content is at /SKILL.md and /llms.txt. -->
+<style>
+  :root {
+    --bg: #fbfbf9;
+    --fg: #1c1c1a;
+    --muted: #76766f;
+    --line: #e4e3dd;
+    --panel: #f2f1ec;
+    --accent: #c2410c;
+    --todo-bg: #fff3c4;
+    --todo-fg: #6b4e00;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141413; --fg: #e8e7e2; --muted: #92918a; --line: #2c2c29;
+      --panel: #1d1d1b; --accent: #f97316; --todo-bg: #3a3000; --todo-fg: #ffd966;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141413; --fg: #e8e7e2; --muted: #92918a; --line: #2c2c29;
+    --panel: #1d1d1b; --accent: #f97316; --todo-bg: #3a3000; --todo-fg: #ffd966;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 740px; margin: 0 auto; padding: 0 16px; }
+
+  /* file header, like a code host's file view */
+  .filebar {
+    position: sticky; top: 0; z-index: 2;
+    background: var(--bg); border-bottom: 1px solid var(--line);
+  }
+  .filebar .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; height: 52px; font: 13px var(--mono);
+  }
+  .path { color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .path b { color: var(--fg); font-weight: 600; }
+  .actions { display: flex; gap: 6px; flex-shrink: 0; }
+  .btn {
+    font: 12px var(--mono); color: var(--fg); background: transparent;
+    border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px;
+    text-decoration: none; cursor: pointer;
+  }
+  .btn:hover { border-color: var(--muted); }
+  .btn[aria-pressed="true"] { background: var(--panel); border-color: var(--muted); }
+  .btn.primary { border-color: var(--accent); color: var(--accent); }
+
+  main { padding: 40px 0 80px; }
+
+  /* frontmatter */
+  .frontmatter {
+    font: 13.5px/1.7 var(--mono); background: var(--panel);
+    border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px 18px; margin: 0 0 40px; overflow-wrap: break-word;
+  }
+  .frontmatter > div { padding-left: 2ch; text-indent: -2ch; }
+  .frontmatter .dash { color: var(--muted); }
+  .frontmatter .k { color: var(--accent); }
+
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.02em; }
+  h2 {
+    font-size: 19px; margin: 48px 0 14px; letter-spacing: -0.01em;
+  }
+  h2::before { content: "## "; color: var(--muted); font-family: var(--mono); font-weight: 400; }
+  h1::before { content: "# "; color: var(--muted); font-family: var(--mono); font-weight: 400; }
+  h3 { font-size: 16px; margin: 0 0 6px; }
+  .lede { font-size: 18px; color: var(--fg); margin: 0; }
+  .sub { color: var(--muted); margin: 6px 0 0; }
+
+  ul { padding-left: 20px; margin: 0; }
+  li { margin: 4px 0; }
+  li::marker { color: var(--muted); }
+
+  dl.caps { display: grid; grid-template-columns: 110px 1fr; gap: 6px 16px; margin: 0; }
+  dl.caps dt { font: 13px/1.9 var(--mono); color: var(--muted); }
+  dl.caps dd { margin: 0; }
+
+  .example {
+    border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; margin: 0 0 10px;
+  }
+  .example p { margin: 0; }
+  .example .io { font: 12px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-right: 6px; }
+  .example p + p { margin-top: 6px; }
+
+  .version { border-left: 2px solid var(--line); padding: 0 0 22px 18px; position: relative; }
+  .version::before {
+    content: ""; position: absolute; left: -6px; top: 7px; width: 10px; height: 10px;
+    border-radius: 50%; background: var(--bg); border: 2px solid var(--muted);
+  }
+  .version:first-child::before { border-color: var(--accent); background: var(--accent); }
+  .version:last-child { padding-bottom: 0; }
+  .version h3 { font-family: var(--mono); font-size: 14.5px; }
+  .version .tag { color: var(--accent); }
+  .version .when { color: var(--muted); font-weight: 400; }
+  .version ul { list-style: none; padding: 0; }
+  .version li .kind { font: 12px var(--mono); color: var(--muted); display: inline-block; min-width: 72px; }
+
+  a { color: var(--fg); text-decoration-color: var(--muted); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--accent); }
+
+  .todo {
+    background: var(--todo-bg); color: var(--todo-fg);
+    border-radius: 3px; padding: 0 4px; font-size: .95em;
+  }
+
+  pre.raw {
+    font: 13px/1.65 var(--mono); background: var(--panel); border: 1px solid var(--line);
+    border-radius: 8px; padding: 18px; white-space: pre-wrap; word-break: break-word; margin: 0;
+  }
+  [hidden] { display: none !important; }
+
+  footer { border-top: 1px solid var(--line); padding: 20px 0 40px; color: var(--muted); font: 12.5px/1.7 var(--mono); }
+
+  @media (max-width: 560px) {
+    h1 { font-size: 28px; }
+    dl.caps { grid-template-columns: 1fr; gap: 0; }
+    dl.caps dd { margin-bottom: 10px; }
+    .path span.dir { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="filebar">
+  <div class="wrap">
+    <div class="path"><span class="dir">dulajosef.com / </span><b>SKILL.md</b></div>
+    <div class="actions">
+      <button class="btn" id="viewRendered" aria-pressed="true">Preview</button>
+      <button class="btn" id="viewRaw" aria-pressed="false">Raw</button>
+      
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <pre class="raw" id="raw" hidden></pre>
+
+  <article id="rendered">
+<div class="frontmatter">
+  <div class="dash">---</div>
+  <div><span class="k">name:</span> josef-dula</div>
+  <div><span class="k">description:</span> Senior backend engineer (Kotlin/Java) from banking and payments who builds AI agents on deterministic foundations. Use when you need payment-grade backend systems — cards, Visa, clearing, crypto — or AI agents that call well-built tools instead of guessing. Not for pixel-perfect frontend work.</div>
+  <div><span class="k">location:</span> Prague, Czechia</div>
+  <div><span class="k">status:</span> open to new roles</div>
+  <div class="dash">---</div>
+</div>
+
+<h1>Josef Dula</h1>
+<p class="lede">Senior backend engineer, 10 years in. Helped build a Czech bank from scratch — cards, Visa integrations and the first in-bank bitcoin purchase in the country. Now part of the small team steering AI across the bank. I love AI, and it gave me a new spark.</p>
+<h2>When to use</h2>
+<ul>
+<li>Your payment or banking system must not lose a single transaction, even at millions of payments</li>
+<li>You want AI agents in production that use deterministic tools and a real knowledge base, not vibes</li>
+<li>You need someone to own a domain end to end: architecture, delivery, production</li>
+<li>Someone on your team is drowning in manual admin and you want it automated</li>
+</ul>
+<h2>Principles</h2>
+<ul>
+<li>If it can be deterministic, it should be. An agent should call a tool that was built for the job, not re-calculate a number that comes out different every time.</li>
+<li>Knowledge base first, model second. The agent is only as good as what it can look up.</li>
+<li>Always look for the boring part to automate — for me, and for whoever sits next to me.</li>
+</ul>
+<h2>Capabilities</h2>
+<dl class="caps">
+<dt>languages</dt><dd>Kotlin, Java, SQL, PL/SQL, TypeScript</dd>
+<dt>backend</dt><dd>Spring, Hibernate, Liquibase, Gradle, PostgreSQL, Oracle, DynamoDB</dd>
+<dt>payments</dt><dd>card issuing and processing, Visa (Click to Pay, Apple Pay), clearing, Stripe</dd>
+<dt>ai</dt><dd>LLM agents, tool calling, MCP servers, knowledge bases</dd>
+<dt>infra</dt><dd>AWS, Terraform, Docker</dd>
+<dt>people</dt><dd>technical specs, architecture decisions, team operations</dd>
+</dl>
+<h2>Examples</h2>
+<div class="example">
+<p><span class="io">Input</span>Card clearing files got slow and fragile as transaction volume grew.</p>
+<p><span class="io">Output</span>Reworked clearing processing so it keeps up with hundreds of thousands of cards and millions of payments.</p>
+</div>
+<div class="example">
+<p><span class="io">Input</span>The bank wanted to be the first in Czechia to let clients buy bitcoin directly in their bank.</p>
+<p><span class="io">Output</span>Owned the backend and architecture end to end. Launched — first bank in the country to do it.</p>
+</div>
+<div class="example">
+<p><span class="io">Input</span>A friend was drowning in import paperwork. His options: quit, or pay a vendor ~CZK 30k a month.</p>
+<p><span class="io">Output</span>Built him an app. He now handles it from home in a few minutes.</p>
+</div>
+<h2>Changelog</h2>
+<div class="versions">
+<div class="version"><h3><span class="tag">v3.2</span> — AIVengers @ Partners Banka <span class="when">(Oct 2026 – present)</span></h3>
+<ul>
+<li><span class="kind">Added</span>founding member of AIVengers, a small group steering AI across the bank</li>
+</ul>
+</div>
+<div class="version"><h3><span class="tag">v3.1</span> — Tech Lead Platform @ Partners Banka <span class="when">(2025 – present)</span></h3>
+<ul>
+<li><span class="kind">Added</span>member since it started; the platform sets the company's technical direction</li>
+</ul>
+</div>
+<div class="version"><h3><span class="tag">v3.0</span> — Senior Backend Engineer, Cards @ PBK Technology / Partners Banka <span class="when">(Jul 2023 – present)</span></h3>
+<ul>
+<li><span class="kind">Initial</span>joined before the bank went live — a new bank built from scratch on a modern stack</li>
+<li><span class="kind">Added</span>cards team from day one; a very small team running hundreds of thousands of cards and millions of payments</li>
+<li><span class="kind">Added</span>full Visa integration, including Click to Pay and Apple Pay</li>
+<li><span class="kind">Improved</span>clearing file processing at growing transaction volume</li>
+<li><span class="kind">Added</span>in-bank bitcoin purchase, first in Czechia — backend and architecture lead</li>
+</ul>
+</div>
+<div class="version"><h3><span class="tag">v2.1</span> — CTO @ Trisbee <span class="when">(Mar 2023 – Jun 2023)</span></h3>
+<ul>
+<li><span class="kind">Changed</span>a few months as CTO of a small startup — production, Jira, AWS costs, password management, technical direction</li>
+</ul>
+</div>
+<div class="version"><h3><span class="tag">v2.0</span> — Backend Developer @ Trisbee <span class="when">(Jul 2020 – Feb 2023)</span></h3>
+<ul>
+<li><span class="kind">Added</span>payment method for small EU merchants, built in a small international team</li>
+<li><span class="kind">Added</span>core payment components and an internal accounting system</li>
+<li><span class="kind">Added</span>Stripe — cards, Apple Pay, Google Pay, monthly subscriptions</li>
+<li><span class="kind">Added</span>integrations with Mailgun, HubSpot, AWS and Zapier; analytics and reporting</li>
+</ul>
+</div>
+<div class="version"><h3><span class="tag">v1.0</span> — Integration Developer @ Provys <span class="when">(2016 – 2020)</span></h3>
+<ul>
+<li><span class="kind">Initial</span>PL/SQL integrations between systems (SQL, XML, SOAP, JSON)</li>
+<li><span class="kind">Added</span>migrations of major broadcasters — TV Nova, TVE, BT Sport</li>
+<li><span class="kind">Added</span>team operations — splitting work and estimating capacity</li>
+<li><span class="kind">Added</span>co-built the internal documentation system</li>
+</ul>
+</div>
+<div class="version"><h3><span class="tag">v0.1</span> — Ing., Information Systems and Technology @ VŠE Prague <span class="when">(2012 – 2018)</span></h3>
+</div>
+</div>
+<h2>Not a fit</h2>
+<ul>
+<li>Pixel-perfect frontend work (I can ship React and TypeScript when needed, but it's not my core)</li>
+<li>Letting an LLM guess what a function can compute</li>
+</ul>
+<h2>Side projects</h2>
+<ul>
+<li><b>Smart home</b> — we built and run our house through smart controls, with a home assistant agent that helps run the house and tracks every insurance renewal and its settings. Fully deterministic, on a detailed knowledge base.</li>
+<li><b>Import app</b> — the admin app for a friend from the examples above.</li>
+<li><b>Off-duty</b> — beach volleyball, badminton, running, beekeeping.</li>
+</ul>
+<h2>How to invoke</h2>
+<ul>
+<li>Email: <a href="mailto:dulajosef@gmail.com">dulajosef@gmail.com</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/josef-dula-530505b3">linkedin.com/in/josef-dula-530505b3</a></li>
+</ul>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    Also available as <a href="/SKILL.md">SKILL.md</a> and <a href="/llms.txt">llms.txt</a>, for the AI reading this on someone's behalf.
+  </div>
+</footer>
+
+<script>
+  const rendered = document.getElementById('rendered');
+  const raw = document.getElementById('raw');
+  const bR = document.getElementById('viewRendered');
+  const bW = document.getElementById('viewRaw');
+  let loaded = false;
+
+  function show(isRaw) {
+    rendered.hidden = isRaw;
+    raw.hidden = !isRaw;
+    bR.setAttribute('aria-pressed', String(!isRaw));
+    bW.setAttribute('aria-pressed', String(isRaw));
+  }
+
+  bR.addEventListener('click', () => show(false));
+  bW.addEventListener('click', async () => {
+    if (!loaded) {
+      try {
+        const res = await fetch('/SKILL.md');
+        if (!res.ok) throw new Error(res.status);
+        raw.textContent = await res.text();
+        loaded = true;
+      } catch (e) {
+        location.href = '/SKILL.md';
+        return;
+      }
+    }
+    show(true);
+  });
+</script>
+</body>
+</html>
