@@ -247,7 +247,7 @@ def main():
                        + render_frontmatter(fm) + "\n\n" + render_body(body))
             write(OUT / prefix.lstrip("/") / slug / "index.html", page(
                 lang, slug, title=f"{heading} — {slug}/SKILL.md", description=fm.get("description", ""),
-                path_html=f"{host}{slug} / <b>SKILL.md</b>", raw_url=raw_url, body=content))
+                path_html=f'{host}<a href="{prefix}/">skills</a> / <a href="{prefix}/{slug}/">{slug}</a><span class="file"> / <b>SKILL.md</b></span>', raw_url=raw_url, body=content))
             shutil.copy(src, OUT / prefix.lstrip("/") / slug / "SKILL.md")
             llms_skills.setdefault(lang, []).append((slug, raw_url, fm.get("description", "")))
             listing.append(
