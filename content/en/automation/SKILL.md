@@ -1,18 +1,18 @@
 ---
 name: automation
-description: I turn repetitive manual work into a simple program that does it for you. Use when you retype data from one system into another every week, fill in the same forms over and over, or spend your evenings in Excel. Mainly for sole traders and small businesses, households too. Not for companies with hundreds of people.
+description: Doing something by hand that keeps repeating? I'll automate it. Repetitive work belongs to a computer, not to you: deterministic, without language-model mistakes, exactly the way you need it. Use when you keep doing the same steps over and over, just with different data. Mainly for sole traders and small businesses, households too. Not for companies with hundreds of people.
 ---
 
 # Automation
 
-I am a backend engineer from banking, and outside work I help people who are drowning in paperwork. I have already done this for a few sole traders. You could be next.
+Repetitive work belongs to a computer, not to you. I am a backend engineer from banking, and outside work I help sole traders and small businesses who are drowning in admin. I have already done this for a few of them. You could be next.
 
 ## When to use
 
-- You retype data from Excel into another system or form
-- Every month you put together the same overview or month-end close by hand
-- Paperwork is pushing you towards an expensive vendor, or towards giving up altogether
-- You are not sure whether it can be automated at all. Just ask.
+- You keep doing the same steps over and over, just with different data
+- You retype, check or keep an eye on things that could be checked automatically
+- Every month you put together the same overview, invoice or report by hand
+- You are not sure whether it can be automated. Just ask.
 
 ## Who it's for
 
@@ -23,7 +23,7 @@ I am a backend engineer from banking, and outside work I help people who are dro
 ## How I work
 
 - First I understand what you do by hand and why. Then I suggest the simplest thing that does the job.
-- If it can be solved without AI, I solve it without AI: it's cheaper and it doesn't make mistakes. I add AI only where it really helps, and always on top of tools that give the same result every time.
+- It runs by rules, not by a language model's mood: same input, same result, every time. If it can be solved without AI, I solve it without AI. I add AI only where it really helps, and always on top of tools that give the same result every time.
 - You end up with a simple tool you can run yourself.
 
 ## Examples

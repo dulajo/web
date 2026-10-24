@@ -1,31 +1,35 @@
 ---
 name: work
-description: Seniorní backend vývojář (Kotlin/Java) z bankovnictví a plateb, který staví AI agenty na deterministických základech. Použijte, když potřebujete backend pro platby, kde se nesmí ztratit ani jedna transakce (karty, Visa, clearing, krypto), nebo AI agenty, kteří volají spolehlivé nástroje místo hádání. Nepoužívejte na frontend s pixelovou přesností.
+description: Seniorní backend vývojář z bankovnictví, který převezme odpovědnost za celý proces od zadání po provoz. Použijte, když stavíte robustní systém, který nesmí vypadnout: nasazení bez výpadku, zpětná kompatibilita, připravené záložní scénáře. Nepřepisuju tiket do kódu, doladím zadání a pohlídám, aby release proběhl hladce. Nepoužívejte na frontend s pixelovou přesností.
 location: Praha
 status: otevřený novým příležitostem
 ---
 
 # Josef Dula
 
-Seniorní backend vývojář, 10 let v oboru. Pomáhal jsem postavit českou banku od nuly: karty, napojení na Visu a první nákup bitcoinu přímo v bance v Česku. Dnes jsem v malém týmu, který řídí AI napříč bankou. AI mě baví a dala mi nový náboj.
+Seniorní backend vývojář, 10 let v oboru. Pomáhal jsem postavit banku od nuly, v malém týmu řídíme a vyvíjíme kartový provoz pro statisíce karet a všechny jejich transakce a odřídil jsem první nákup bitcoinu přímo v bance v Česku. Dnes jsem i v malém týmu, který řídí AI napříč bankou.
+
+Nejvíc mě baví chvíle, kdy se podívám do dat a vidím, kolik lidí používá to, co jsem postavil, a jak.
 
 ## Kdy použít
 
-- Platební nebo bankovní systém nesmí ztratit jedinou transakci, ani při milionech plateb
-- Chcete AI agenty v produkci, kteří používají deterministické nástroje a skutečnou znalostní bázi
-- Potřebujete někoho, kdo převezme celou oblast: architekturu, vývoj i provoz
-- Někoho v týmu topí ruční administrativa a chcete ji zautomatizovat
+- Stavíte systém, který nesmí vypadnout ani ztratit data
+- Potřebujete někoho, kdo převezme celou oblast: od zadání přes architekturu po provoz a měření
+- Chcete vydávat bez výpadků: zpětně kompatibilní změny a připravený záložní scénář
+- Chcete AI v produkci, ale na pevných základech
 
 ## Principy
 
+- Tiket není zadání, je to začátek rozhovoru. Nad vším se zamyslím a zadání doladím dřív, než začnu psát kód.
+- Release bez výpadku je standard, ne svátek: zpětná kompatibilita a vždycky připravená cesta zpátky.
 - Co může být deterministické, má být deterministické. Agent má zavolat nástroj, který je na to postavený, a ne pokaždé znovu počítat číslo, které vyjde pokaždé jinak.
-- Nejdřív znalostní báze, potom model. Agent je jen tak dobrý jako to, co si dokáže dohledat.
-- Vždycky hledám nudnou část, kterou jde zautomatizovat: pro sebe i pro toho, kdo sedí vedle mě.
+- Hotovo je, až to lidé používají. Dívám se do dat, kolik lidí a jak používá to, co jsem postavil.
 
 ## Schopnosti
 
 - jazyky: Kotlin, Java, SQL, PL/SQL, TypeScript
 - backend: Spring, Hibernate, Liquibase, Gradle, PostgreSQL, Oracle, DynamoDB
+- provoz: nasazení bez výpadku, zpětná kompatibilita, záložní scénáře, data o používání
 - platby: vydávání a zpracování karet, Visa (Click to Pay, Apple Pay), clearing, Stripe
 - ai: LLM agenti, volání nástrojů, MCP servery, znalostní báze
 - infra: AWS, Terraform, Docker

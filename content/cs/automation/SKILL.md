@@ -1,18 +1,18 @@
 ---
 name: automation
-description: Opakovanou ruční práci převedu na jednoduchý program, který ji udělá za vás. Použijte, když každý týden přepisujete data z jednoho systému do druhého, pořád dokola vyplňujete stejné formuláře nebo trávíte večery v Excelu. Hlavně pro živnostníky a malé firmy, klidně i pro domácnosti. Nepoužívejte pro firmy se stovkami lidí.
+description: Děláte ručně něco, co se pořád opakuje? Zautomatizuju vám to. Opakovanou práci má dělat počítač, ne vy: deterministicky, bez chyb jazykových modelů a přesně tak, jak potřebujete. Použijte, když děláte pořád dokola stejné kroky, jen s jinými daty. Hlavně pro živnostníky a malé firmy, klidně i pro domácnosti. Nepoužívejte pro firmy se stovkami lidí.
 ---
 
 # Automatizace
 
-Jsem backend vývojář z bankovnictví a po práci pomáhám lidem, které topí administrativa. Pár živnostníkům jsem už pomohl, vy můžete být další.
+Opakovanou práci má dělat počítač, ne vy. Jsem backend vývojář z bankovnictví a po práci pomáhám živnostníkům a malým firmám, které topí administrativa. Pár jsem jich už udělal, vy můžete být další.
 
 ## Kdy použít
 
-- Přepisujete data z Excelu do jiného systému nebo formuláře
-- Každý měsíc ručně skládáte stejný přehled nebo uzávěrku
-- Kvůli papírování zvažujete drahého dodavatele, nebo dokonce skončit
-- Nevíte, jestli se to vůbec dá zautomatizovat. Zeptejte se.
+- Děláte pořád dokola stejné kroky, jen s jinými daty
+- Přepisujete, kontrolujete nebo hlídáte věci, které by šlo pohlídat automaticky
+- Každý měsíc ručně skládáte stejný přehled, fakturu nebo hlášení
+- Nevíte, jestli se to dá zautomatizovat. Zeptejte se.
 
 ## Pro koho
 
@@ -23,7 +23,7 @@ Jsem backend vývojář z bankovnictví a po práci pomáhám lidem, které top�
 ## Jak pracuju
 
 - Nejdřív pochopím, co děláte ručně a proč. Pak navrhnu nejjednodušší řešení, které to zvládne.
-- Když to jde vyřešit bez AI, vyřeším to bez AI: je to levnější a nedělá to chyby. AI přidám jen tam, kde opravdu pomůže, a vždycky nad nástroji, které dávají pokaždé stejný výsledek.
+- Běží to podle pravidel, ne podle nálady jazykového modelu: stejný vstup, stejný výsledek, pokaždé. Když to jde vyřešit bez AI, vyřeším to bez AI. AI přidám jen tam, kde opravdu pomůže, a vždycky nad nástroji, které dávají pokaždé stejný výsledek.
 - Na konci máte jednoduchý nástroj, který zvládnete obsluhovat sami.
 
 ## Příklady

@@ -1,31 +1,35 @@
 ---
 name: work
-description: Senior backend engineer (Kotlin/Java) from banking and payments who builds AI agents on deterministic foundations. Use when you need payment-grade backend systems — cards, Visa, clearing, crypto — or AI agents that call well-built tools instead of guessing. Not for pixel-perfect frontend work.
+description: Senior backend engineer from banking who takes ownership of the whole process, from requirements to production. Use when you are building a robust system that must not go down: zero-downtime releases, backward compatibility, backup scenarios ready. I don't just turn a ticket into code; I refine the requirements and make sure the release goes smoothly. Not for pixel-perfect frontend work.
 location: Prague, Czechia
 status: open to new roles
 ---
 
 # Josef Dula
 
-Senior backend engineer, 10 years in. Helped build a Czech bank from scratch — cards, Visa integrations and the first in-bank bitcoin purchase in the country. Now part of the small team steering AI across the bank. I love AI, and it gave me a new spark.
+Senior backend engineer, 10 years in. I helped build a bank from scratch, in a small team I run and develop card operations for hundreds of thousands of cards and all their transactions, and I led the first in-bank bitcoin purchase in Czechia. Today I am also part of the small team steering AI across the bank.
+
+What I enjoy most: looking at the data and seeing how many people use what I built, and how.
 
 ## When to use
 
-- Your payment or banking system must not lose a single transaction, even at millions of payments
-- You want AI agents in production that use deterministic tools and a real knowledge base, not vibes
-- You need someone to own a domain end to end: architecture, delivery, production
-- Someone on your team is drowning in manual admin and you want it automated
+- You are building a system that must not go down or lose data
+- You need someone to own a whole area: from requirements through architecture to production and measurement
+- You want releases without downtime: backward-compatible changes and a backup scenario ready
+- You want AI in production, on solid foundations
 
 ## Principles
 
-- If it can be deterministic, it should be. An agent should call a tool that was built for the job, not re-calculate a number that comes out different every time.
-- Knowledge base first, model second. The agent is only as good as what it can look up.
-- Always look for the boring part to automate — for me, and for whoever sits next to me.
+- A ticket is not a spec, it's the start of a conversation. I think everything through and refine the requirements before I write code.
+- A zero-downtime release is the standard, not a celebration: backward compatibility and a way back that is always ready.
+- If it can be deterministic, it should be. An agent should call a tool built for the job, not re-calculate a number that comes out different every time.
+- Done means people use it. I look at the data to see how many people use what I built, and how.
 
 ## Capabilities
 
 - languages: Kotlin, Java, SQL, PL/SQL, TypeScript
 - backend: Spring, Hibernate, Liquibase, Gradle, PostgreSQL, Oracle, DynamoDB
+- operations: zero-downtime releases, backward compatibility, backup scenarios, usage data
 - payments: card issuing and processing, Visa (Click to Pay, Apple Pay), clearing, Stripe
 - ai: LLM agents, tool calling, MCP servers, knowledge bases
 - infra: AWS, Terraform, Docker

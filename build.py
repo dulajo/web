@@ -25,6 +25,8 @@ LANGS = {
         "open": "Open →",
         "footer": 'Also available as <a href="{raw}">{raw_name}</a> and <a href="/llms.txt">llms.txt</a>, '
                   "for the AI reading this on someone's behalf.",
+        "footer_index": 'Every skill is also available as raw SKILL.md, and this index as <a href="/llms.txt">llms.txt</a>, '
+                        "for the AI reading this on someone's behalf.",
     },
     "cs": {
         "prefix": "/cs",
@@ -33,6 +35,8 @@ LANGS = {
         "open": "Otevřít →",
         "footer": 'Také jako <a href="{raw}">{raw_name}</a> a <a href="/llms.txt">llms.txt</a>, '
                   "pro AI, která tohle čte za někoho jiného.",
+        "footer_index": 'Každý skill je i jako čistý SKILL.md a tento rozcestník jako <a href="/llms.txt">llms.txt</a>, '
+                        "pro AI, která tohle čte za někoho jiného.",
     },
 }
 CAPABILITY_SECTIONS = {"capabilities", "schopnosti"}
@@ -198,7 +202,7 @@ def page(lang, slug, *, title, description, path_html, raw_url, body, redirect=F
     ) + f'\n<link rel="alternate" hreflang="x-default" href="{DOMAIN}{rel}">'
     if slug:
         alternates += f'\n<link rel="alternate" type="text/markdown" href="{raw_url}" title="SKILL.md">'
-    footer = s["footer"].format(raw=raw_url, raw_name=raw_url.rsplit("/", 1)[-1])
+    footer = s["footer"].format(raw=raw_url, raw_name=raw_url.rsplit("/", 1)[-1]) if slug else s["footer_index"]
     return (
         TEMPLATE.read_text(encoding="utf-8")
         .replace("{{LANG}}", lang)
