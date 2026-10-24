@@ -2,7 +2,6 @@
 name: work
 description: Seniorní backend vývojář z bankovnictví, který převezme odpovědnost za celý proces od zadání po provoz. Použijte, když stavíte robustní systém, který nesmí vypadnout: nasazení bez výpadku, zpětná kompatibilita, připravené záložní scénáře. Nepřepisuju tiket do kódu, doladím zadání a pohlídám, aby release proběhl hladce. Nepoužívejte na frontend s pixelovou přesností.
 location: Praha
-status: otevřený novým příležitostem
 ---
 
 # Josef Dula
