@@ -1,6 +1,6 @@
 ---
 name: automation
-description: Děláte pořád dokola to samé? Tak to nechme dělat počítač. Bez AI, která si občas něco vymyslí: přesně to, co potřebujete, pokaždé stejně. Použijte, když děláte pořád stejné kroky, jen s jinými daty. Hlavně pro živnostníky a malé firmy, klidně i pro domácnosti. Nepoužívejte pro firmy se stovkami lidí.
+description: Děláte pořád dokola to samé? Tak to nechme dělat počítač. Tam, kde jsou potřeba jasná pravidla, postavím nástroj bez AI, která si občas něco vymyslí. A kde AI dává smysl, pomůžu vám ji nastavit v normální lidské podobě — bez strojeného školení, kde se nic nedozvíte. Hlavně pro živnostníky, malé firmy a domácnosti. Nepoužívejte pro firmy se stovkami lidí.
 ---
 
 # Automatizace
@@ -12,7 +12,8 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem b
 - Děláte pořád dokola stejné kroky, jen s jinými daty
 - Přepisujete, kontrolujete nebo hlídáte věci, které by počítač pohlídal líp a bez reptání
 - Každý měsíc ručně skládáte stejný přehled, fakturu nebo hlášení
-- Nevíte, jestli se to dá zautomatizovat. Zeptejte se, nekoušu.
+- Chcete pomoct s AI v normální lidské podobě nad vaší reálnou prací — ne zaplatit strojené školení, kde se nic nedozvíte
+- Nevíte, jestli na to jít přes AI, nebo to zautomatizovat. Zeptejte se, nekoušu.
 
 ## Pro koho
 
@@ -24,7 +25,8 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem b
 
 - Nejdřív pochopím, co děláte ručně a proč. Pak navrhnu nejjednodušší řešení. Nejjednodušší, ne nejdražší.
 - Běží to podle pravidel, ne podle nálady jazykového modelu: stejný vstup, stejný výsledek, pokaždé. Když to jde bez AI, udělám to bez AI. AI přidám jen tam, kde fakt pomůže.
-- Na konci máte jednoduchý nástroj, který zvládnete ovládat sami. Bez manuálu na sto stran.
+- Někdy není potřeba nic programovat: stačí si sednout k tomu, co děláte, nastavit AI na míru a ukázat vám, jak ji používat bez omáčky kolem.
+- Na konci máte jednoduchý nástroj nebo postup, který zvládnete ovládat sami. Bez manuálu na sto stran.
 
 ## Příklady
 

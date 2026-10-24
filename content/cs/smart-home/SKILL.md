@@ -5,7 +5,7 @@ description: Dům, který si pamatuje víc než vy. Kdy jste koupili myčku, kdy
 
 # Chytrá domácnost
 
-Dům jsme postavili a řídíme ho přes chytré ovládání. Mám ho vymazlený podle sebe a rád se podívám i na ten váš, ať je chytrý hodně, málo, nebo vůbec.
+Dům jsme postavili a řídíme ho přes Loxone a Home Assistant. Mám ho vymazlený podle sebe a rád se podívám i na ten váš, ať je chytrý hodně, málo, nebo vůbec.
 
 ## Kdy použít
 
@@ -30,7 +30,7 @@ Dům jsme postavili a řídíme ho přes chytré ovládání. Mám ho vymazlený
 ## Na co se nehodím
 
 - Elektroinstalace. Jsem programátor, ne elektrikář, a obočí si chci nechat.
-- Nonstop podpora. Taky občas spím.
+- Nonstop pohotovost. Když o půlnoci nepůjde rozsvítit fialově v obýváku, počká to do rána.
 
 ## Jak mě vyvolat
 
