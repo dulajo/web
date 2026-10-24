@@ -228,7 +228,11 @@ def write(path: Path, text: str):
 def main():
     if OUT.exists():
         shutil.rmtree(OUT)
-    shutil.copytree(STATIC, OUT)
+    # static/ may be missing (git doesn't keep empty folders).
+    if STATIC.exists():
+        shutil.copytree(STATIC, OUT)
+    else:
+        OUT.mkdir(parents=True)
     todos = []
     llms_skills = {}
 
