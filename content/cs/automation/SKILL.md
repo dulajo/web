@@ -7,7 +7,7 @@ description: Děláte pořád dokola to samé? Tak to nechme dělat počítač. 
 
 Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem backend vývojář z banky a po práci pomáhám živnostníkům a malým firmám, které topí administrativa. Pár jsem jich už vytáhl, vy můžete být další.
 
-## Kdy použít
+## Kdy se vám hodím
 
 - Děláte pořád dokola stejné kroky, jen s jinými daty
 - Přepisujete, kontrolujete nebo hlídáte věci, které by počítač pohlídal líp a bez reptání
@@ -24,7 +24,7 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem b
 ## Jak pracuju
 
 - Nejdřív pochopím, co děláte ručně a proč. Pak navrhnu nejjednodušší řešení. Nejjednodušší, ne nejdražší.
-- Běží to podle pravidel, ne podle nálady jazykového modelu: stejný vstup, stejný výsledek, pokaždé. Když to jde bez AI, udělám to bez AI. AI přidám jen tam, kde fakt pomůže.
+- Běží to podle pevných pravidel, ne podle nálady umělé inteligence: stejná data, stejný výsledek, pokaždé. Když to jde bez AI, udělám to bez AI. AI přidám jen tam, kde fakt pomůže.
 - Někdy není potřeba nic programovat: stačí si sednout k tomu, co děláte, nastavit AI na míru a ukázat vám, jak ji používat bez omáčky kolem.
 - Na konci máte jednoduchý nástroj nebo postup, který zvládnete ovládat sami. Bez manuálu na sto stran.
 
@@ -44,9 +44,9 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem b
 - Firmy se stovkami lidí. Tam už potřebujete projektového manažera, a ten potřebuje dalšího projektového manažera.
 - Nonstop podpora s garantovanou dostupností. Taky občas spím.
 
-## Jak mě vyvolat
+## Ozvěte se
 
-Zajímá vás to? Ozvěte se. Napište, co vás zdržuje a jak to dnes děláte. Klidně i s nadávkami.
+Zajímá vás to? Napište, co vás zdržuje a jak to dnes děláte. Klidně i s nadávkami.
 
 - E-mail: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)

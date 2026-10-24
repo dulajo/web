@@ -7,7 +7,7 @@ description: Doing the same thing over and over? Let's make a computer do it. Wh
 
 Excel is a great tool. Just not for spending your Sundays in. I am a backend engineer from a bank, and after hours I help sole traders and small businesses who are drowning in admin. I have already pulled a few of them out. You could be next.
 
-## When to use
+## When I can help
 
 - You keep doing the same steps over and over, just with different data
 - You retype, check or keep an eye on things a computer would handle better, and without complaining
@@ -24,7 +24,7 @@ Excel is a great tool. Just not for spending your Sundays in. I am a backend eng
 ## How I work
 
 - First I understand what you do by hand and why. Then I suggest the simplest solution. Simplest, not most expensive.
-- It runs by rules, not by a language model's mood: same input, same result, every time. If it works without AI, it gets done without AI. AI only where it really helps.
+- It runs by fixed rules, not by an AI's mood: same data, same result, every time. If it works without AI, it gets done without AI. AI only where it really helps.
 - Sometimes no coding is needed at all: we just sit down with your actual work, set up AI to fit it and skip the fluff.
 - You end up with a simple tool or workflow you can run yourself. No 100-page manual.
 
@@ -44,9 +44,9 @@ Excel is a great tool. Just not for spending your Sundays in. I am a backend eng
 - Companies with hundreds of people. There you need a project manager, and that project manager needs another project manager.
 - 24/7 support with guaranteed availability. I sleep sometimes.
 
-## How to invoke
+## Get in touch
 
-Interested? Get in touch. Tell me what slows you down and how you do it today. Swearing allowed.
+Interested? Tell me what slows you down and how you do it today. Swearing allowed.
 
 - Email: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)

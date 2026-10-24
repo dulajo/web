@@ -17,12 +17,19 @@ TEMPLATE = ROOT / "template.html"
 DOMAIN = "https://dulajosef.com"
 
 SKILLS = ["work", "smart-home", "automation"]
+# Pages for people outside tech: no code-looking frontmatter box at the top, just a short note at the end.
+PLAIN_SKILLS = {"smart-home", "automation"}
+CARD_TITLES = {
+    "en": {"work": "Work", "smart-home": "Smart home", "automation": "Automation"},
+    "cs": {"work": "Práce", "smart-home": "Chytrá domácnost", "automation": "Automatizace"},
+}
 LANGS = {
     "en": {
         "prefix": "",
         "preview": "Preview",
         "back": "← all skills",
         "open": "Open →",
+        "skill_note": "This page is also a SKILL.md, a skill description an AI can read too. The Raw button at the top shows it.",
         "footer": 'Also available as <a href="{raw}">{raw_name}</a> and <a href="/llms.txt">llms.txt</a>, '
                   "for the AI reading this on someone's behalf.",
         "footer_index": 'Every skill is also available as raw SKILL.md, and this index as <a href="/llms.txt">llms.txt</a>, '
@@ -33,6 +40,7 @@ LANGS = {
         "preview": "Náhled",
         "back": "← všechny skilly",
         "open": "Otevřít →",
+        "skill_note": "Tahle stránka je zároveň SKILL.md, popis dovednosti, kterému rozumí i AI. Ukáže ho tlačítko Raw nahoře.",
         "footer": 'Také jako <a href="{raw}">{raw_name}</a> a <a href="/llms.txt">llms.txt</a>, '
                   "pro AI, která tohle čte za někoho jiného.",
         "footer_index": 'Každý skill je i jako čistý SKILL.md a tento rozcestník jako <a href="/llms.txt">llms.txt</a>, '
@@ -243,8 +251,12 @@ def main():
             todos += [f"{lang}/{slug}: [{t}]" for t in re.findall(r"\[([^\]]+)\](?!\()", "\n".join(body))]
             heading = next((l[2:].strip() for l in body if l.startswith("# ")), slug)
             raw_url = f"{prefix}/{slug}/SKILL.md"
-            content = (f'<a class="back" href="{prefix}/">{s["back"]}</a>\n'
-                       + render_frontmatter(fm) + "\n\n" + render_body(body))
+            if slug in PLAIN_SKILLS:
+                content = (f'<a class="back" href="{prefix}/">{s["back"]}</a>\n' + render_body(body)
+                           + f'\n<p class="skill-note">{s["skill_note"]}</p>')
+            else:
+                content = (f'<a class="back" href="{prefix}/">{s["back"]}</a>\n'
+                           + render_frontmatter(fm) + "\n\n" + render_body(body))
             write(OUT / prefix.lstrip("/") / slug / "index.html", page(
                 lang, slug, title=f"{heading} — {slug}/SKILL.md", description=fm.get("description", ""),
                 path_html=f'{host}<span class="crumb"><a href="{prefix}/">skills</a> / </span><b>{slug}</b>', raw_url=raw_url, body=content))
@@ -252,7 +264,7 @@ def main():
             llms_skills.setdefault(lang, []).append((slug, raw_url, fm.get("description", "")))
             listing.append(
                 f'<a class="skill" href="{prefix}/{slug}/"><div class="skill-head">'
-                f'<span class="skill-name">{slug}<span>/SKILL.md</span></span>'
+                f'<span class="skill-name">{CARD_TITLES[lang][slug]}<span class="skill-file">{slug}/SKILL.md</span></span>'
                 f'<span class="skill-open">{s["open"]}</span></div>'
                 f'<p class="skill-desc">{inline(fm.get("description", ""))}</p></a>'
             )

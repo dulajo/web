@@ -7,7 +7,7 @@ description: Dům, který si pamatuje víc než vy. Kdy jste koupili myčku, kdy
 
 Dům jsme postavili a řídíme ho přes Loxone a Home Assistant. Mám ho vymazlený podle sebe a rád se podívám i na ten váš, ať je chytrý hodně, málo, nebo vůbec.
 
-## Kdy použít
+## Kdy se vám hodím
 
 - Máte chytrou domácnost, ale zařízení spolu mluví asi jako sousedi přes plot
 - Stavíte nebo rekonstruujete a chcete to promyslet dřív, než se zaomítá
@@ -15,16 +15,16 @@ Dům jsme postavili a řídíme ho přes Loxone a Home Assistant. Mám ho vymazl
 - Chcete doma vlastní server (homelab) a data mít u sebe, ne „někde v cloudu“
 - Chcete domácího AI asistenta, který si nevymýšlí
 
-## Principy
+## Jak to dělám
 
 - Světla řídí pravidla, ne AI s náladou. Nikdo nechce žaluzie, které halucinují.
-- Asistent používá nástroje a znalostní bázi, které jsou pro něj připravené. Nehádá, ví.
+- Asistent si nic nevymýšlí. Odpovídá z toho, co má zapsané, a dělá jen to, co mu dovolíte.
 
 ## Co u nás doma běží
 
 - Loxone jako pevný základ, Home Assistant na všechno ostatní
-- Agent se znalostní bází, který to drží pohromadě. Ví, kdy jsme koupili který spotřebič a kdy mu končí záruka, jaké máme pojistky a kolik stojí, kdy je který servis a kdy byl naposledy. Nastavení domu měnit nemůže a do znalostní báze zapisuje jen s naším souhlasem. Je to agent, ne šéf.
-- Homelab s vlastními službami a monitoringem
+- Domácí asistent, který to drží pohromadě. Ví, kdy jsme koupili který spotřebič a kdy mu končí záruka, jaké máme pojistky a kolik stojí, kdy je který servis a kdy byl naposledy. Nastavení domu měnit nemůže a nic si nezapíše bez našeho souhlasu. Je to asistent, ne šéf.
+- Vlastní server doma (homelab), na kterém tohle všechno běží
 - 3D model celého domu, protože proč ne
 
 ## Na co se nehodím
@@ -32,9 +32,9 @@ Dům jsme postavili a řídíme ho přes Loxone a Home Assistant. Mám ho vymazl
 - Elektroinstalace. Jsem programátor, ne elektrikář, a obočí si chci nechat.
 - Nonstop pohotovost. Když o půlnoci nepůjde rozsvítit fialově v obýváku, počká to do rána.
 
-## Jak mě vyvolat
+## Ozvěte se
 
-Zajímá vás to? Ozvěte se. Napište, co máte doma, nebo co byste konečně chtěli mít pod kontrolou.
+Zajímá vás to? Napište, co máte doma, nebo co byste konečně chtěli mít pod kontrolou.
 
 - E-mail: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)
