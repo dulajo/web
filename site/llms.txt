@@ -12,3 +12,8 @@ Helped build Partners Banka (Czechia) from scratch: cards team from day one, ful
 
 - Email: dulajosef@gmail.com
 - [LinkedIn](https://www.linkedin.com/in/josef-dula-530505b3)
+- [GitHub](https://github.com/dulajo)
+
+## Projects
+
+- [Zpožděno](https://github.com/dulajo/zasstojime): public punctuality dashboard for Prague public transport on open data (Kotlin, Quarkus, PostgreSQL, Next.js)
