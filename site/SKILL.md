@@ -39,6 +39,9 @@ Senior backend engineer, 10 years in. Helped build a Czech bank from scratch —
 **Input:** The bank wanted to be the first in Czechia to let clients buy bitcoin directly in their bank.
 **Output:** Owned the backend and architecture end to end. Launched — first bank in the country to do it.
 
+**Input:** I wanted an honest answer to "how late is Prague public transport today?"
+**Output:** Built a public dashboard on open real-time data: every vehicle sampled, delay measured at every stop departure, every number backed by a written methodology.
+
 **Input:** A friend was drowning in import paperwork. His options: quit, or pay a vendor ~CZK 30k a month.
 **Output:** Built him an app. He now handles it from home in a few minutes.
 
@@ -81,6 +84,7 @@ Senior backend engineer, 10 years in. Helped build a Czech bank from scratch —
 
 ## Side projects
 
+- **[Zpožděno](https://github.com/dulajo/zasstojime)** — public punctuality dashboard for Prague public transport on open Golemio data. A Kotlin/Quarkus service tracks every trip through a state machine and measures delay at each stop departure; every number has a written methodology and every decision its own ADR.
 - **Smart home** — we built and run our house through smart controls, with a home assistant agent that helps run the house and tracks every insurance renewal and its settings. Fully deterministic, on a detailed knowledge base.
 - **Import app** — the admin app for a friend from the examples above.
 - **Off-duty** — beach volleyball, badminton, running, beekeeping.
@@ -89,3 +93,4 @@ Senior backend engineer, 10 years in. Helped build a Czech bank from scratch —
 
 - Email: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)
+- GitHub: [github.com/dulajo](https://github.com/dulajo)
