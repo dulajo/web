@@ -52,7 +52,7 @@
   }
   .path { color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
   .path a { color: var(--muted); text-decoration: none; }
-  .path a:hover { color: var(--fg); }
+  .path a:hover { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
   .path b { color: var(--fg); font-weight: 600; }
   .actions { display: flex; gap: 6px; flex-shrink: 0; align-items: center; }
   .btn {
@@ -152,6 +152,7 @@
     dl.caps { grid-template-columns: 1fr; gap: 0; }
     dl.caps dd { margin-bottom: 10px; }
     .path .host { display: none; }
+    .path .file { display: none; }
     .actions { gap: 4px; }
     .btn { padding: 5px 7px; }
   }
