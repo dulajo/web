@@ -1,6 +1,6 @@
 ---
 name: automation
-description: Děláte pořád dokola to samé? Tak to nechme dělat počítač. Tam, kde jsou potřeba jasná pravidla, postavím nástroj bez AI, která si občas něco vymyslí. A kde AI dává smysl, pomůžu vám ji nastavit v normální lidské podobě — bez strojeného školení, kde se nic nedozvíte. Hlavně pro živnostníky, malé firmy a domácnosti. Nepoužívejte pro firmy se stovkami lidí.
+description: Děláte pořád dokola to samé? Tak to nechme dělat počítač. Kde jsou potřeba jasná pravidla, postavím nástroj bez AI, která si občas něco vymyslí. A kde AI dává smysl, pomůžu vám ji nastavit lidsky a srozumitelně, bez strojeného školení, ze kterého si nic neodnesete. Použijte, když děláte pořád stejné kroky, jen s jinými daty, nebo chcete AI využít na skutečnou práci. Hlavně pro živnostníky, malé firmy a domácnosti. Nepoužívejte pro firmy se stovkami lidí.
 ---
 
 # Automatizace
@@ -12,7 +12,7 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem b
 - Děláte pořád dokola stejné kroky, jen s jinými daty
 - Přepisujete, kontrolujete nebo hlídáte věci, které by počítač pohlídal líp a bez reptání
 - Každý měsíc ručně skládáte stejný přehled, fakturu nebo hlášení
-- Chcete pomoct s AI v normální lidské podobě nad vaší reálnou prací — ne zaplatit strojené školení, kde se nic nedozvíte
+- Chcete s AI pomoct lidsky a na vaší skutečné práci, ne zaplatit strojené školení, ze kterého si nic neodnesete
 - Nevíte, jestli na to jít přes AI, nebo to zautomatizovat. Zeptejte se, nekoušu.
 
 ## Pro koho

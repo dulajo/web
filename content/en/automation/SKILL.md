@@ -1,6 +1,6 @@
 ---
 name: automation
-description: Doing the same thing over and over? Let's make a computer do it. Where strict rules are needed, I build a tool without AI that occasionally makes things up. And where AI makes sense, I'll help you set it up in plain human terms — no stiff corporate training where you learn nothing. Mainly for sole traders, small businesses and households. Not for companies with hundreds of people.
+description: Doing the same thing over and over? Let's make a computer do it. Where strict rules are needed, I build a tool without AI that occasionally makes things up. And where AI makes sense, I'll help you set it up in plain human terms, without a stiff corporate training where you learn nothing. Use when you keep repeating the same steps, just with different data, or want AI to help with your actual work. Mainly for sole traders, small businesses and households. Not for companies with hundreds of people.
 ---
 
 # Automation
@@ -12,7 +12,7 @@ Excel is a great tool. Just not for spending your Sundays in. I am a backend eng
 - You keep doing the same steps over and over, just with different data
 - You retype, check or keep an eye on things a computer would handle better, and without complaining
 - Every month you put together the same overview, invoice or report by hand
-- You want practical, human help with AI on your actual work — not a stiff paid training where you learn nothing
+- You want practical, human help with AI on your actual work, not a stiff paid training where you learn nothing
 - Not sure whether it calls for AI or automation? Ask. I don't bite.
 
 ## Who it's for
