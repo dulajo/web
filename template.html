@@ -82,10 +82,16 @@
 
   main { padding: 40px 0 80px; }
 
+
+  /* frontmatter */
+  .frontmatter {
     font: 13.5px/1.7 var(--mono); background: var(--panel);
     border: 1px solid var(--line); border-radius: 8px;
     padding: 16px 18px; margin: 0 0 40px; overflow-wrap: break-word;
   }
+  .frontmatter > div { padding-left: 2ch; text-indent: -2ch; }
+  .frontmatter .dash { color: var(--muted); }
+  .frontmatter .k { color: var(--accent); }
 
   h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.02em; }
   .contact-card { display: flex; align-items: center; gap: 16px; margin-top: 4px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px; }

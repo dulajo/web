@@ -76,8 +76,15 @@ def parse(path: Path):
 
 
 
-def render_body(lines, lede=None):
-    """Render the markdown body. lede (the skill description) is shown right under the title."""
+def render_frontmatter(fm):
+    rows = ['<div class="dash">---</div>']
+    for k, v in fm.items():
+        rows.append(f'<div><span class="k">{html.escape(k)}:</span> {inline(v)}</div>')
+    rows.append('<div class="dash">---</div>')
+    return '<div class="frontmatter">\n  ' + "\n  ".join(rows) + "\n</div>"
+
+
+def render_body(lines):
     out = []
     section = ""
     open_tag = None  # "ul", "dl" or "example"
@@ -111,9 +118,6 @@ def render_body(lines, lede=None):
         if line.startswith("# "):
             close()
             out.append(f"<h1>{inline(line[2:])}</h1>")
-            if lede:
-                out.append(f'<p class="lede">{inline(lede)}</p>')
-                first_para = False
             continue
 
         if line.startswith("## "):
@@ -263,10 +267,10 @@ def main():
             todos += [f"{lang}/{slug}: [{t}]" for t in re.findall(r"\[([^\]]+)\](?!\()", "\n".join(body))]
             heading = next((l[2:].strip() for l in body if l.startswith("# ")), slug)
             raw_url = f"{prefix}/{slug}/SKILL.md"
-            # Same layout everywhere: title, description as the intro, sections, contact card.
-            # The frontmatter itself is only in the raw SKILL.md (Raw button).
+            # Same layout everywhere: the SKILL.md frontmatter box (the description lives only there),
+            # then the human intro under the title, the sections and a contact card.
             content = (f'<a class="back" href="{prefix}/">{s["back"]}</a>\n'
-                       + with_contact_card(render_body(body, lede=fm.get("description"))))
+                       + render_frontmatter(fm) + "\n\n" + with_contact_card(render_body(body)))
             write(OUT / prefix.lstrip("/") / slug / "index.html", page(
                 lang, slug, title=f"{heading} — {slug}/SKILL.md", description=fm.get("description", ""),
                 path_html=f'{host}<span class="crumb"><a href="{prefix}/">skills</a> / </span><b>{slug}</b>', raw_url=raw_url, body=content))
@@ -282,7 +286,8 @@ def main():
         fm, body = parse(CONTENT / lang / "index.md")
         heading = next((l[2:].strip() for l in body if l.startswith("# ")), "Josef Dula")
         contacts = " · ".join(f'<a href="{CONTACT_KEYS[k](v)}">{k}</a>' for k, v in fm.items() if k in CONTACT_KEYS)
-        content = (render_body(body, lede=fm.get("description"))
+        shown = {k: v for k, v in fm.items() if k not in CONTACT_KEYS}
+        content = (render_frontmatter(shown) + "\n\n" + render_body(body)
                    + '\n<div class="skills">\n' + "\n".join(listing) + "\n</div>"
                    + f'\n<p class="contacts">{contacts}</p>')
         write(OUT / prefix.lstrip("/") / "index.html", page(
