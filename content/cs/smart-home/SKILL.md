@@ -5,7 +5,7 @@ description: Chytrá domácnost, která šetří čas a nepřidělává starosti
 
 # Chytrá domácnost
 
-Náš dům řídíme přes Loxone doplněný o Home Assistant. Máme svého domácího asistenta, který o domě ví všechno, takže nic nedohledáváme v papírech, tabulkách a e-mailech. Rád se podívám i na ten váš.
+Jsem backend vývojář a náš dům řídíme přes Loxone doplněný o Home Assistant. Máme svého domácího asistenta, který má k domu všechny podklady, takže je nedohledáváme v papírech, tabulkách a e-mailech. Rád se podívám i na ten váš.
 
 ## Kdy se vám hodím
 
@@ -14,7 +14,7 @@ Náš dům řídíme přes Loxone doplněný o Home Assistant. Máme svého dom�
 - Stavíte nebo rekonstruujete a chcete chytrou domácnost promyslet hned od začátku
 - Nechcete automatizovat celý dům, ale rádi byste zautomatizovali aspoň agendu kolem něj: záruky, pojistky, servis
 - Chcete doma vlastní server (homelab) a data mít u sebe, ne „někde v cloudu“
-- Chcete domácího AI asistenta, který si nevymýšlí
+- Chcete domácího AI asistenta, který odpovídá z vašich podkladů, ne z hlavy
 
 ## Jak pracuju
 
@@ -42,8 +42,6 @@ Náš dům řídíme přes Loxone doplněný o Home Assistant. Máme svého dom�
 **Vstup:** Hledání záručního listu nebo smlouvy znamenalo přehrabovat šuplíky a složky.
 **Výstup:** Dokumenty jsou v domácím správci dokumentů a asistent je najde za pár vteřin.
 
-**Vstup:** Za správce hesel a dokumentů bychom platili měsíční předplatné velkým službám.
-**Výstup:** Obojí běží doma v homelabu. Data máme u sebe a předplatné odpadá.
 
 ## Na co se nehodím
 
@@ -51,7 +49,7 @@ Náš dům řídíme přes Loxone doplněný o Home Assistant. Máme svého dom�
 
 ## Ozvěte se
 
-Zajímá vás to? Napište, co máte doma, nebo co byste konečně chtěli mít pod kontrolou.
+Máte doma něco, co nefunguje, jak byste chtěli, nebo chytrou domácnost teprve promýšlíte? Napište mi, co řešíte. Probereme, jestli a jak bych mohl pomoct.
 
 - E-mail: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)

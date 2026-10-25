@@ -33,8 +33,8 @@ Excel is a great tool. Just not for spending your Sundays in. I am a backend eng
 **Input:** A sole trader imports goods from abroad and retyped the details of every shipment between spreadsheets and the customs system by hand. His options: keep spending hours a week on it, or buy a vendor's system for CZK 30,000 plus CZK 3,000 a month.
 **Output:** A small program that uploads the data from the Excel sheet he's used to straight into the customs system in one click. Nothing new to learn, no eye-watering fees, and above all it saves time. Luckily, option three won.
 
-**Input:** A company's release process was slow and had several manual steps that held it up. And because a person did them, mistakes could slip in.
-**Output:** Every manual step that could be was replaced by a deterministic check. A person stays only as the human in the loop who gives the green light and then doesn't have to babysit the process.
+**Input:** An important process at a company had several manual steps. They slowed everything down, and one oversight was enough for something to go wrong.
+**Output:** The checks a computer can do are now done by a computer, the same way every time. A person just gives the green light and doesn't have to babysit the rest.
 
 **Input:** Papers, documents and emails are a mess, and nobody knows who sent what and when.
 **Output:** A simple automation over documents and email that builds a solid knowledge base out of them. A company agent can then search it safely.
@@ -45,7 +45,7 @@ Excel is a great tool. Just not for spending your Sundays in. I am a backend eng
 
 ## Get in touch
 
-Interested? Tell me what slows you down and how you do it today. Swearing allowed.
+Tell me what slows you down and how you do it today. You don't need to know what can be automated; we'll figure that out together. Swearing allowed.
 
 - Email: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)

@@ -5,7 +5,7 @@ description: A smart home that saves time instead of adding worries. Lights, bli
 
 # Smart home
 
-We run our house on Loxone, extended with Home Assistant. We have our own home assistant that knows everything about the house, so we never dig through papers, spreadsheets and emails. I'm happy to look at yours too.
+I'm a backend engineer, and we run our house on Loxone, extended with Home Assistant. Our home assistant has all the paperwork for the house, so we don't have to dig through papers, spreadsheets and emails. I'm happy to look at yours too.
 
 ## When I can help
 
@@ -14,7 +14,7 @@ We run our house on Loxone, extended with Home Assistant. We have our own home a
 - You are building or renovating and want to plan the smart home from the start
 - You don't want to automate the whole house, but you'd like to automate at least the paperwork around it: warranties, insurance, servicing
 - You want your own home server (homelab) and your data at home, not "somewhere in the cloud"
-- You want a home AI assistant that doesn't make things up
+- You want a home AI assistant that answers from your own records, not off the top of its head
 
 ## How I work
 
@@ -42,8 +42,6 @@ We run our house on Loxone, extended with Home Assistant. We have our own home a
 **Input:** Finding a warranty card or a contract meant digging through drawers and folders.
 **Output:** Documents live in our home document manager, and the assistant finds them in seconds.
 
-**Input:** A password manager and a document manager would have meant monthly subscriptions to the big platforms.
-**Output:** Both run at home on the homelab. Our data stays with us and the subscriptions are gone.
 
 ## Not a fit
 
@@ -51,7 +49,7 @@ We run our house on Loxone, extended with Home Assistant. We have our own home a
 
 ## Get in touch
 
-Interested? Tell me what you have at home, or what you would finally like to keep under control.
+Is something at home not working the way you'd like, or are you only just thinking about a smart home? Tell me what you're dealing with, and we'll see whether and how I can help.
 
 - Email: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)

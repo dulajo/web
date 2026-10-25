@@ -1,12 +1,12 @@
 ---
 name: work
-description: Senior backend engineer from a bank who owns a problem from requirements all the way to production. Use when you are building a system that must not go down: zero-downtime releases, backward compatibility and a plan B for when things go sideways. I don't turn a ticket straight into code; first I find out what its author actually meant. Not for teams looking for someone to sit in meetings all day.
+description: Senior backend engineer from a bank who owns a problem from requirements all the way to production. Use when you are building a system that must not go down: zero-downtime releases, backward compatibility and a plan B for when things go sideways. I don't turn a ticket straight into code; first I find out what its author actually meant.
 location: Prague, Czechia
 ---
 
 # Josef Dula
 
-10 years in. I helped build a bank from scratch. In a small team we run and develop the card system for hundreds of thousands of cards and all their transactions. As the only backend engineer, I built the first in-bank bitcoin purchase in Czechia. And now I am in the group steering AI across the bank.
+10 years in. I helped build a bank from scratch. In a small team we run and develop the card system for hundreds of thousands of cards and all their transactions. In a team of six where I was the only backend engineer, we delivered the first in-bank bitcoin purchase in Czechia. And now I am in the group steering AI across the bank.
 
 I ship without downtime, because explaining to people why their card doesn't work is not my idea of fun. What I do enjoy is looking at the data and seeing how many people use what I built.
 
@@ -16,6 +16,7 @@ I ship without downtime, because explaining to people why their card doesn't wor
 - You need someone to take the whole task: clarify the requirements, plan it step by step, get it to production, and not vanish right after the merge
 - You want releases without downtime: backward-compatible changes and a way back that is always ready
 - You want AI in production, not in a slide deck
+- You want someone who brings the team along: helps colleagues, agrees solutions across teams and sees them through until people actually use them
 
 ## How I work
 
@@ -24,6 +25,7 @@ I ship without downtime, because explaining to people why their card doesn't wor
 - A zero-downtime release is the standard, not a celebration.
 - If it can be deterministic, it should be. An agent should call a tool, not take another guess.
 - Done means people use it. Until then it's just nice code.
+- The best solutions come from the team. I like helping the people around me; right now I'm teaching a frontend colleague backend.
 
 ## Capabilities
 
@@ -38,10 +40,13 @@ I ship without downtime, because explaining to people why their card doesn't wor
 ## Examples
 
 **Input:** The bank wanted to be the first in Czechia to let clients buy bitcoin directly in their bank.
-**Output:** I built the whole backend as the only backend engineer, with AI at my side. An idempotent architecture that handles production traffic and high volumes. We're live, transactions are flowing, and no serious bugs.
+**Output:** In a team of six I was the only backend engineer, and together we delivered a complex product the company wasn't prepared for at all. The biggest risk was processing a payment twice or losing it on the way, hence the outbox pattern and strict idempotency. Since launch, every transaction and every sign-up has gone through without a single error.
 
 **Input:** AI is changing the world, and the company needed to work out what that means for it.
 **Output:** From the day AIVengers started, I've been part of reshaping company processes with AI: automating the release process and work reporting. I used to agonise over my timesheet, trying to remember what I'd actually done, and click it in by hand. Now an agent drafts what I did that day from the available data, and once I approve, it's reported. One sentence and one confirmation.
+
+**Input:** Coding agents need a free hand, but must not be able to wreck the developer's machine.
+**Output:** I designed a sandbox for agentic development: inside, the agent can do whatever it needs, and it can't reach outside. Other teams across the bank are now adopting it.
 
 **Input:** Small merchants in the EU needed a simple way to take cashless payments.
 **Output:** The Trisbee app with a complete Stripe integration: cards, Apple Pay, Google Pay and monthly subscriptions, plus an internal accounting system.
@@ -50,19 +55,20 @@ I ship without downtime, because explaining to people why their card doesn't wor
 
 ### v3.2 — + AIVengers (Oct 2026 – present)
 - Added: member of AIVengers, a small group steering AI across the bank
+- Added: a sandbox for agentic development that other teams are adopting
 
 ### v3.1 — + Tech Lead Platform (2024 – present)
-- Added: member of the Tech Lead Platform, which sets the company's technical direction. Same role, new features, backward compatible.
+- Added: member of the Tech Lead Platform, which sets the company's technical direction: bank-wide solutions that other teams then adopt. Same role, new features, backward compatible.
 
 ### v3.0 — Senior Backend Engineer, Cards @ PBK Technology / Partners Banka (Jul 2023 – present)
 - Initial: joined before the bank went live — a new bank built from scratch on a modern stack
 - Added: cards team from day one; a very small team running hundreds of thousands of cards and millions of payments
 - Added: full Visa integration, including Click to Pay and Apple Pay
 - Improved: clearing file processing at growing transaction volume
-- Added: in-bank bitcoin purchase, first in Czechia; the only backend engineer, idempotent architecture for production volumes
+- Added: in-bank bitcoin purchase, first in Czechia; the only backend engineer in a team of six, outbox pattern and idempotency
 
 ### v2.1 — CTO @ Trisbee (Mar 2023 – Jun 2023)
-- Changed: a few months as CTO of a small startup — production, Jira, AWS costs, password management, technical direction
+- Changed: a few months as CTO of a small startup — leading a team of about five, production, Jira, AWS costs, password management, technical direction
 
 ### v2.0 — Backend Developer @ Trisbee (Jul 2020 – Feb 2023)
 - Added: payment method for small EU merchants, built in a small international team
@@ -85,8 +91,7 @@ I ship without downtime, because explaining to people why their card doesn't wor
 
 ## Not a fit
 
-- Whole days of meetings and academic debates that lead nowhere.
-- Jobs that are more about reporting work than delivering it. I need to build things and see them work.
+- Jobs that are more about meetings and reporting than results. I need to build things and see them work.
 
 ## Get in touch
 

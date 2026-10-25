@@ -33,8 +33,8 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem b
 **Vstup:** Živnostník dováží zboží ze zahraničí a údaje o každé zásilce ručně přepisoval mezi tabulkami a celním systémem. Měl dvě možnosti: dál na tom trávit hodiny týdně, nebo koupit systém od dodavatele za 30 000 Kč a k tomu platit 3 000 Kč měsíčně.
 **Výstup:** Malý program, který data z jeho Excelu, na který je zvyklý, jedním kliknutím nahraje do celního systému. Nemusí se nic nového učit, neplatí horentní sumy a hlavně šetří čas. Naštěstí vyhrála třetí možnost.
 
-**Vstup:** Release ve firmě byl zdlouhavý a měl několik ručních kroků, které ho brzdily. A protože je dělal člověk, hrozila v nich chyba.
-**Výstup:** Všechny ruční kroky, které šlo, nahradila deterministická kontrola. Člověk zůstal jen jako „human in the loop“, který dá zelenou, a dál se o proces nestará.
+**Vstup:** Ve firmě měl jeden důležitý postup několik ručních kroků. Zdržovaly a stačilo jedno přehlédnutí, aby se něco pokazilo.
+**Výstup:** Kontroly, které šlo svěřit počítači, teď dělá počítač, pokaždé stejně. Člověk už jen dá zelenou a dál to nemusí hlídat.
 
 **Vstup:** V papírech, dokumentech a e-mailech je chaos a nikdo neví, kdo co kdy poslal.
 **Výstup:** Jednoduchá automatizace nad dokumenty a e-mailem, která z nich postaví kvalitní bázi. Nad ní pak firemní agent bezpečně vyhledává.
@@ -45,7 +45,7 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem b
 
 ## Ozvěte se
 
-Zajímá vás to? Napište, co vás zdržuje a jak to dnes děláte. Klidně i s nadávkami.
+Napište mi, co vás zdržuje a jak to dnes děláte. Nemusíte vědět, co se dá automatizovat, to zjistíme spolu. Klidně i s nadávkami.
 
 - E-mail: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)
