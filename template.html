@@ -85,9 +85,9 @@
 
   /* frontmatter */
   .frontmatter {
-    font: 13.5px/1.7 var(--mono); background: var(--panel);
+    font: 12.5px/1.6 var(--mono); background: var(--panel);
     border: 1px solid var(--line); border-radius: 8px;
-    padding: 16px 18px; margin: 0 0 40px; overflow-wrap: break-word;
+    padding: 12px 14px; margin: 0 0 28px; overflow-wrap: break-word;
   }
   .frontmatter > div { padding-left: 2ch; text-indent: -2ch; }
   .frontmatter .dash { color: var(--muted); }
@@ -120,6 +120,9 @@
   .example p { margin: 0; }
   .example .io { font: 12px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-right: 6px; }
   .example p + p { margin-top: 6px; }
+  .chat { border-left: 3px solid var(--accent); }
+  .chat p + p { margin-top: 10px; }
+  .chat .io.ai { color: var(--accent); }
 
   .version { border-left: 2px solid var(--line); padding: 0 0 22px 18px; position: relative; }
   .version::before {
