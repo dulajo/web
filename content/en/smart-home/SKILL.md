@@ -34,7 +34,16 @@ We run our house on Loxone, extended with Home Assistant. We have our own home a
 ## Examples
 
 **Input:** The hot water circulation pump kept running even when nobody needed hot water.
-**Output:** Now it runs only when we actually need it.
+**Output:** It's driven by a mix of presence, house mode and the cycle length actually needed. It runs only when it makes sense.
+
+**Input:** When does the dishwasher warranty end? When was the heat pump last serviced? The answer was always "somewhere in the emails".
+**Output:** The home assistant knows right away and speaks up on its own when a service is due, a warranty ends or an insurance policy renews.
+
+**Input:** Finding a warranty card or a contract meant digging through drawers and folders.
+**Output:** Documents live in our home document manager, and the assistant finds them in seconds.
+
+**Input:** A password manager and a document manager would have meant monthly subscriptions to the big platforms.
+**Output:** Both run at home on the homelab. Our data stays with us and the subscriptions are gone.
 
 ## Not a fit
 

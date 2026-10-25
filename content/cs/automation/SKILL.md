@@ -1,6 +1,6 @@
 ---
 name: automation
-description: Děláte pořád dokola to samé? Tak to nechme dělat počítač. Kde jsou potřeba jasná pravidla, postavím nástroj bez AI, která si občas něco vymyslí. A kde AI dává smysl, pomůžu vám ji nastavit lidsky a srozumitelně, bez strojeného školení, ze kterého si nic neodnesete. Použijte, když děláte pořád stejné kroky, jen s jinými daty, nebo chcete AI využít na skutečnou práci. Hlavně pro živnostníky, malé firmy a domácnosti. Nepoužívejte pro firmy se stovkami lidí.
+description: Děláte pořád dokola to samé? Tak to nechme dělat počítač. Kde jsou potřeba jasná pravidla, postavím nástroj bez AI, která si občas něco vymyslí. A kde AI dává smysl, pomůžu vám ji nastavit lidsky a srozumitelně, bez strojeného školení, ze kterého si nic neodnesete. Použijte, když děláte pořád stejné kroky, jen s jinými daty, nebo chcete AI využít na skutečnou práci. Pro živnostníky a malé firmy. Nepoužívejte pro firmy se stovkami lidí.
 ---
 
 # Automatizace
@@ -18,8 +18,8 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem b
 ## Pro koho
 
 - Živnostníci: těm jsem zatím pomáhal nejvíc
-- Domácnosti: rozpočet, dokumenty, pojistky
 - Menší firmy s několika lidmi
+- Domácnost? Na tu je [chytrá domácnost](/cs/smart-home/).
 
 ## Jak pracuju
 
@@ -30,19 +30,18 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem b
 
 ## Příklady
 
-**Vstup:** Kamarád dováží zboží a každou zásilku ručně přepisoval do celního systému. Měl dvě možnosti: skončit, nebo platit dodavateli ~30 000 Kč měsíčně.
-**Výstup:** Aplikace, která z jeho Excelu udělá hotové celní prohlášení a rovnou ho zkontroluje. Teď to má z domu za pár minut. Vyhrála třetí možnost.
+**Vstup:** Živnostník dováží zboží ze zahraničí a údaje o každé zásilce ručně přepisoval mezi tabulkami a celním systémem. Měl dvě možnosti: dál na tom trávit hodiny týdně, nebo koupit systém od dodavatele za 30 000 Kč a k tomu platit 3 000 Kč měsíčně.
+**Výstup:** Malý program, který data z jeho Excelu, na který je zvyklý, jedním kliknutím nahraje do celního systému. Nemusí se nic nového učit, neplatí horentní sumy a hlavně šetří čas. Naštěstí vyhrála třetí možnost.
 
-**Vstup:** Rodinné finance v tabulce a každý první den v měsíci ruční přelévání peněz mezi účty.
-**Výstup:** Aplikace s plánem měsíce, kalendářem plateb a měsíční uzávěrkou ze zůstatků na účtech. Tabulka odešla do důchodu.
+**Vstup:** Release ve firmě byl zdlouhavý a měl několik ručních kroků, které ho brzdily. A protože je dělal člověk, hrozila v nich chyba.
+**Výstup:** Všechny ruční kroky, které šlo, nahradila deterministická kontrola. Člověk zůstal jen jako „human in the loop“, který dá zelenou, a dál se o proces nestará.
 
-**Vstup:** Pojistky, smlouvy a jejich výročí rozházené po e-mailech a šuplících.
-**Výstup:** Domácí asistent, který je má na jednom místě a včas připomene, co končí. Žádné „počkej, to už propadlo?“.
+**Vstup:** V papírech, dokumentech a e-mailech je chaos a nikdo neví, kdo co kdy poslal.
+**Výstup:** Jednoduchá automatizace nad dokumenty a e-mailem, která z nich postaví kvalitní bázi. Nad ní pak firemní agent bezpečně vyhledává.
 
 ## Na co se nehodím
 
 - Firmy se stovkami lidí. Tam už potřebujete projektového manažera, a ten potřebuje dalšího projektového manažera.
-- Nonstop podpora s garantovanou dostupností. Taky občas spím.
 
 ## Ozvěte se
 

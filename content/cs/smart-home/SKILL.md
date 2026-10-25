@@ -33,8 +33,17 @@ Náš dům řídíme přes Loxone doplněný o Home Assistant. Máme svého dom�
 
 ## Příklady
 
-**Vstup:** Cirkulační čerpadlo teplé vody běželo, i když teplou vodu nikdo nepotřeboval.
-**Výstup:** Teď běží jen ve chvíli, kdy ji opravdu potřebujeme.
+**Vstup:** Cirkulační čerpadlo teplé vody běželo pořád, i když teplou vodu nikdo nepotřeboval.
+**Výstup:** Řídí ho kombinace přítomnosti, režimu domu a délky cyklu, která je opravdu potřeba. Běží jen tehdy, když to dává smysl.
+
+**Vstup:** Kdy končí záruka na myčku? Kdy byl naposledy servis tepelného čerpadla? Odpověď byla vždycky „někde v e-mailech“.
+**Výstup:** Domácí asistent to ví hned a sám se ozve, když se blíží servis, končí záruka nebo se obnovuje pojistka.
+
+**Vstup:** Hledání záručního listu nebo smlouvy znamenalo přehrabovat šuplíky a složky.
+**Výstup:** Dokumenty jsou v domácím správci dokumentů a asistent je najde za pár vteřin.
+
+**Vstup:** Za správce hesel a dokumentů bychom platili měsíční předplatné velkým službám.
+**Výstup:** Obojí běží doma v homelabu. Data máme u sebe a předplatné odpadá.
 
 ## Na co se nehodím
 

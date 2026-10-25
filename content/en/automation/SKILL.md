@@ -1,6 +1,6 @@
 ---
 name: automation
-description: Doing the same thing over and over? Let's make a computer do it. Where strict rules are needed, I build a tool without AI that occasionally makes things up. And where AI makes sense, I'll help you set it up in plain human terms, without a stiff corporate training where you learn nothing. Use when you keep repeating the same steps, just with different data, or want AI to help with your actual work. Mainly for sole traders, small businesses and households. Not for companies with hundreds of people.
+description: Doing the same thing over and over? Let's make a computer do it. Where strict rules are needed, I build a tool without AI that occasionally makes things up. And where AI makes sense, I'll help you set it up in plain human terms, without a stiff corporate training where you learn nothing. Use when you keep repeating the same steps, just with different data, or want AI to help with your actual work. For sole traders and small businesses. Not for companies with hundreds of people.
 ---
 
 # Automation
@@ -18,8 +18,8 @@ Excel is a great tool. Just not for spending your Sundays in. I am a backend eng
 ## Who it's for
 
 - Sole traders: that's who I have helped most so far
-- Households: budgets, documents, insurance
 - Small businesses with a few people
+- A household? That's what [smart-home](/smart-home/) is for.
 
 ## How I work
 
@@ -30,19 +30,18 @@ Excel is a great tool. Just not for spending your Sundays in. I am a backend eng
 
 ## Examples
 
-**Input:** A friend imports goods and retyped every shipment into the customs system by hand. His options: quit, or pay a vendor ~CZK 30k a month.
-**Output:** An app that turns his Excel sheet into a finished customs declaration and checks it on the way. He now does it from home in a few minutes. Option three won.
+**Input:** A sole trader imports goods from abroad and retyped the details of every shipment between spreadsheets and the customs system by hand. His options: keep spending hours a week on it, or buy a vendor's system for CZK 30,000 plus CZK 3,000 a month.
+**Output:** A small program that uploads the data from the Excel sheet he's used to straight into the customs system in one click. Nothing new to learn, no eye-watering fees, and above all it saves time. Luckily, option three won.
 
-**Input:** Family finances in a spreadsheet; on the first of every month, shuffling money between accounts by hand.
-**Output:** An app with a monthly plan, a calendar of payments and a month-end close from account balances. The spreadsheet retired.
+**Input:** A company's release process was slow and had several manual steps that held it up. And because a person did them, mistakes could slip in.
+**Output:** Every manual step that could be was replaced by a deterministic check. A person stays only as the human in the loop who gives the green light and then doesn't have to babysit the process.
 
-**Input:** Insurance policies, contracts and their renewal dates scattered across emails and drawers.
-**Output:** A home assistant that keeps them in one place and reminds us in time what is about to expire. No more "wait, did that lapse?".
+**Input:** Papers, documents and emails are a mess, and nobody knows who sent what and when.
+**Output:** A simple automation over documents and email that builds a solid knowledge base out of them. A company agent can then search it safely.
 
 ## Not a fit
 
 - Companies with hundreds of people. There you need a project manager, and that project manager needs another project manager.
-- 24/7 support with guaranteed availability. I sleep sometimes.
 
 ## Get in touch
 
