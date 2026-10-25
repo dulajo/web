@@ -5,6 +5,8 @@ description: Dům, který si pamatuje víc než vy. Kdy jste koupili myčku, kdy
 
 # Chytrá domácnost
 
+Dům, který si pamatuje víc než vy. Kdy jste koupili myčku, kdy jí končí záruka, kolik stojí pojistka a kdy je čas na servis kotle. Máte chytrou domácnost? Podíváme se na ni, ať běží na čemkoli. Nemáte? Nevadí, stačí šuplík plný papírů, který nikdo nechce otevřít.
+
 Dům jsme postavili a řídíme ho přes Loxone a Home Assistant. Mám ho vymazlený podle sebe a rád se podívám i na ten váš, ať je chytrý hodně, málo, nebo vůbec.
 
 ## Kdy se vám hodím

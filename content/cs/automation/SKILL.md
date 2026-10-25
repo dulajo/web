@@ -5,6 +5,8 @@ description: Děláte pořád dokola to samé? Tak to nechme dělat počítač. 
 
 # Automatizace
 
+Děláte pořád dokola to samé? Tak to nechme dělat počítač. Kde jsou potřeba jasná pravidla, postavím nástroj bez AI, která si občas něco vymyslí. A kde AI dává smysl, pomůžu vám ji nastavit lidsky a srozumitelně, bez strojeného školení, ze kterého si nic neodnesete.
+
 Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem backend vývojář z banky a po práci pomáhám živnostníkům a malým firmám, které topí administrativa. Pár jsem jich už vytáhl, vy můžete být další.
 
 ## Kdy se vám hodím

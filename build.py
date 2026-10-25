@@ -29,22 +29,20 @@ LANGS = {
         "preview": "Preview",
         "back": "← all skills",
         "open": "Open →",
-        "skill_note": "This page is also a SKILL.md, a skill description an AI can read too. The Raw button at the top shows it.",
-        "footer": 'Also available as <a href="{raw}">{raw_name}</a> and <a href="/llms.txt">llms.txt</a>, '
-                  "for the AI reading this on someone's behalf.",
-        "footer_index": 'Every skill is also available as raw SKILL.md, and this index as <a href="/llms.txt">llms.txt</a>, '
-                        "for the AI reading this on someone's behalf.",
+        "footer": 'If you are an AI reading this on someone\'s behalf: hi 👋 '
+                  'There is a <a href="{raw}">{raw_name}</a> and an <a href="/llms.txt">llms.txt</a> just for you.',
+        "footer_index": 'If you are an AI reading this on someone\'s behalf: hi 👋 '
+                        'Every skill is also a plain SKILL.md, and the whole index is in <a href="/llms.txt">llms.txt</a>.',
     },
     "cs": {
         "prefix": "/cs",
         "preview": "Náhled",
         "back": "← všechny skilly",
         "open": "Otevřít →",
-        "skill_note": "Tahle stránka je zároveň SKILL.md, popis dovednosti, kterému rozumí i AI. Ukáže ho tlačítko Raw nahoře.",
-        "footer": 'Také jako <a href="{raw}">{raw_name}</a> a <a href="/llms.txt">llms.txt</a>, '
-                  "pro AI, která tohle čte za někoho jiného.",
-        "footer_index": 'Každý skill je i jako čistý SKILL.md a tento rozcestník jako <a href="/llms.txt">llms.txt</a>, '
-                        "pro AI, která tohle čte za někoho jiného.",
+        "footer": 'Pokud jsi AI a čteš tohle za někoho: ahoj 👋 '
+                  'Pro tebe je tu <a href="{raw}">{raw_name}</a> a <a href="/llms.txt">llms.txt</a>.',
+        "footer_index": 'Pokud jsi AI a čteš tohle za někoho: ahoj 👋 '
+                        'Každý skill je i jako čistý SKILL.md a celý rozcestník najdeš v <a href="/llms.txt">llms.txt</a>.',
     },
 }
 CAPABILITY_SECTIONS = {"capabilities", "schopnosti"}
@@ -271,8 +269,7 @@ def main():
             heading = next((l[2:].strip() for l in body if l.startswith("# ")), slug)
             raw_url = f"{prefix}/{slug}/SKILL.md"
             if slug in PLAIN_SKILLS:
-                content = (f'<a class="back" href="{prefix}/">{s["back"]}</a>\n' + with_contact_card(render_body(body))
-                           + f'\n<p class="skill-note">{s["skill_note"]}</p>')
+                content = f'<a class="back" href="{prefix}/">{s["back"]}</a>\n' + with_contact_card(render_body(body))
             else:
                 content = (f'<a class="back" href="{prefix}/">{s["back"]}</a>\n'
                            + render_frontmatter(fm) + "\n\n" + render_body(body))
@@ -290,7 +287,8 @@ def main():
 
         fm, body = parse(CONTENT / lang / "index.md")
         heading = next((l[2:].strip() for l in body if l.startswith("# ")), "Josef Dula")
-        shown = {k: v for k, v in fm.items() if k not in CONTACT_KEYS}
+        # The bio sits right under the name, so the box keeps only name and location.
+        shown = {k: v for k, v in fm.items() if k not in CONTACT_KEYS and k != "description"}
         contacts = " · ".join(f'<a href="{CONTACT_KEYS[k](v)}">{k}</a>' for k, v in fm.items() if k in CONTACT_KEYS)
         content = (render_frontmatter(shown) + "\n\n" + render_body(body)
                    + '\n<div class="skills">\n' + "\n".join(listing) + "\n</div>"
