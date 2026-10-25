@@ -5,8 +5,6 @@ description: A home that remembers more than you do. When you bought the dishwas
 
 # Smart home
 
-A home that remembers more than you do. When you bought the dishwasher, when its warranty ends, what the insurance costs and when the boiler is due for a service. Have a smart home? We'll take a look, whatever it runs on. Don't have one? Fine, a drawer full of papers nobody wants to open will do.
-
 We built our house and run it on Loxone and Home Assistant. I have it tuned the way I like it, and I am happy to look at yours, however smart it is, or isn't.
 
 ## When I can help
@@ -17,7 +15,7 @@ We built our house and run it on Loxone and Home Assistant. I have it tuned the 
 - You want your own home server (homelab) and your data at home, not "somewhere in the cloud"
 - You want a home AI assistant that doesn't make things up
 
-## How I do it
+## How I work
 
 - Lights follow rules, not an AI with moods. Nobody wants hallucinating blinds.
 - The assistant doesn't make things up. It answers from what it has written down, and does only what you allow it to.

@@ -6,18 +6,18 @@ location: Prague, Czechia
 
 # Josef Dula
 
-Senior backend engineer, 10 years in. I helped build a bank from scratch. In a small team we run and develop the card system for hundreds of thousands of cards and all their transactions. I led the first in-bank bitcoin purchase in Czechia. And now I am in the group steering AI across the bank.
+10 years in. I helped build a bank from scratch. In a small team we run and develop the card system for hundreds of thousands of cards and all their transactions. I led the first in-bank bitcoin purchase in Czechia. And now I am in the group steering AI across the bank.
 
 I ship without downtime, because explaining to people why their card doesn't work is not my idea of fun. What I do enjoy is looking at the data and seeing how many people use what I built.
 
-## When to use
+## When I can help
 
 - You are building a system that must not go down or lose data. Not even on a Friday afternoon.
 - You need someone who takes a thing from requirements through architecture to production, and doesn't vanish right after the merge
 - You want releases without downtime: backward-compatible changes and a way back that is always ready
 - You want AI in production, not in a slide deck
 
-## Principles
+## How I work
 
 - A ticket is not a spec. It's the start of a conversation, occasionally an interrogation.
 - A zero-downtime release is the standard, not a celebration.
@@ -77,20 +77,20 @@ I ship without downtime, because explaining to people why their card doesn't wor
 
 ### v0.1 — Ing., Information Systems and Technology @ VŠE Prague (2012 – 2018)
 
+## Side projects
+
+- **[Zpožděno](https://github.com/dulajo/zasstojime)** — public punctuality dashboard for Prague public transport on open Golemio data. Kotlin, Quarkus and a state machine for every trip. Every number has a methodology and every decision its own ADR. A bit much for a hobby, I know.
+- **Smart home and automations** — outside work I help people with both. See [smart-home](/smart-home/) and [automation](/automation/).
+- **Off-duty** — mostly beach volleyball.
+
 ## Not a fit
 
 - Pixel-perfect frontend. I can handle React and TypeScript, but CSS and I have an agreement: we leave each other alone.
 - Letting an LLM guess what 2 + 2 is.
 
-## Side projects
+## Get in touch
 
-- **[Zpožděno](https://github.com/dulajo/zasstojime)** — public punctuality dashboard for Prague public transport on open Golemio data. Kotlin, Quarkus and a state machine for every trip. Every number has a methodology and every decision its own ADR. A bit much for a hobby, I know.
-- **Smart home and automations** — outside work I help people with both. See [smart-home](/smart-home/) and [automation](/automation/).
-- **Off-duty** — beach volleyball, badminton, running, beekeeping. Bees are the only team whose code I don't review.
-
-## How to invoke
-
-Solving similar problems, or building something interesting? Get in touch.
+Solving similar problems, or building something interesting? Drop me a line.
 
 - Email: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)

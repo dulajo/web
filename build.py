@@ -17,8 +17,6 @@ TEMPLATE = ROOT / "template.html"
 DOMAIN = "https://dulajosef.com"
 
 SKILLS = ["work", "smart-home", "automation"]
-# Pages for people outside tech: no code-looking frontmatter box at the top, just a short note at the end.
-PLAIN_SKILLS = {"smart-home", "automation"}
 CARD_TITLES = {
     "en": {"work": "Work", "smart-home": "Smart home", "automation": "Automation"},
     "cs": {"work": "Práce", "smart-home": "Chytrá domácnost", "automation": "Automatizace"},
@@ -77,15 +75,9 @@ def parse(path: Path):
     return fm, lines[end + 1:]
 
 
-def render_frontmatter(fm):
-    rows = ['<div class="dash">---</div>']
-    for k, v in fm.items():
-        rows.append(f'<div><span class="k">{html.escape(k)}:</span> {inline(v)}</div>')
-    rows.append('<div class="dash">---</div>')
-    return '<div class="frontmatter">\n  ' + "\n  ".join(rows) + "\n</div>"
 
-
-def render_body(lines):
+def render_body(lines, lede=None):
+    """Render the markdown body. lede (the skill description) is shown right under the title."""
     out = []
     section = ""
     open_tag = None  # "ul", "dl" or "example"
@@ -119,6 +111,9 @@ def render_body(lines):
         if line.startswith("# "):
             close()
             out.append(f"<h1>{inline(line[2:])}</h1>")
+            if lede:
+                out.append(f'<p class="lede">{inline(lede)}</p>')
+                first_para = False
             continue
 
         if line.startswith("## "):
@@ -268,11 +263,10 @@ def main():
             todos += [f"{lang}/{slug}: [{t}]" for t in re.findall(r"\[([^\]]+)\](?!\()", "\n".join(body))]
             heading = next((l[2:].strip() for l in body if l.startswith("# ")), slug)
             raw_url = f"{prefix}/{slug}/SKILL.md"
-            if slug in PLAIN_SKILLS:
-                content = f'<a class="back" href="{prefix}/">{s["back"]}</a>\n' + with_contact_card(render_body(body))
-            else:
-                content = (f'<a class="back" href="{prefix}/">{s["back"]}</a>\n'
-                           + render_frontmatter(fm) + "\n\n" + render_body(body))
+            # Same layout everywhere: title, description as the intro, sections, contact card.
+            # The frontmatter itself is only in the raw SKILL.md (Raw button).
+            content = (f'<a class="back" href="{prefix}/">{s["back"]}</a>\n'
+                       + with_contact_card(render_body(body, lede=fm.get("description"))))
             write(OUT / prefix.lstrip("/") / slug / "index.html", page(
                 lang, slug, title=f"{heading} — {slug}/SKILL.md", description=fm.get("description", ""),
                 path_html=f'{host}<span class="crumb"><a href="{prefix}/">skills</a> / </span><b>{slug}</b>', raw_url=raw_url, body=content))
@@ -287,10 +281,8 @@ def main():
 
         fm, body = parse(CONTENT / lang / "index.md")
         heading = next((l[2:].strip() for l in body if l.startswith("# ")), "Josef Dula")
-        # The bio sits right under the name, so the box keeps only name and location.
-        shown = {k: v for k, v in fm.items() if k not in CONTACT_KEYS and k != "description"}
         contacts = " · ".join(f'<a href="{CONTACT_KEYS[k](v)}">{k}</a>' for k, v in fm.items() if k in CONTACT_KEYS)
-        content = (render_frontmatter(shown) + "\n\n" + render_body(body)
+        content = (render_body(body, lede=fm.get("description"))
                    + '\n<div class="skills">\n' + "\n".join(listing) + "\n</div>"
                    + f'\n<p class="contacts">{contacts}</p>')
         write(OUT / prefix.lstrip("/") / "index.html", page(

@@ -5,8 +5,6 @@ description: Doing the same thing over and over? Let's make a computer do it. Wh
 
 # Automation
 
-Doing the same thing over and over? Let's make a computer do it. Where strict rules are needed, I build a tool without AI that occasionally makes things up. And where AI makes sense, I'll help you set it up in plain human terms, without a stiff corporate training where you learn nothing.
-
 Excel is a great tool. Just not for spending your Sundays in. I am a backend engineer from a bank, and after hours I help sole traders and small businesses who are drowning in admin. I have already pulled a few of them out. You could be next.
 
 ## When I can help

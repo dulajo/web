@@ -6,18 +6,18 @@ location: Praha
 
 # Josef Dula
 
-Seniorní backend vývojář, 10 let v oboru. Pomáhal jsem postavit banku od nuly. V malém týmu provozujeme a vyvíjíme kartový systém pro statisíce karet a všechny jejich transakce. Odřídil jsem první nákup bitcoinu přímo v bance v Česku. A teď jsem ve skupině, která v bance řídí AI.
+10 let v oboru. Pomáhal jsem postavit banku od nuly. V malém týmu provozujeme a vyvíjíme kartový systém pro statisíce karet a všechny jejich transakce. Odřídil jsem první nákup bitcoinu přímo v bance v Česku. A teď jsem ve skupině, která v bance řídí AI.
 
 Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta, mě nebaví. Nejvíc mě naopak baví podívat se do dat a vidět, kolik lidí používá to, co jsem postavil.
 
-## Kdy použít
+## Kdy se vám hodím
 
 - Stavíte systém, který nesmí spadnout ani ztratit data. Ani v pátek odpoledne.
 - Potřebujete někoho, kdo věc vezme od zadání přes architekturu až po provoz a nezmizí hned po merge
 - Chcete vydávat bez výpadků: zpětně kompatibilní změny a vždycky připravená cesta zpátky
 - Chcete AI v produkci, ne v prezentaci
 
-## Principy
+## Jak pracuju
 
 - Tiket není zadání. Je to začátek rozhovoru, občas i výslechu.
 - Release bez výpadku je standard, ne svátek.
@@ -77,20 +77,20 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 
 ### v0.1 — Ing., Informační systémy a technologie @ VŠE Praha (2012 – 2018)
 
+## Vedlejší projekty
+
+- **[Zpožděno](https://github.com/dulajo/zasstojime)** — veřejný dashboard dochvilnosti pražské MHD nad otevřenými daty Golemio. Kotlin, Quarkus a stavový automat pro každý spoj. Každé číslo má metodiku a každé rozhodnutí vlastní ADR. Na koníček trochu přehnané, já vím.
+- **Chytrá domácnost a automatizace** — po práci s obojím pomáhám dalším lidem. Viz [smart-home](/cs/smart-home/) a [automation](/cs/automation/).
+- **Volno** — hlavně beach volejbal.
+
 ## Na co se nehodím
 
 - Frontend s pixelovou přesností. React a TypeScript zvládnu, ale s CSS máme dohodu, že se navzájem nerušíme.
 - Nechat LLM hádat, kolik je 2 + 2.
 
-## Vedlejší projekty
+## Ozvěte se
 
-- **[Zpožděno](https://github.com/dulajo/zasstojime)** — veřejný dashboard dochvilnosti pražské MHD nad otevřenými daty Golemio. Kotlin, Quarkus a stavový automat pro každý spoj. Každé číslo má metodiku a každé rozhodnutí vlastní ADR. Na koníček trochu přehnané, já vím.
-- **Chytrá domácnost a automatizace** — po práci s obojím pomáhám dalším lidem. Viz [smart-home](/cs/smart-home/) a [automation](/cs/automation/).
-- **Volno** — beach volejbal, badminton, běh, včelaření. Včely jsou jediný tým, kterému nedělám code review.
-
-## Jak mě vyvolat
-
-Řešíte podobné věci, nebo stavíte něco zajímavého? Ozvěte se.
+Řešíte podobné věci, nebo stavíte něco zajímavého? Napište mi.
 
 - E-mail: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)
