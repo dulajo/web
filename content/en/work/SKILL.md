@@ -21,7 +21,7 @@ I ship without downtime, because explaining to people why their card doesn't wor
 ## How I work
 
 - A ticket is not a spec. It's the start of a conversation, occasionally an interrogation.
-- The whole task, start to finish: requirements, a staged plan, the road to production, observability and monitoring, so I know it really works.
+- I split a big thing into smaller steps that can be shipped safely, with monitoring and data on top, so I know it really works in production.
 - A zero-downtime release is the standard, not a celebration.
 - If it can be deterministic, it should be. An agent should call a tool, not take another guess.
 - Done means people use it. Until then it's just nice code.
@@ -40,13 +40,13 @@ I ship without downtime, because explaining to people why their card doesn't wor
 ## Examples
 
 **Input:** The bank wanted to be the first in Czechia to let clients buy bitcoin directly in their bank.
-**Output:** In a team of six I was the only backend engineer, and together we delivered a complex product the company wasn't prepared for at all. The biggest risk was processing a payment twice or losing it on the way, hence the outbox pattern and strict idempotency. Since launch, every transaction and every sign-up has gone through without a single error.
+**Output:** In a team of six I was the only backend engineer. None of us had brought crypto into a bank before, and we work in a heavily regulated environment. The biggest risk was processing a payment twice or losing it on the way, hence the outbox pattern and strict idempotency: when a surrounding service goes down, processing is safely retried, with no duplicated or lost payment. Since launch, we haven't had to fix a single bug in our code in production.
 
 **Input:** AI is changing the world, and the company needed to work out what that means for it.
 **Output:** From the day AIVengers started, I've been part of reshaping company processes with AI: automating the release process and work reporting. I used to agonise over my timesheet, trying to remember what I'd actually done, and click it in by hand. Now an agent drafts what I did that day from the available data, and once I approve, it's reported. One sentence and one confirmation.
 
-**Input:** Coding agents need a free hand, but must not be able to wreck the developer's machine.
-**Output:** I designed a sandbox for agentic development: inside, the agent can do whatever it needs, and it can't reach outside. Other teams across the bank are now adopting it.
+**Input:** Coding agents need a free hand, but must not get the whole developer machine or the company's keys.
+**Output:** I designed a developer sandbox: the agent works without constant approvals, can only reach pre-approved addresses, and API keys and tokens never enter the sandbox at all; a proxy adds them on the way out. Other teams across the bank are now adopting it.
 
 **Input:** Small merchants in the EU needed a simple way to take cashless payments.
 **Output:** The Trisbee app with a complete Stripe integration: cards, Apple Pay, Google Pay and monthly subscriptions, plus an internal accounting system.

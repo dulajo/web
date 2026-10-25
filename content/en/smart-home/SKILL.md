@@ -5,7 +5,7 @@ description: A smart home that saves time instead of adding worries. Lights, bli
 
 # Smart home
 
-I'm a backend engineer, and we run our house on Loxone, extended with Home Assistant. Our home assistant has all the paperwork for the house, so we don't have to dig through papers, spreadsheets and emails. I'm happy to look at yours too.
+I'm a programmer, and we run our house on Loxone, extended with Home Assistant. Our home assistant has all the paperwork for the house, so we don't have to dig through papers, spreadsheets and emails. I'm happy to look at yours too.
 
 ## When I can help
 
@@ -15,6 +15,12 @@ I'm a backend engineer, and we run our house on Loxone, extended with Home Assis
 - You don't want to automate the whole house, but you'd like to automate at least the paperwork around it: warranties, insurance, servicing
 - You want your own home server (homelab) and your data at home, not "somewhere in the cloud"
 - You want a home AI assistant that answers from your own records, not off the top of its head
+
+## What you need
+
+- Nothing in particular. You don't need Loxone, Home Assistant or your own server, or you can have all of them and something else besides. Further down is just how we do it.
+- A home assistant can run at several levels. The simplest is an app on your computer that runs only when you switch it on. One step further is a separate, even older computer that runs around the clock and sees only what you allow. And furthest is connecting it to a smart home and its sensors.
+- You control what the assistant sees. Don't want it in your email? It gets its own mailbox and you forward only what it should see. Don't want to give it your whole Google Drive? It gets its own account and you share just the folders you choose.
 
 ## How I work
 
@@ -29,30 +35,24 @@ I'm a backend engineer, and we run our house on Loxone, extended with Home Assis
 - A homelab with a few home services that save us subscriptions to the big platforms, such as a password manager and a document manager
 - The central brain of the house: all the paperwork in one place, neatly organised
 - A home assistant that can work with any of these, depending on what we allow it
-- The latest addition: a 3D model of the whole house thanks to Astra, because why not
-
-## What it looks like
-
-**You:** Analyse the heat pump over the last month.
-**Assistant:** The heat pump is running nicely and all readings are within normal range. I did notice that someone once took a shower when the hot water wasn't ready yet. The tank hadn't gone cold, but if you plan to shower this early in the morning, we should adjust the settings.
-
-**Assistant:** The heat pump service was due today. Did it happen? Do we have a report? If so, send it to me, along with the invoice for the work. Is there anything I should note that isn't in the report? Unless you say otherwise, I'll remind you in 11 months to book the next service.
-
-**Assistant:** Today's agenda: book the ventilation unit service. There's a draft ready in your email, check it and send it.
-
-It could book the service on its own, but for now we want to have the last word.
+- The latest addition: a 3D model of the whole house. The AI model Astra redrew it from the house plans with the help of the free Blender, adds furniture from current photos, and we use it to fine-tune changes to the rooms.
 
 ## Examples
 
 **Input:** The hot water circulation pump kept running even when nobody needed hot water.
 **Output:** It's driven by a mix of presence, house mode and the cycle length actually needed. It runs only when it makes sense.
 
-**Input:** When does the dishwasher warranty end? When was the heat pump last serviced? The answer was always "somewhere in the emails".
-**Output:** The home assistant knows right away and speaks up on its own when a service is due, a warranty ends or an insurance policy renews.
+**You:** Analyse the heat pump over the last month.
+**Assistant:** The heat pump is running nicely and all readings are within normal range. I did notice that someone once took a shower when the hot water wasn't ready yet. The tank hadn't gone cold, but if you plan to shower this early in the morning, we should adjust the settings.
 
 **Input:** Finding a warranty card or a contract meant digging through drawers and folders.
 **Output:** Documents live in our home document manager, and the assistant finds them in seconds.
 
+**Assistant:** The heat pump service was due today. Did it happen? Do we have a report? If so, send it to me, along with the invoice for the work. Is there anything I should note that isn't in the report? Unless you say otherwise, I'll remind you in 11 months to book the next service.
+
+**Assistant:** Today's agenda: book the ventilation unit service. There's a draft ready in your email, check it and send it.
+
+It could book the service on its own, but for now we want to have the last word.
 
 ## Not a fit
 

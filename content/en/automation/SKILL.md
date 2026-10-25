@@ -5,7 +5,7 @@ description: Doing the same thing over and over? Let's make a computer do it. Wh
 
 # Automation
 
-Excel is a great tool. Just not for spending your Sundays in. I am a backend engineer from a bank, and after hours I help sole traders and small businesses who are drowning in admin. I have already pulled a few of them out. You could be next.
+Excel is a great tool. Just not for spending your Sundays in. I'm a programmer at a bank, and after hours I help sole traders and small businesses who are drowning in admin. I have already pulled a few of them out. You could be next.
 
 ## When I can help
 
@@ -23,28 +23,23 @@ Excel is a great tool. Just not for spending your Sundays in. I am a backend eng
 
 ## How I work
 
-- First I understand what you do by hand and why. Then I suggest the simplest solution. Simplest, not most expensive.
-- Point AI at chaos and you get more chaos. So the first phase, though nobody likes to hear it, is tidying up the data: papers, spreadsheets and emails in one place, neatly organised. Even a single shared folder in the cloud will do, for example on Google Drive.
-- You won't be moving things there by hand; that's exactly what the automation is for. You drop an email into the right folder and the rest happens on its own: the attachment is filed where it belongs and logged in the overview.
-- The next step can be AI as the sorter, so you don't even sort the emails yourself. But it has clear limits: when it isn't sure, it doesn't make things up, it asks.
-- It runs by fixed rules, not by an AI's mood: same data, same result, every time. If it works without AI, it gets done without AI. AI only where it really helps.
+- We start with the one small thing that slows you down most. I look at the paperwork behind that specific problem. You don't have to rebuild the whole business or merge all your spreadsheets for it.
+- Then I suggest the simplest solution. Simplest, not most expensive. Often it's enough to connect what you already use.
+- Typically: you drop an email into the right folder and the rest happens on its own. The attachment is filed where it belongs and logged in the overview.
+- It runs by fixed rules, not by an AI's mood: same data, same result, every time. If it works without AI, it gets done without AI.
+- If you later want AI to sort your emails, it needs the paperwork in one place, even just a shared folder on Google Drive. Point AI at chaos and you only get more chaos. And it has clear limits: when it isn't sure, it doesn't make things up, it asks.
 - Sometimes no coding is needed at all: we just sit down with your actual work, set up AI to fit it and skip the fluff.
 - You end up with a simple tool or workflow you can run yourself. No 100-page manual.
-
-## What it can look like
-
-**Assistant:** I'm not sure where this email from a supplier belongs. I think it's an invoice for project Y. Can you confirm, or would you rather file it yourself?
 
 ## Examples
 
 **Input:** A sole trader imports goods from abroad and retyped the details of every shipment between spreadsheets and the customs system by hand. His options: keep spending hours a week on it, or buy a vendor's system for CZK 30,000 plus CZK 3,000 a month.
 **Output:** A small program that uploads the data from the Excel sheet he's used to straight into the customs system in one click. Nothing new to learn, no eye-watering fees, and above all it saves time. Luckily, option three won.
 
-**Input:** An important process at a company had several manual steps. They slowed everything down, and one oversight was enough for something to go wrong.
-**Output:** The checks a computer can do are now done by a computer, the same way every time. A person just gives the green light and doesn't have to babysit the rest.
+**Input:** Invoices arrive by email, contracts sit in a drawer, and nobody knows who sent what and when.
+**Output:** Invoices and important emails file themselves in one place and can be found with a single question, such as "When did supplier X last send us an invoice, and for how much?"
 
-**Input:** Papers, documents and emails are a mess, and nobody knows who sent what and when.
-**Output:** A simple automation over documents and email that builds a solid knowledge base out of them. A company agent can then search it safely.
+**Assistant:** 14 invoices came in today. I filed 13 into the right folders and logged them in the overview. I'm not sure about one from a supplier: I think it belongs to project Y. Can you confirm?
 
 ## Not a fit
 

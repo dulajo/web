@@ -5,7 +5,7 @@ description: Děláte pořád dokola to samé? Tak to nechme dělat počítač. 
 
 # Automatizace
 
-Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem backend vývojář z banky a po práci pomáhám živnostníkům a malým firmám, které topí administrativa. Pár jsem jich už vytáhl, vy můžete být další.
+Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem programátor z banky a po práci pomáhám živnostníkům a malým firmám, které topí administrativa. Pár jsem jich už vytáhl, vy můžete být další.
 
 ## Kdy se vám hodím
 
@@ -23,28 +23,23 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem b
 
 ## Jak pracuju
 
-- Nejdřív pochopím, co děláte ručně a proč. Pak navrhnu nejjednodušší řešení. Nejjednodušší, ne nejdražší.
-- Když pustíte AI na chaos, dostanete větší chaos. Proto je první fáze, i když to nikdo nerad slyší, úklid dat: papíry, Excely a e-maily na jedno místo a přehledně uspořádané. Klidně jen jedna sdílená složka v cloudu, třeba na Google Drive.
-- Ručně to tam přenášet nebudete, to je právě ta automatizace. Přesunete e-mail do správné složky a zbytek se udělá sám: příloha se uloží, kam patří, a zapíše se do přehledu.
-- Další krok může být AI jako třídič, takže e-maily už netřídíte ani vy. Má ale jasně dané hranice: když si není jistá, nevymýšlí si a zeptá se.
-- Běží to podle pevných pravidel, ne podle nálady umělé inteligence: stejná data, stejný výsledek, pokaždé. Když to jde bez AI, udělám to bez AI. AI přidám jen tam, kde fakt pomůže.
+- Začneme jednou drobností, která vás nejvíc zdržuje. Podívám se na podklady k tomuhle konkrétnímu problému. Kvůli tomu nemusíte předělávat celou firmu ani sjednocovat všechny tabulky.
+- Pak navrhnu nejjednodušší řešení. Nejjednodušší, ne nejdražší. Často stačí propojit to, co už používáte.
+- Typicky: přesunete e-mail do správné složky a zbytek se udělá sám. Příloha se uloží, kam patří, a zapíše se do přehledu.
+- Běží to podle pevných pravidel, ne podle nálady umělé inteligence: stejná data, stejný výsledek, pokaždé. Když to jde bez AI, udělám to bez AI.
+- Když časem chcete, aby e-maily třídila AI, potřebuje mít podklady na jednom místě, klidně ve sdílené složce na Google Drive. AI puštěná na chaos udělá jen větší chaos. A má jasné hranice: když si není jistá, nevymýšlí si a zeptá se.
 - Někdy není potřeba nic programovat: stačí si sednout k tomu, co děláte, nastavit AI na míru a ukázat vám, jak ji používat bez omáčky kolem.
 - Na konci máte jednoduchý nástroj nebo postup, který zvládnete ovládat sami. Bez manuálu na sto stran.
-
-## Jak to může vypadat
-
-**Asistent:** E-mail od dodavatele nevím s jistotou kam zařadit. Myslím, že je to faktura k projektu Y. Potvrdíš mi to, nebo ho zařadíš sám?
 
 ## Příklady
 
 **Vstup:** Živnostník dováží zboží ze zahraničí a údaje o každé zásilce ručně přepisoval mezi tabulkami a celním systémem. Měl dvě možnosti: dál na tom trávit hodiny týdně, nebo koupit systém od dodavatele za 30 000 Kč a k tomu platit 3 000 Kč měsíčně.
 **Výstup:** Malý program, který data z jeho Excelu, na který je zvyklý, jedním kliknutím nahraje do celního systému. Nemusí se nic nového učit, neplatí horentní sumy a hlavně šetří čas. Naštěstí vyhrála třetí možnost.
 
-**Vstup:** Ve firmě měl jeden důležitý postup několik ručních kroků. Zdržovaly a stačilo jedno přehlédnutí, aby se něco pokazilo.
-**Výstup:** Kontroly, které šlo svěřit počítači, teď dělá počítač, pokaždé stejně. Člověk už jen dá zelenou a dál to nemusí hlídat.
+**Vstup:** Faktury chodí e-mailem, smlouvy leží v šuplíku a nikdo neví, kdo co kdy poslal.
+**Výstup:** Faktury a důležité e-maily se samy ukládají na jedno místo a dají se dohledat jednou otázkou, třeba „Kdy nám dodavatel X poslal poslední fakturu a na kolik byla?“
 
-**Vstup:** V papírech, dokumentech a e-mailech je chaos a nikdo neví, kdo co kdy poslal.
-**Výstup:** Jednoduchá automatizace nad dokumenty a e-mailem, která z nich postaví kvalitní bázi. Nad ní pak firemní agent bezpečně vyhledává.
+**Asistent:** Dnes přišlo 14 faktur. 13 jsem uložil do správných složek a zapsal do přehledu. U jedné od dodavatele si nejsem jistý: myslím, že patří k projektu Y. Potvrdíš mi to?
 
 ## Na co se nehodím
 

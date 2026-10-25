@@ -21,7 +21,7 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 ## Jak pracuju
 
 - Tiket není zadání. Je to začátek rozhovoru, občas i výslechu.
-- Celý úkol od začátku do konce: zadání, plán po etapách, cesta do produkce, observabilita a monitoring, abych věděl, že to opravdu funguje.
+- Velkou věc rozdělím na menší kroky, které jdou bezpečně nasadit, a mám nad nimi monitoring a data, abych věděl, že to v produkci opravdu funguje.
 - Release bez výpadku je standard, ne svátek.
 - Co může být deterministické, má být deterministické. Agent má zavolat nástroj, ne si pokaždé znovu tipnout.
 - Hotovo je, až to lidé používají. Do té doby je to jen hezký kód.
@@ -40,13 +40,13 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 ## Příklady
 
 **Vstup:** Banka chtěla být první v Česku, kde si klienti koupí bitcoin přímo v bance.
-**Výstup:** V šestičlenném týmu jsem byl jediný backendista a společně jsme dodali komplexní produkt, na který firma vůbec nebyla připravená. Největší riziko bylo zpracovat platbu dvakrát nebo ji cestou ztratit, proto outbox pattern a důsledná idempotence. Od spuštění všechny transakce i registrace prochází bez jediné chyby.
+**Výstup:** V šestičlenném týmu jsem byl jediný backendista. Kryptoměny v bance předtím nikdo z nás nezaváděl a k tomu jsme silně regulované prostředí. Největší riziko bylo zpracovat platbu dvakrát nebo ji cestou ztratit, proto outbox pattern a důsledná idempotence: když okolní služba vypadne, zpracování se bezpečně zopakuje, bez zdvojené i ztracené platby. Od spuštění jsme v produkci zatím neopravovali jedinou chybu v našem kódu.
 
 **Vstup:** Nástup AI mění svět a firma potřebovala uchopit, co to pro ni znamená.
 **Výstup:** Hned od vzniku AIVengers jsem se zapojil do proměny firemních procesů pomocí AI: automatizace release procesu a výkazů práce. Dřív jsem nad výkazem laboroval, co jsem vlastně dělal, a klikal ho ručně. Dnes agent sám z podkladů navrhne, co jsem ten den dělal, a po mém schválení to vykáže. Jedna věta a jedno potvrzení.
 
-**Vstup:** Agenti pro vývoj potřebují volné ruce, ale nesmí mít možnost zničit vývojářův stroj.
-**Výstup:** Navrhl jsem sandbox pro agentický vývoj: agent si uvnitř dělá, co potřebuje, a ven nedosáhne. Řešení teď přebírají další týmy v bance.
+**Vstup:** Agenti pro vývoj potřebují volné ruce, ale nesmí dostat celý vývojářův stroj ani firemní klíče.
+**Výstup:** Navrhl jsem vývojářský sandbox: agent v něm pracuje bez neustálého schvalování, na síť smí jen na předem povolené adresy a API klíče ani tokeny se do sandboxu vůbec nedostanou, dosazuje je až proxy na cestě ven. Řešení teď přebírají další týmy v bance.
 
 **Vstup:** Malí obchodníci v EU potřebovali jednoduše přijímat bezhotovostní platby.
 **Výstup:** Aplikace Trisbee s kompletní integrací na Stripe: karty, Apple Pay, Google Pay i měsíční předplatné, včetně interního účetního systému.
