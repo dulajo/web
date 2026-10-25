@@ -19,7 +19,7 @@ I'm a programmer, and we run our house on Loxone, extended with Home Assistant. 
 ## What you need
 
 - Nothing in particular. You don't need Loxone, Home Assistant or your own server, or you can have all of them and something else besides. Further down is just how we do it.
-- A home assistant can run at several levels. The simplest is an app on your computer that runs only when you switch it on. One step further is a separate, even older computer that runs around the clock and sees only what you allow. And furthest is connecting it to a smart home and its sensors.
+- A home assistant can run at several levels. The simplest is an app on your computer that runs only when you switch it on. One step further is a separate, even older computer that runs around the clock and sees only what you allow. And furthest is home hardware powerful enough to run its own AI model: all the data stays at home and nothing goes to the cloud. Connecting the assistant to a smart home and its sensors works at any of these levels.
 - You control what the assistant sees. Don't want it in your email? It gets its own mailbox and you forward only what it should see. Don't want to give it your whole Google Drive? It gets its own account and you share just the folders you choose.
 
 ## How I work
@@ -40,10 +40,10 @@ I'm a programmer, and we run our house on Loxone, extended with Home Assistant. 
 ## Examples
 
 **Input:** The hot water circulation pump kept running even when nobody needed hot water.
-**Output:** It's driven by a mix of presence, house mode and the cycle length actually needed. It runs only when it makes sense.
+**Output:** It's driven by a mix of presence, house mode and the cycle length actually needed. On top of that, the assistant checks it really runs only as much as it should, and speaks up when it doesn't. The analysis right below shows what that looks like.
 
 **You:** Analyse the heat pump over the last month.
-**Assistant:** The heat pump is running nicely and all readings are within normal range. I did notice that someone once took a shower when the hot water wasn't ready yet. The tank hadn't gone cold, but if you plan to shower this early in the morning, we should adjust the settings.
+**Assistant:** The heat pump is fine; I found no faults in the last 30 days. The compressor runs long cycles with no short-cycling, and the seasonal performance factor for heating is 4.8. The savings are elsewhere: the night program heats to 22 °C while the day setting is only 21 °C, and the hot water circulation still runs about 1.5 hours a day. Fixing both, and trying to heat in the afternoon instead, could save roughly CZK 1,000–2,000 a year. I haven't changed anything.
 
 **Input:** Finding a warranty card or a contract meant digging through drawers and folders.
 **Output:** Documents live in our home document manager, and the assistant finds them in seconds.

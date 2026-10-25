@@ -19,7 +19,7 @@ Jsem programátor a náš dům řídíme přes Loxone doplněný o Home Assistan
 ## Co k tomu potřebujete
 
 - Nic konkrétního. Loxone, Home Assistant ani vlastní server mít nemusíte, nebo můžete mít všechno a ještě něco jiného. Níž popisuju jen to, jak to máme my.
-- Domácího asistenta jde provozovat na několika úrovních. Nejjednodušší je aplikace na vašem počítači, která běží, jen když ji zapnete. O krok dál je samostatný, klidně starší počítač, který běží nonstop a vidí jen to, co mu dovolíte. A nejdál je propojení s chytrou domácností a čidly.
+- Domácího asistenta jde provozovat na několika úrovních. Nejjednodušší je aplikace na vašem počítači, která běží, jen když ji zapnete. O krok dál je samostatný, klidně starší počítač, který běží nonstop a vidí jen to, co mu dovolíte. A nejdál je domácí hardware tak silný, že na něm běží vlastní AI model: všechna data zůstávají doma a nic se neposílá do cloudu. Napojit asistenta na chytrou domácnost a čidla jde na kterékoli z těchto úrovní.
 - Co asistent uvidí, máte pod kontrolou. Nechcete, aby vám lezl do e-mailu? Dostane vlastní schránku a přepošlete mu jen to, co má vidět. Nechcete mu dát celý Google Drive? Dostane vlastní účet a nasdílíte mu jen vybrané složky.
 
 ## Jak pracuju
@@ -40,10 +40,10 @@ Jsem programátor a náš dům řídíme přes Loxone doplněný o Home Assistan
 ## Příklady
 
 **Vstup:** Cirkulační čerpadlo teplé vody běželo pořád, i když teplou vodu nikdo nepotřeboval.
-**Výstup:** Řídí ho kombinace přítomnosti, režimu domu a délky cyklu, která je opravdu potřeba. Běží jen tehdy, když to dává smysl.
+**Výstup:** Řídí ho kombinace přítomnosti, režimu domu a potřebné délky cyklu. Asistent navíc hlídá, jestli opravdu běží jen tolik, kolik má, a když ne, ozve se. Jak to vypadá, je hned v rozboru pod tím.
 
 **Ty:** Udělej analýzu tepelka za poslední měsíc.
-**Asistent:** Tepelné čerpadlo běží krásně a všechny hodnoty jsou v normě. Jen koukám, že se jednou někdo sprchoval v době, kdy nebyla připravená teplá voda. Bojler nebyl vychladlý, ale pokud se plánujete sprchovat takhle brzy ráno, měli bychom upravit nastavení.
+**Asistent:** Tepelné čerpadlo je v pořádku, za posledních 30 dní jsem nenašel žádnou poruchu. Kompresor jede dlouhé cykly bez taktování a sezónní faktor topení je 4,8. Prostor pro úsporu vidím jinde: noční program topí na 22 °C, přes den jen na 21 °C, a cirkulace teplé vody pořád běží asi 1,5 hodiny denně. Úprava obojího a pokus topit spíš odpoledne by mohly ušetřit zhruba 1 000–2 000 Kč ročně. Nic jsem neměnil.
 
 **Vstup:** Hledání záručního listu nebo smlouvy znamenalo přehrabovat šuplíky a složky.
 **Výstup:** Dokumenty jsou v domácím správci dokumentů a asistent je najde za pár vteřin.
