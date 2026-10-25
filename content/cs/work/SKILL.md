@@ -57,14 +57,14 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 ### v3.1 — + Tech Lead Platform (2024 – dosud)
 - Přidáno: člen Tech Lead Platform, která určuje technický směr firmy: řešení napříč bankou, která pak přebírají ostatní týmy. Stejná role, nové funkce, zpětně kompatibilní.
 
-### v3.0 — Senior Backend Engineer, karty @ PBK Technology / Partners Banka (čvc 2023 – dosud)
+### v3.0 — Senior Backend Engineer, karty @ PBK Technology / Partners Banka (srp 2023 – dosud)
 - Začátek: nastoupil jsem ještě před spuštěním banky, nové banky na zelené louce a v moderních technologiích
 - Přidáno: kartový tým od prvního dne; velmi malý tým, který provozuje statisíce karet a miliony plateb
 - Přidáno: kompletní napojení na Visu včetně Click to Pay a Apple Pay
 - Zlepšeno: zpracování clearingových souborů při rostoucím objemu transakcí
 - Přidáno: nákup bitcoinu přímo v bance, první v Česku; jediný backendista v šestičlenném týmu, outbox pattern a idempotence
 
-### v2.1 — CTO @ Trisbee (bře 2023 – čvn 2023)
+### v2.1 — CTO @ Trisbee (bře 2023 – srp 2023)
 - Změněno: pár měsíců jako CTO malého startupu: vedení zhruba pětičlenného týmu, provoz, Jira, náklady na AWS, správa hesel, technický směr
 
 ### v2.0 — Backend vývojář @ Trisbee (čvc 2020 – úno 2023)

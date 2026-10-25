@@ -57,14 +57,14 @@ I ship without downtime, because explaining to people why their card doesn't wor
 ### v3.1 — + Tech Lead Platform (2024 – present)
 - Added: member of the Tech Lead Platform, which sets the company's technical direction: bank-wide solutions that other teams then adopt. Same role, new features, backward compatible.
 
-### v3.0 — Senior Backend Engineer, Cards @ PBK Technology / Partners Banka (Jul 2023 – present)
+### v3.0 — Senior Backend Engineer, Cards @ PBK Technology / Partners Banka (Aug 2023 – present)
 - Initial: joined before the bank went live — a new bank built from scratch on a modern stack
 - Added: cards team from day one; a very small team running hundreds of thousands of cards and millions of payments
 - Added: full Visa integration, including Click to Pay and Apple Pay
 - Improved: clearing file processing at growing transaction volume
 - Added: in-bank bitcoin purchase, first in Czechia; the only backend engineer in a team of six, outbox pattern and idempotency
 
-### v2.1 — CTO @ Trisbee (Mar 2023 – Jun 2023)
+### v2.1 — CTO @ Trisbee (Mar 2023 – Aug 2023)
 - Changed: a few months as CTO of a small startup — leading a team of about five, production, Jira, AWS costs, password management, technical direction
 
 ### v2.0 — Backend Developer @ Trisbee (Jul 2020 – Feb 2023)
