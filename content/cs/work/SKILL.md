@@ -55,7 +55,6 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 
 ### v3.2 — + AIVengers (říj 2026 – dosud)
 - Přidáno: člen AIVengers, malé skupiny, která řídí AI napříč bankou
-- Přidáno: sandbox pro agentický vývoj, který přebírají další týmy
 
 ### v3.1 — + Tech Lead Platform (2024 – dosud)
 - Přidáno: člen Tech Lead Platform, která určuje technický směr firmy: řešení napříč bankou, která pak přebírají ostatní týmy. Stejná role, nové funkce, zpětně kompatibilní.

@@ -38,7 +38,7 @@ Jsem backend vývojář a náš dům řídíme přes Loxone doplněný o Home As
 
 **Asistent:** Dnes měla být kontrola tepelného čerpadla. Proběhla? Máme z ní zprávu? Pokud ano, pošli mi ji, stejně jako fakturu za práci. Mám si k tomu poznamenat ještě něco, co se ze zprávy nedočtu? Pokud neřekneš jinak, za 11 měsíců ti připomenu objednat další servis.
 
-**Asistent:** Dnes mám v agendě objednat servis tepelka. V e-mailu máš připravený koncept, zkontroluj ho a odešli.
+**Asistent:** Dnes mám v agendě objednat servis rekuperace. V e-mailu máš připravený koncept, zkontroluj ho a odešli.
 
 Objednat by to zvládl i sám, ale poslední slovo zatím chceme mít my.
 

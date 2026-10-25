@@ -55,7 +55,6 @@ I ship without downtime, because explaining to people why their card doesn't wor
 
 ### v3.2 — + AIVengers (Oct 2026 – present)
 - Added: member of AIVengers, a small group steering AI across the bank
-- Added: a sandbox for agentic development that other teams are adopting
 
 ### v3.1 — + Tech Lead Platform (2024 – present)
 - Added: member of the Tech Lead Platform, which sets the company's technical direction: bank-wide solutions that other teams then adopt. Same role, new features, backward compatible.

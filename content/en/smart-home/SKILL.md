@@ -38,7 +38,7 @@ I'm a backend engineer, and we run our house on Loxone, extended with Home Assis
 
 **Assistant:** The heat pump service was due today. Did it happen? Do we have a report? If so, send it to me, along with the invoice for the work. Is there anything I should note that isn't in the report? Unless you say otherwise, I'll remind you in 11 months to book the next service.
 
-**Assistant:** Today's agenda: book the heat pump service. There's a draft ready in your email, check it and send it.
+**Assistant:** Today's agenda: book the ventilation unit service. There's a draft ready in your email, check it and send it.
 
 It could book the service on its own, but for now we want to have the last word.
 
