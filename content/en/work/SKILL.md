@@ -40,8 +40,8 @@ I ship without downtime, because explaining to people why their card doesn't wor
 **Input:** The bank wanted to be the first in Czechia to let clients buy bitcoin directly in their bank.
 **Output:** I built the whole backend as the only backend engineer, with AI at my side. An idempotent architecture that handles production traffic and high volumes. We're live, transactions are flowing, and no serious bugs.
 
-**Input:** Card clearing files started to choke as transaction volume grew.
-**Output:** Reworked clearing processing. It now comfortably keeps up with hundreds of thousands of cards and millions of payments.
+**Input:** AI is changing the world, and the company needed to work out what that means for it.
+**Output:** From the day AIVengers started, I've been part of reshaping company processes with AI: automating the release process and work reporting. I used to agonise over my timesheet, trying to remember what I'd actually done, and click it in by hand. Now an agent drafts what I did that day from the available data, and once I approve, it's reported. One sentence and one confirmation.
 
 **Input:** Small merchants in the EU needed a simple way to take cashless payments.
 **Output:** The Trisbee app with a complete Stripe integration: cards, Apple Pay, Google Pay and monthly subscriptions, plus an internal accounting system.
@@ -51,7 +51,7 @@ I ship without downtime, because explaining to people why their card doesn't wor
 ### v3.2 — + AIVengers (Oct 2026 – present)
 - Added: member of AIVengers, a small group steering AI across the bank
 
-### v3.1 — + Tech Lead Platform (2025 – present)
+### v3.1 — + Tech Lead Platform (2024 – present)
 - Added: member of the Tech Lead Platform, which sets the company's technical direction. Same role, new features, backward compatible.
 
 ### v3.0 — Senior Backend Engineer, Cards @ PBK Technology / Partners Banka (Jul 2023 – present)
@@ -87,7 +87,6 @@ I ship without downtime, because explaining to people why their card doesn't wor
 
 - Whole days of meetings and academic debates that lead nowhere.
 - Jobs that are more about reporting work than delivering it. I need to build things and see them work.
-- Letting an LLM guess what 2 + 2 is.
 
 ## Get in touch
 

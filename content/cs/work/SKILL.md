@@ -40,8 +40,8 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 **Vstup:** Banka chtěla být první v Česku, kde si klienti koupí bitcoin přímo v bance.
 **Výstup:** Celý backend jsem postavil jako jediný backend vývojář, s AI po boku. Idempotentní architektura, která zvládá produkční provoz i velké objemy. Jsme v produkci, transakce lítají a žádný vážný bug.
 
-**Vstup:** Clearingové soubory karet začaly s rostoucím počtem transakcí drhnout.
-**Výstup:** Přepracoval jsem zpracování clearingu. Teď v klidu stíhá statisíce karet a miliony plateb.
+**Vstup:** Nástup AI mění svět a firma potřebovala uchopit, co to pro ni znamená.
+**Výstup:** Hned od vzniku AIVengers jsem se zapojil do proměny firemních procesů pomocí AI: automatizace release procesu a výkazů práce. Dřív jsem nad výkazem laboroval, co jsem vlastně dělal, a klikal ho ručně. Dnes agent sám z podkladů navrhne, co jsem ten den dělal, a po mém schválení to vykáže. Jedna věta a jedno potvrzení.
 
 **Vstup:** Malí obchodníci v EU potřebovali jednoduše přijímat bezhotovostní platby.
 **Výstup:** Aplikace Trisbee s kompletní integrací na Stripe: karty, Apple Pay, Google Pay i měsíční předplatné, včetně interního účetního systému.
@@ -51,7 +51,7 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 ### v3.2 — + AIVengers (říj 2026 – dosud)
 - Přidáno: člen AIVengers, malé skupiny, která řídí AI napříč bankou
 
-### v3.1 — + Tech Lead Platform (2025 – dosud)
+### v3.1 — + Tech Lead Platform (2024 – dosud)
 - Přidáno: člen Tech Lead Platform, která určuje technický směr firmy. Stejná role, nové funkce, zpětně kompatibilní.
 
 ### v3.0 — Senior Backend Engineer, karty @ PBK Technology / Partners Banka (čvc 2023 – dosud)
@@ -87,7 +87,6 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 
 - Celé dny na schůzkách a akademické debaty, ze kterých nic nevzejde.
 - Práce, kde jde víc o vykazování než o výsledky. Potřebuju tvořit a vidět, že to funguje.
-- Nechat LLM hádat, kolik je 2 + 2.
 
 ## Ozvěte se
 

@@ -11,7 +11,7 @@ Náš dům řídíme přes Loxone doplněný o Home Assistant. Máme svého dom�
 
 - Máte chytrou domácnost, ale zařízení spolu mluví asi jako sousedi přes plot
 - Chytrou domácnost nemáte, ale chtěli byste ji a rádi byste probrali možnosti
-- Stavíte nebo rekonstruujete a chcete to promyslet včas, dokud se dají snadno natáhnout kabely
+- Stavíte nebo rekonstruujete a chcete chytrou domácnost promyslet hned od začátku
 - Nechcete automatizovat celý dům, ale rádi byste zautomatizovali aspoň agendu kolem něj: záruky, pojistky, servis
 - Chcete doma vlastní server (homelab) a data mít u sebe, ne „někde v cloudu“
 - Chcete domácího AI asistenta, který si nevymýšlí

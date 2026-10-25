@@ -11,7 +11,7 @@ We run our house on Loxone, extended with Home Assistant. We have our own home a
 
 - You have a smart home, but your devices talk to each other like neighbours over a fence
 - You don't have a smart home yet, but you'd like one and want to talk through the options
-- You are building or renovating and want to think it through while running cables is still easy
+- You are building or renovating and want to plan the smart home from the start
 - You don't want to automate the whole house, but you'd like to automate at least the paperwork around it: warranties, insurance, servicing
 - You want your own home server (homelab) and your data at home, not "somewhere in the cloud"
 - You want a home AI assistant that doesn't make things up
