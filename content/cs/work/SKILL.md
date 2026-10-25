@@ -20,7 +20,7 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 ## Příklady
 
 **Vstup:** Banka chtěla být první v Česku, kde si klienti koupí bitcoin přímo v bance.
-**Výstup:** V šestičlenném týmu jsem byl jediný backendista. Kryptoměny v bance předtím nikdo z nás nezaváděl a k tomu jsme silně regulované prostředí. Největší riziko bylo zpracovat platbu dvakrát nebo ji cestou ztratit, proto outbox pattern a důsledná idempotence: když okolní služba vypadne, zpracování se bezpečně zopakuje, bez zdvojené i ztracené platby. Od spuštění v létě 2026 jsme v produkci zatím neopravovali jedinou chybu v našem kódu.
+**Výstup:** V šestičlenném týmu jsem byl jediný backendista. Kryptoměny v bance předtím nikdo z nás nezaváděl a k tomu jsme silně regulované prostředí. Největší riziko bylo zpracovat platbu dvakrát nebo ji cestou ztratit, proto outbox pattern a důsledná idempotence: když okolní služba vypadne, zpracování se bezpečně zopakuje, bez zdvojené i ztracené platby. Za první čtvrtrok provozu jsme v produkci neopravovali jedinou chybu v našem kódu.
 
 **Vstup:** Výkaz práce znamenal každý den vzpomínat, co jsem vlastně dělal, a ručně to naklikat.
 **Výstup:** Dnes agent sám z podkladů navrhne, co jsem ten den dělal, a po mém schválení to vykáže. Jedna věta a jedno potvrzení. Spolu s automatizací release procesu je to jedna z věcí, které v AIVengers měníme od jejich vzniku.
