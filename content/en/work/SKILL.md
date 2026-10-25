@@ -20,7 +20,7 @@ I ship without downtime, because explaining to people why their card doesn't wor
 ## Examples
 
 **Input:** The bank wanted to be the first in Czechia to let clients buy bitcoin directly in their bank.
-**Output:** In a team of six I was the only backend engineer. None of us had brought crypto into a bank before, and we work in a heavily regulated environment. The biggest risk was processing a payment twice or losing it on the way, hence the outbox pattern and strict idempotency: when a surrounding service goes down, processing is safely retried, with no duplicated or lost payment. Since launch, we haven't had to fix a single bug in our code in production.
+**Output:** In a team of six I was the only backend engineer. None of us had brought crypto into a bank before, and we work in a heavily regulated environment. The biggest risk was processing a payment twice or losing it on the way, hence the outbox pattern and strict idempotency: when a surrounding service goes down, processing is safely retried, with no duplicated or lost payment. Since launch in summer 2026, we haven't had to fix a single bug in our code in production.
 
 **Input:** Filling in my timesheet meant trying to remember every day what I'd actually done, and clicking it in by hand.
 **Output:** Now an agent drafts what I did that day from the available data, and once I approve, it's reported. One sentence and one confirmation. Together with automating the release process, it's one of the things we've been changing in AIVengers since day one.
