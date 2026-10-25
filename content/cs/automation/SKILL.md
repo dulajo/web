@@ -24,9 +24,16 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem b
 ## Jak pracuju
 
 - Nejdřív pochopím, co děláte ručně a proč. Pak navrhnu nejjednodušší řešení. Nejjednodušší, ne nejdražší.
+- Když pustíte AI na chaos, dostanete větší chaos. Proto je první fáze, i když to nikdo nerad slyší, úklid dat: papíry, Excely a e-maily na jedno místo a přehledně uspořádané. Klidně jen jedna sdílená složka v cloudu, třeba na Google Drive.
+- Ručně to tam přenášet nebudete, to je právě ta automatizace. Přesunete e-mail do správné složky a zbytek se udělá sám: příloha se uloží, kam patří, a zapíše se do přehledu.
+- Další krok může být AI jako třídič, takže e-maily už netřídíte ani vy. Má ale jasně dané hranice: když si není jistá, nevymýšlí si a zeptá se.
 - Běží to podle pevných pravidel, ne podle nálady umělé inteligence: stejná data, stejný výsledek, pokaždé. Když to jde bez AI, udělám to bez AI. AI přidám jen tam, kde fakt pomůže.
 - Někdy není potřeba nic programovat: stačí si sednout k tomu, co děláte, nastavit AI na míru a ukázat vám, jak ji používat bez omáčky kolem.
 - Na konci máte jednoduchý nástroj nebo postup, který zvládnete ovládat sami. Bez manuálu na sto stran.
+
+## Jak to může vypadat
+
+**Asistent:** E-mail od dodavatele nevím s jistotou kam zařadit. Myslím, že je to faktura k projektu Y. Potvrdíš mi to, nebo ho zařadíš sám?
 
 ## Příklady
 

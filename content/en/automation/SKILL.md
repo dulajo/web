@@ -24,9 +24,16 @@ Excel is a great tool. Just not for spending your Sundays in. I am a backend eng
 ## How I work
 
 - First I understand what you do by hand and why. Then I suggest the simplest solution. Simplest, not most expensive.
+- Point AI at chaos and you get more chaos. So the first phase, though nobody likes to hear it, is tidying up the data: papers, spreadsheets and emails in one place, neatly organised. Even a single shared folder in the cloud will do, for example on Google Drive.
+- You won't be moving things there by hand; that's exactly what the automation is for. You drop an email into the right folder and the rest happens on its own: the attachment is filed where it belongs and logged in the overview.
+- The next step can be AI as the sorter, so you don't even sort the emails yourself. But it has clear limits: when it isn't sure, it doesn't make things up, it asks.
 - It runs by fixed rules, not by an AI's mood: same data, same result, every time. If it works without AI, it gets done without AI. AI only where it really helps.
 - Sometimes no coding is needed at all: we just sit down with your actual work, set up AI to fit it and skip the fluff.
 - You end up with a simple tool or workflow you can run yourself. No 100-page manual.
+
+## What it can look like
+
+**Assistant:** I'm not sure where this email from a supplier belongs. I think it's an invoice for project Y. Can you confirm, or would you rather file it yourself?
 
 ## Examples
 

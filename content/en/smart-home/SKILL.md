@@ -31,6 +31,17 @@ I'm a backend engineer, and we run our house on Loxone, extended with Home Assis
 - A home assistant that can work with any of these, depending on what we allow it
 - The latest addition: a 3D model of the whole house thanks to Astra, because why not
 
+## What it looks like
+
+**You:** Analyse the heat pump over the last month.
+**Assistant:** The heat pump is running nicely and all readings are within normal range. I did notice that someone once took a shower when the hot water wasn't ready yet. The tank hadn't gone cold, but if you plan to shower this early in the morning, we should adjust the settings.
+
+**Assistant:** The heat pump service was due today. Did it happen? Do we have a report? If so, send it to me, along with the invoice for the work. Is there anything I should note that isn't in the report? Unless you say otherwise, I'll remind you in 11 months to book the next service.
+
+**Assistant:** Today's agenda: book the heat pump service. There's a draft ready in your email, check it and send it.
+
+It could book the service on its own, but for now we want to have the last word.
+
 ## Examples
 
 **Input:** The hot water circulation pump kept running even when nobody needed hot water.

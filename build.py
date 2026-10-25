@@ -47,6 +47,9 @@ CAPABILITY_SECTIONS = {"capabilities", "schopnosti"}
 CHANGELOG_SECTIONS = {"changelog", "historie verzí"}
 EXAMPLE_START = {"Input", "Vstup"}
 EXAMPLE_LABELS = "Input|Output|Vstup|Výstup"
+# A short conversation: consecutive "**Ty:**" / "**Asistent:**" lines form one card, a blank line ends it.
+CHAT_LABELS = "Ty|Asistent|You|Assistant"
+CHAT_AI = {"Asistent", "Assistant"}
 CONTACT_KEYS = {"email": lambda v: f"mailto:{v}", "linkedin": lambda v: v, "github": lambda v: v}
 CV_BUTTON = '<a class="btn primary" href="/cv.pdf">CV</a>'
 REDIRECT = ("<script>try{if(!localStorage.getItem('lang')&&/^(cs|sk)\\b/i.test(navigator.language||''))"
@@ -97,7 +100,7 @@ def render_body(lines):
             out.append("</ul>")
         elif open_tag == "dl":
             out.append("</dl>")
-        elif open_tag == "example":
+        elif open_tag in ("example", "chat"):
             out.append("</div>")
         open_tag = None
 
@@ -167,6 +170,17 @@ def render_body(lines):
                     out.append(f'<li><span class="kind">{m.group(1)}</span>{inline(m.group(2))}</li>')
                     continue
             out.append(f"<li>{inline(item)}</li>")
+            continue
+
+        m = re.match(rf"\*\*({CHAT_LABELS}):\*\*\s*(.*)", line)
+        if m:
+            who, text = m.groups()
+            if open_tag != "chat":
+                close()
+                out.append('<div class="example chat">')
+                open_tag = "chat"
+            cls = "io ai" if who in CHAT_AI else "io"
+            out.append(f'<p><span class="{cls}">{who}</span>{inline(text)}</p>')
             continue
 
         m = re.match(rf"\*\*({EXAMPLE_LABELS}):\*\*\s*(.*)", line)

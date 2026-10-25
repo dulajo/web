@@ -31,6 +31,17 @@ Jsem backend vývojář a náš dům řídíme přes Loxone doplněný o Home As
 - Domácí asistent, který může pracovat s kteroukoli z těchto věcí, podle toho, co mu dovolíme
 - Nejnovější přírůstek: díky Astře 3D model celého domu, protože proč ne
 
+## Jak to vypadá v praxi
+
+**Ty:** Udělej analýzu tepelka za poslední měsíc.
+**Asistent:** Tepelné čerpadlo běží krásně a všechny hodnoty jsou v normě. Jen koukám, že se jednou někdo sprchoval v době, kdy nebyla připravená teplá voda. Bojler nebyl vychladlý, ale pokud se plánujete sprchovat takhle brzy ráno, měli bychom upravit nastavení.
+
+**Asistent:** Dnes měla být kontrola tepelného čerpadla. Proběhla? Máme z ní zprávu? Pokud ano, pošli mi ji, stejně jako fakturu za práci. Mám si k tomu poznamenat ještě něco, co se ze zprávy nedočtu? Pokud neřekneš jinak, za 11 měsíců ti připomenu objednat další servis.
+
+**Asistent:** Dnes mám v agendě objednat servis tepelka. V e-mailu máš připravený koncept, zkontroluj ho a odešli.
+
+Objednat by to zvládl i sám, ale poslední slovo zatím chceme mít my.
+
 ## Příklady
 
 **Vstup:** Cirkulační čerpadlo teplé vody běželo pořád, i když teplou vodu nikdo nepotřeboval.
