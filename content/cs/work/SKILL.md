@@ -1,6 +1,6 @@
 ---
 name: work
-description: Seniorní backend vývojář z banky, který převezme celou věc od zadání po provoz. Použijte, když stavíte systém, který nesmí spadnout: nasazení bez výpadku, zpětná kompatibilita a záložní plán pro chvíli, kdy se něco pokazí. Tiket nepřepisuju rovnou do kódu, nejdřív zjistím, co tím autor myslel.
+description: Seniorní backend vývojář z banky, který převezme celou věc od zadání po provoz. Použijte, když stavíte systém, který nesmí spadnout. Tiket nepřepisuju rovnou do kódu, nejdřív zjistím, co tím autor myslel.
 location: Praha
 ---
 
@@ -14,15 +14,27 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 
 - Stavíte systém, který nesmí spadnout ani ztratit data. Ani v pátek odpoledne.
 - Potřebujete někoho, kdo vezme celý úkol: vyjasní zadání, rozplánuje ho po krocích, dostane ho do produkce a nezmizí hned po merge
-- Chcete vydávat bez výpadků: zpětně kompatibilní změny a vždycky připravená cesta zpátky
 - Chcete AI v produkci, ne v prezentaci
-- Hledáte někoho, kdo táhne tým s sebou: pomůže kolegům, domluví řešení napříč týmy a dotáhne ho, dokud ho lidé opravdu nepoužívají
+- Hledáte někoho, kdo táhne tým s sebou: pomůže kolegům a domluví řešení napříč týmy
+
+## Příklady
+
+**Vstup:** Banka chtěla být první v Česku, kde si klienti koupí bitcoin přímo v bance.
+**Výstup:** V šestičlenném týmu jsem byl jediný backendista. Kryptoměny v bance předtím nikdo z nás nezaváděl a k tomu jsme silně regulované prostředí. Největší riziko bylo zpracovat platbu dvakrát nebo ji cestou ztratit, proto outbox pattern a důsledná idempotence: když okolní služba vypadne, zpracování se bezpečně zopakuje, bez zdvojené i ztracené platby. Od spuštění jsme v produkci zatím neopravovali jedinou chybu v našem kódu.
+
+**Vstup:** Výkaz práce znamenal každý den vzpomínat, co jsem vlastně dělal, a ručně to naklikat.
+**Výstup:** Dnes agent sám z podkladů navrhne, co jsem ten den dělal, a po mém schválení to vykáže. Jedna věta a jedno potvrzení. Spolu s automatizací release procesu je to jedna z věcí, které v AIVengers měníme od jejich vzniku.
+
+**Vstup:** Agenti pro vývoj potřebují volné ruce, ale nesmí dostat celý vývojářův stroj ani firemní klíče.
+**Výstup:** Navrhl jsem vývojářský sandbox: agent v něm pracuje bez neustálého schvalování, na síť smí jen na předem povolené adresy a API klíče ani tokeny se do sandboxu vůbec nedostanou, dosazuje je až proxy na cestě ven. Řešení teď přebírají další týmy v bance.
+
+**Vstup:** Malí obchodníci v EU potřebovali jednoduše přijímat bezhotovostní platby.
+**Výstup:** Aplikace Trisbee s kompletní integrací na Stripe: karty, Apple Pay, Google Pay i měsíční předplatné, včetně interního účetního systému.
 
 ## Jak pracuju
 
-- Tiket není zadání. Je to začátek rozhovoru, občas i výslechu.
+- Tiket není zadání, je to začátek rozhovoru.
 - Velkou věc rozdělím na menší kroky, které jdou bezpečně nasadit, a mám nad nimi monitoring a data, abych věděl, že to v produkci opravdu funguje.
-- Release bez výpadku je standard, ne svátek.
 - Co může být deterministické, má být deterministické. Agent má zavolat nástroj, ne si pokaždé znovu tipnout.
 - Hotovo je, až to lidé používají. Do té doby je to jen hezký kód.
 - Nejlepší řešení vzniká v týmu. Rád pomáhám lidem kolem sebe, teď třeba učím kolegu z frontendu backend.
@@ -36,20 +48,6 @@ Releasy dělám bez výpadku, protože vysvětlovat lidem, proč jim nejde karta
 - ai: LLM agenti, volání nástrojů, MCP, ACP, sandboxing agentů, znalostní báze
 - infra: AWS, Terraform, Docker
 - doručení: technické specifikace, plán po etapách, architektonická rozhodnutí, řízení týmové operativy
-
-## Příklady
-
-**Vstup:** Banka chtěla být první v Česku, kde si klienti koupí bitcoin přímo v bance.
-**Výstup:** V šestičlenném týmu jsem byl jediný backendista. Kryptoměny v bance předtím nikdo z nás nezaváděl a k tomu jsme silně regulované prostředí. Největší riziko bylo zpracovat platbu dvakrát nebo ji cestou ztratit, proto outbox pattern a důsledná idempotence: když okolní služba vypadne, zpracování se bezpečně zopakuje, bez zdvojené i ztracené platby. Od spuštění jsme v produkci zatím neopravovali jedinou chybu v našem kódu.
-
-**Vstup:** Nástup AI mění svět a firma potřebovala uchopit, co to pro ni znamená.
-**Výstup:** Hned od vzniku AIVengers jsem se zapojil do proměny firemních procesů pomocí AI: automatizace release procesu a výkazů práce. Dřív jsem nad výkazem laboroval, co jsem vlastně dělal, a klikal ho ručně. Dnes agent sám z podkladů navrhne, co jsem ten den dělal, a po mém schválení to vykáže. Jedna věta a jedno potvrzení.
-
-**Vstup:** Agenti pro vývoj potřebují volné ruce, ale nesmí dostat celý vývojářův stroj ani firemní klíče.
-**Výstup:** Navrhl jsem vývojářský sandbox: agent v něm pracuje bez neustálého schvalování, na síť smí jen na předem povolené adresy a API klíče ani tokeny se do sandboxu vůbec nedostanou, dosazuje je až proxy na cestě ven. Řešení teď přebírají další týmy v bance.
-
-**Vstup:** Malí obchodníci v EU potřebovali jednoduše přijímat bezhotovostní platby.
-**Výstup:** Aplikace Trisbee s kompletní integrací na Stripe: karty, Apple Pay, Google Pay i měsíční předplatné, včetně interního účetního systému.
 
 ## Historie verzí
 

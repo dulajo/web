@@ -1,6 +1,6 @@
 ---
 name: smart-home
-description: Chytrá domácnost, která šetří čas a nepřidělává starosti. Světla, žaluzie, topení i spotřebiče spolu konečně mluví a dům se o spoustu věcí postará sám, aniž byste o tom museli vědět. Máte chytrou domácnost? Podíváme se na ni, ať běží na čemkoli. Nemáte? Probereme, co by vám dávalo smysl. Použijte, když chcete dům, který funguje spolehlivě a předvídatelně. Nepoužívejte na elektroinstalaci.
+description: Chytrá domácnost, která šetří čas a nepřidělává starosti. Máte ji, nebo ji teprve chcete? Podíváme se na to spolu. Použijte, když chcete dům, který funguje spolehlivě. Nepoužívejte na elektroinstalaci.
 ---
 
 # Chytrá domácnost
@@ -11,15 +11,32 @@ Jsem programátor a náš dům řídíme přes Loxone doplněný o Home Assistan
 
 - Máte chytrou domácnost, ale zařízení spolu mluví asi jako sousedi přes plot
 - Chytrou domácnost nemáte, ale chtěli byste ji a rádi byste probrali možnosti
-- Stavíte nebo rekonstruujete a chcete chytrou domácnost promyslet hned od začátku
+- Stavíte nebo rekonstruujete: projdeme, co má smysl připravit už teď, aby se později nemuselo sekat do hotových zdí
 - Nechcete automatizovat celý dům, ale rádi byste zautomatizovali aspoň agendu kolem něj: záruky, pojistky, servis
 - Chcete doma vlastní server (homelab) a data mít u sebe, ne „někde v cloudu“
 - Chcete domácího AI asistenta, který odpovídá z vašich podkladů, ne z hlavy
 
+## Příklady
+
+**Vstup:** Hledání záručního listu nebo smlouvy znamenalo přehrabovat šuplíky a složky.
+**Výstup:** Dokumenty jsou v domácím správci dokumentů a asistent je najde za pár vteřin.
+
+**Asistent:** Dnes měla být kontrola tepelného čerpadla. Proběhla? Máme z ní zprávu? Pokud ano, pošli mi ji, stejně jako fakturu za práci. Mám si k tomu poznamenat ještě něco, co se ze zprávy nedočtu? Pokud neřekneš jinak, za 11 měsíců ti připomenu objednat další servis.
+
+**Asistent:** Dnes mám v agendě objednat servis rekuperace. V e-mailu máš připravený koncept, zkontroluj ho a odešli.
+
+Objednat by to zvládl i sám, ale poslední slovo zatím chceme mít my.
+
+**Vstup:** Cirkulační čerpadlo teplé vody běželo pořád, i když teplou vodu nikdo nepotřeboval.
+**Výstup:** Řídí ho kombinace přítomnosti, režimu domu a potřebné délky cyklu. Asistent navíc hlídá, jestli opravdu běží jen tolik, kolik má, a když ne, ozve se. Jak to vypadá, je hned v rozboru pod tím.
+
+**Ty:** Udělej analýzu tepelka za poslední měsíc.
+**Asistent:** Tepelné čerpadlo je v pořádku, za posledních 30 dní jsem nenašel žádnou poruchu a topí úsporně. Prostor pro úsporu vidím jinde: noční program topí na 22 °C, přes den jen na 21 °C, a cirkulace teplé vody pořád běží asi 1,5 hodiny denně. Úprava obojího a pokus topit spíš odpoledne by mohly ušetřit zhruba 1 000–2 000 Kč ročně. Nic jsem neměnil.
+
 ## Co k tomu potřebujete
 
-- Nic konkrétního. Loxone, Home Assistant ani vlastní server mít nemusíte, nebo můžete mít všechno a ještě něco jiného. Níž popisuju jen to, jak to máme my.
-- Domácího asistenta jde provozovat na několika úrovních. Nejjednodušší je aplikace na vašem počítači, která běží, jen když ji zapnete. O krok dál je samostatný, klidně starší počítač, který běží nonstop a vidí jen to, co mu dovolíte. A nejdál je domácí hardware tak silný, že na něm běží vlastní AI model: všechna data zůstávají doma a nic se neposílá do cloudu. Napojit asistenta na chytrou domácnost a čidla jde na kterékoli z těchto úrovní.
+- Nic speciálního. Loxone, Home Assistant ani vlastní server mít nemusíte.
+- Asistent může běžet na vašem počítači, na samostatném starším počítači, nebo na vlastním hardwaru, ze kterého data vůbec neodcházejí. Vybereme podle toho, co potřebujete.
 - Co asistent uvidí, máte pod kontrolou. Nechcete, aby vám lezl do e-mailu? Dostane vlastní schránku a přepošlete mu jen to, co má vidět. Nechcete mu dát celý Google Drive? Dostane vlastní účet a nasdílíte mu jen vybrané složky.
 
 ## Jak pracuju
@@ -36,23 +53,6 @@ Jsem programátor a náš dům řídíme přes Loxone doplněný o Home Assistan
 - Centrální mozek domu: podklady ke všemu na jednom místě, přehledně uspořádané
 - Domácí asistent, který může pracovat s kteroukoli z těchto věcí, podle toho, co mu dovolíme
 - Nejnovější přírůstek: 3D model celého domu. AI model Astra ho s pomocí bezplatného Blenderu překreslil z projektu domu, z aktuálních fotek do něj doplňuje nábytek a podle toho ladíme úpravy místností.
-
-## Příklady
-
-**Vstup:** Cirkulační čerpadlo teplé vody běželo pořád, i když teplou vodu nikdo nepotřeboval.
-**Výstup:** Řídí ho kombinace přítomnosti, režimu domu a potřebné délky cyklu. Asistent navíc hlídá, jestli opravdu běží jen tolik, kolik má, a když ne, ozve se. Jak to vypadá, je hned v rozboru pod tím.
-
-**Ty:** Udělej analýzu tepelka za poslední měsíc.
-**Asistent:** Tepelné čerpadlo je v pořádku, za posledních 30 dní jsem nenašel žádnou poruchu. Kompresor jede dlouhé cykly bez taktování a sezónní faktor topení je 4,8. Prostor pro úsporu vidím jinde: noční program topí na 22 °C, přes den jen na 21 °C, a cirkulace teplé vody pořád běží asi 1,5 hodiny denně. Úprava obojího a pokus topit spíš odpoledne by mohly ušetřit zhruba 1 000–2 000 Kč ročně. Nic jsem neměnil.
-
-**Vstup:** Hledání záručního listu nebo smlouvy znamenalo přehrabovat šuplíky a složky.
-**Výstup:** Dokumenty jsou v domácím správci dokumentů a asistent je najde za pár vteřin.
-
-**Asistent:** Dnes měla být kontrola tepelného čerpadla. Proběhla? Máme z ní zprávu? Pokud ano, pošli mi ji, stejně jako fakturu za práci. Mám si k tomu poznamenat ještě něco, co se ze zprávy nedočtu? Pokud neřekneš jinak, za 11 měsíců ti připomenu objednat další servis.
-
-**Asistent:** Dnes mám v agendě objednat servis rekuperace. V e-mailu máš připravený koncept, zkontroluj ho a odešli.
-
-Objednat by to zvládl i sám, ale poslední slovo zatím chceme mít my.
 
 ## Na co se nehodím
 

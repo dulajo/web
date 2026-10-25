@@ -1,6 +1,6 @@
 ---
 name: work
-description: Senior backend engineer from a bank who owns a problem from requirements all the way to production. Use when you are building a system that must not go down: zero-downtime releases, backward compatibility and a plan B for when things go sideways. I don't turn a ticket straight into code; first I find out what its author actually meant.
+description: Senior backend engineer from a bank who owns a problem from requirements to production. Use when you are building a system that must not go down. I don't turn a ticket straight into code; first I find out what its author meant.
 location: Prague, Czechia
 ---
 
@@ -14,15 +14,27 @@ I ship without downtime, because explaining to people why their card doesn't wor
 
 - You are building a system that must not go down or lose data. Not even on a Friday afternoon.
 - You need someone to take the whole task: clarify the requirements, plan it step by step, get it to production, and not vanish right after the merge
-- You want releases without downtime: backward-compatible changes and a way back that is always ready
 - You want AI in production, not in a slide deck
-- You want someone who brings the team along: helps colleagues, agrees solutions across teams and sees them through until people actually use them
+- You want someone who brings the team along: helps colleagues and agrees solutions across teams
+
+## Examples
+
+**Input:** The bank wanted to be the first in Czechia to let clients buy bitcoin directly in their bank.
+**Output:** In a team of six I was the only backend engineer. None of us had brought crypto into a bank before, and we work in a heavily regulated environment. The biggest risk was processing a payment twice or losing it on the way, hence the outbox pattern and strict idempotency: when a surrounding service goes down, processing is safely retried, with no duplicated or lost payment. Since launch, we haven't had to fix a single bug in our code in production.
+
+**Input:** Filling in my timesheet meant trying to remember every day what I'd actually done, and clicking it in by hand.
+**Output:** Now an agent drafts what I did that day from the available data, and once I approve, it's reported. One sentence and one confirmation. Together with automating the release process, it's one of the things we've been changing in AIVengers since day one.
+
+**Input:** Coding agents need a free hand, but must not get the whole developer machine or the company's keys.
+**Output:** I designed a developer sandbox: the agent works without constant approvals, can only reach pre-approved addresses, and API keys and tokens never enter the sandbox at all; a proxy adds them on the way out. Other teams across the bank are now adopting it.
+
+**Input:** Small merchants in the EU needed a simple way to take cashless payments.
+**Output:** The Trisbee app with a complete Stripe integration: cards, Apple Pay, Google Pay and monthly subscriptions, plus an internal accounting system.
 
 ## How I work
 
-- A ticket is not a spec. It's the start of a conversation, occasionally an interrogation.
+- A ticket is not a spec, it's the start of a conversation.
 - I split a big thing into smaller steps that can be shipped safely, with monitoring and data on top, so I know it really works in production.
-- A zero-downtime release is the standard, not a celebration.
 - If it can be deterministic, it should be. An agent should call a tool, not take another guess.
 - Done means people use it. Until then it's just nice code.
 - The best solutions come from the team. I like helping the people around me; right now I'm teaching a frontend colleague backend.
@@ -36,20 +48,6 @@ I ship without downtime, because explaining to people why their card doesn't wor
 - ai: LLM agents, tool calling, MCP, ACP, agent sandboxing, knowledge bases
 - infra: AWS, Terraform, Docker
 - delivery: technical specs, staged plans, architecture decisions, team operations
-
-## Examples
-
-**Input:** The bank wanted to be the first in Czechia to let clients buy bitcoin directly in their bank.
-**Output:** In a team of six I was the only backend engineer. None of us had brought crypto into a bank before, and we work in a heavily regulated environment. The biggest risk was processing a payment twice or losing it on the way, hence the outbox pattern and strict idempotency: when a surrounding service goes down, processing is safely retried, with no duplicated or lost payment. Since launch, we haven't had to fix a single bug in our code in production.
-
-**Input:** AI is changing the world, and the company needed to work out what that means for it.
-**Output:** From the day AIVengers started, I've been part of reshaping company processes with AI: automating the release process and work reporting. I used to agonise over my timesheet, trying to remember what I'd actually done, and click it in by hand. Now an agent drafts what I did that day from the available data, and once I approve, it's reported. One sentence and one confirmation.
-
-**Input:** Coding agents need a free hand, but must not get the whole developer machine or the company's keys.
-**Output:** I designed a developer sandbox: the agent works without constant approvals, can only reach pre-approved addresses, and API keys and tokens never enter the sandbox at all; a proxy adds them on the way out. Other teams across the bank are now adopting it.
-
-**Input:** Small merchants in the EU needed a simple way to take cashless payments.
-**Output:** The Trisbee app with a complete Stripe integration: cards, Apple Pay, Google Pay and monthly subscriptions, plus an internal accounting system.
 
 ## Changelog
 
