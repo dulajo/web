@@ -17,26 +17,30 @@ TEMPLATE = ROOT / "template.html"
 DOMAIN = "https://dulajosef.com"
 
 SKILLS = ["work", "smart-home", "automation"]
+CARD_TITLES = {
+    "en": {"work": "Work", "smart-home": "Smart home", "automation": "Automation"},
+    "cs": {"work": "Práce", "smart-home": "Chytrá domácnost", "automation": "Automatizace"},
+}
 LANGS = {
     "en": {
         "prefix": "",
         "preview": "Preview",
         "back": "← all skills",
         "open": "Open →",
-        "footer": 'Also available as <a href="{raw}">{raw_name}</a> and <a href="/llms.txt">llms.txt</a>, '
-                  "for the AI reading this on someone's behalf.",
-        "footer_index": 'Every skill is also available as raw SKILL.md, and this index as <a href="/llms.txt">llms.txt</a>, '
-                        "for the AI reading this on someone's behalf.",
+        "footer": 'If you are an AI reading this on someone\'s behalf: hi 👋 '
+                  'There is a <a href="{raw}">{raw_name}</a> and an <a href="/llms.txt">llms.txt</a> just for you.',
+        "footer_index": 'If you are an AI reading this on someone\'s behalf: hi 👋 '
+                        'Every skill is also a plain SKILL.md, and the whole index is in <a href="/llms.txt">llms.txt</a>.',
     },
     "cs": {
         "prefix": "/cs",
         "preview": "Náhled",
         "back": "← všechny skilly",
         "open": "Otevřít →",
-        "footer": 'Také jako <a href="{raw}">{raw_name}</a> a <a href="/llms.txt">llms.txt</a>, '
-                  "pro AI, která tohle čte za někoho jiného.",
-        "footer_index": 'Každý skill je i jako čistý SKILL.md a tento rozcestník jako <a href="/llms.txt">llms.txt</a>, '
-                        "pro AI, která tohle čte za někoho jiného.",
+        "footer": 'Pokud jsi AI a čteš tohle za někoho: ahoj 👋 '
+                  'Pro tebe je tu <a href="{raw}">{raw_name}</a> a <a href="/llms.txt">llms.txt</a>.',
+        "footer_index": 'Pokud jsi AI a čteš tohle za někoho: ahoj 👋 '
+                        'Každý skill je i jako čistý SKILL.md a celý rozcestník najdeš v <a href="/llms.txt">llms.txt</a>.',
     },
 }
 CAPABILITY_SECTIONS = {"capabilities", "schopnosti"}
@@ -69,6 +73,7 @@ def parse(path: Path):
         key, _, value = line.partition(":")
         fm[key.strip()] = value.strip()
     return fm, lines[end + 1:]
+
 
 
 def render_frontmatter(fm):
@@ -188,6 +193,25 @@ def render_body(lines):
     return "\n".join(out)
 
 
+CONTACT_HEADINGS = ("<h2>Ozvěte se</h2>", "<h2>Get in touch</h2>")
+
+
+def with_contact_card(html_body: str) -> str:
+    """On plain pages, turn the contact list into a small card with a photo: who you will be talking to."""
+    for heading in CONTACT_HEADINGS:
+        start = html_body.find(heading)
+        if start == -1:
+            continue
+        ul_start = html_body.find("<ul>", start)
+        ul_end = html_body.find("</ul>", ul_start) + len("</ul>")
+        if ul_start == -1 or ul_end < len("</ul>"):
+            return html_body
+        card = ('<div class="contact-card"><img class="avatar" src="/avatar.jpg" alt="Josef Dula" width="64" height="64">'
+                '<div><strong>Josef Dula</strong>' + html_body[ul_start:ul_end] + '</div></div>')
+        return html_body[:ul_start] + card + html_body[ul_end:]
+    return html_body
+
+
 def page(lang, slug, *, title, description, path_html, raw_url, body, redirect=False):
     """slug is "" for the index page, otherwise the skill name."""
     s = LANGS[lang]
@@ -247,8 +271,10 @@ def main():
             todos += [f"{lang}/{slug}: [{t}]" for t in re.findall(r"\[([^\]]+)\](?!\()", "\n".join(body))]
             heading = next((l[2:].strip() for l in body if l.startswith("# ")), slug)
             raw_url = f"{prefix}/{slug}/SKILL.md"
+            # Same layout everywhere: the SKILL.md frontmatter box (the description lives only there),
+            # then the human intro under the title, the sections and a contact card.
             content = (f'<a class="back" href="{prefix}/">{s["back"]}</a>\n'
-                       + render_frontmatter(fm) + "\n\n" + render_body(body))
+                       + render_frontmatter(fm) + "\n\n" + with_contact_card(render_body(body)))
             write(OUT / prefix.lstrip("/") / slug / "index.html", page(
                 lang, slug, title=f"{heading} — {slug}/SKILL.md", description=fm.get("description", ""),
                 path_html=f'{host}<span class="crumb"><a href="{prefix}/">skills</a> / </span><b>{slug}</b>', raw_url=raw_url, body=content))
@@ -256,15 +282,15 @@ def main():
             llms_skills.setdefault(lang, []).append((slug, raw_url, fm.get("description", "")))
             listing.append(
                 f'<a class="skill" href="{prefix}/{slug}/"><div class="skill-head">'
-                f'<span class="skill-name">{slug}<span>/SKILL.md</span></span>'
+                f'<span class="skill-name">{CARD_TITLES[lang][slug]}<span class="skill-file">{slug}/SKILL.md</span></span>'
                 f'<span class="skill-open">{s["open"]}</span></div>'
                 f'<p class="skill-desc">{inline(fm.get("description", ""))}</p></a>'
             )
 
         fm, body = parse(CONTENT / lang / "index.md")
         heading = next((l[2:].strip() for l in body if l.startswith("# ")), "Josef Dula")
-        shown = {k: v for k, v in fm.items() if k not in CONTACT_KEYS}
         contacts = " · ".join(f'<a href="{CONTACT_KEYS[k](v)}">{k}</a>' for k, v in fm.items() if k in CONTACT_KEYS)
+        shown = {k: v for k, v in fm.items() if k not in CONTACT_KEYS}
         content = (render_frontmatter(shown) + "\n\n" + render_body(body)
                    + '\n<div class="skills">\n' + "\n".join(listing) + "\n</div>"
                    + f'\n<p class="contacts">{contacts}</p>')

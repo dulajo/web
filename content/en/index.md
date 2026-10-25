@@ -1,6 +1,6 @@
 ---
 name: josef-dula
-description: Backend engineer from a bank who builds AI on solid foundations. After hours he helps people with smart homes and the paperwork nobody wants to do.
+description: By day I build card systems and AI at a bank. In the evenings I tune my own smart home, automate boring paperwork and play beach volleyball.
 location: Prague, Czechia
 email: dulajosef@gmail.com
 linkedin: https://www.linkedin.com/in/josef-dula-530505b3

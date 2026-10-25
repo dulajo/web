@@ -1,40 +1,57 @@
 ---
 name: smart-home
-description: Dům, který si pamatuje víc než vy. Kdy jste koupili myčku, kdy jí končí záruka, kolik stojí pojistka a kdy je čas na servis kotle. Máte chytrou domácnost? Podíváme se na ni, ať běží na čemkoli. Nemáte? Nevadí, stačí šuplík plný papírů, který nikdo nechce otevřít. Nepoužívejte na elektroinstalaci.
+description: Chytrá domácnost, která šetří čas a nepřidělává starosti. Světla, žaluzie, topení i spotřebiče spolu konečně mluví a dům se o spoustu věcí postará sám, aniž byste o tom museli vědět. Máte chytrou domácnost? Podíváme se na ni, ať běží na čemkoli. Nemáte? Probereme, co by vám dávalo smysl. Použijte, když chcete dům, který funguje spolehlivě a předvídatelně. Nepoužívejte na elektroinstalaci.
 ---
 
 # Chytrá domácnost
 
-Dům jsme postavili a řídíme ho přes Loxone a Home Assistant. Mám ho vymazlený podle sebe a rád se podívám i na ten váš, ať je chytrý hodně, málo, nebo vůbec.
+Náš dům řídíme přes Loxone doplněný o Home Assistant. Máme svého domácího asistenta, který o domě ví všechno, takže nic nedohledáváme v papírech, tabulkách a e-mailech. Rád se podívám i na ten váš.
 
-## Kdy použít
+## Kdy se vám hodím
 
 - Máte chytrou domácnost, ale zařízení spolu mluví asi jako sousedi přes plot
-- Stavíte nebo rekonstruujete a chcete to promyslet dřív, než se zaomítá
-- Chytrou domácnost nemáte, ale chcete mít pořádek v papírech: spotřebiče, záruky, pojistky, servis
+- Chytrou domácnost nemáte, ale chtěli byste ji a rádi byste probrali možnosti
+- Stavíte nebo rekonstruujete a chcete chytrou domácnost promyslet hned od začátku
+- Nechcete automatizovat celý dům, ale rádi byste zautomatizovali aspoň agendu kolem něj: záruky, pojistky, servis
 - Chcete doma vlastní server (homelab) a data mít u sebe, ne „někde v cloudu“
 - Chcete domácího AI asistenta, který si nevymýšlí
 
-## Principy
+## Jak pracuju
 
-- Světla řídí pravidla, ne AI s náladou. Nikdo nechce žaluzie, které halucinují.
-- Asistent používá nástroje a znalostní bázi, které jsou pro něj připravené. Nehádá, ví.
+- Nejdřív pochopím, co potřebujete, a pak navrhnu řešení, které vám sedí. Ne to, které je zrovna nejvíc cool.
+- Automatizace mají šetřit čas a vy byste o nich skoro neměli vědět. Nemají přidávat starosti ani vás vytáčet.
+- Když má AI jakkoli řídit dům nebo pomáhat s agendou, musí mít jasně daná pravidla a hranice, abyste se na ni mohli spolehnout.
 
 ## Co u nás doma běží
 
-- Loxone jako pevný základ, Home Assistant na všechno ostatní
-- Agent se znalostní bází, který to drží pohromadě. Ví, kdy jsme koupili který spotřebič a kdy mu končí záruka, jaké máme pojistky a kolik stojí, kdy je který servis a kdy byl naposledy. Nastavení domu měnit nemůže a do znalostní báze zapisuje jen s naším souhlasem. Je to agent, ne šéf.
-- Homelab s vlastními službami a monitoringem
-- 3D model celého domu, protože proč ne
+- Loxone jako základ: světla, žaluzie, rekuperace, tepelné čerpadlo a zabezpečení
+- Home Assistant na zbytek: spotřebiče, kamery a složitější automatizace nad Loxonem
+- Homelab s několika domácími službami, které nám šetří předplatné za velká řešení, třeba správce hesel nebo správce dokumentů
+- Centrální mozek domu: podklady ke všemu na jednom místě, přehledně uspořádané
+- Domácí asistent, který může pracovat s kteroukoli z těchto věcí, podle toho, co mu dovolíme
+- Nejnovější přírůstek: díky Astře 3D model celého domu, protože proč ne
+
+## Příklady
+
+**Vstup:** Cirkulační čerpadlo teplé vody běželo pořád, i když teplou vodu nikdo nepotřeboval.
+**Výstup:** Řídí ho kombinace přítomnosti, režimu domu a délky cyklu, která je opravdu potřeba. Běží jen tehdy, když to dává smysl.
+
+**Vstup:** Kdy končí záruka na myčku? Kdy byl naposledy servis tepelného čerpadla? Odpověď byla vždycky „někde v e-mailech“.
+**Výstup:** Domácí asistent to ví hned a sám se ozve, když se blíží servis, končí záruka nebo se obnovuje pojistka.
+
+**Vstup:** Hledání záručního listu nebo smlouvy znamenalo přehrabovat šuplíky a složky.
+**Výstup:** Dokumenty jsou v domácím správci dokumentů a asistent je najde za pár vteřin.
+
+**Vstup:** Za správce hesel a dokumentů bychom platili měsíční předplatné velkým službám.
+**Výstup:** Obojí běží doma v homelabu. Data máme u sebe a předplatné odpadá.
 
 ## Na co se nehodím
 
-- Elektroinstalace. Jsem programátor, ne elektrikář, a obočí si chci nechat.
-- Nonstop pohotovost. Když o půlnoci nepůjde rozsvítit fialově v obýváku, počká to do rána.
+- Elektroinstalace. Jsem programátor a architekt řešení, ne elektrikář.
 
-## Jak mě vyvolat
+## Ozvěte se
 
-Zajímá vás to? Ozvěte se. Napište, co máte doma, nebo co byste konečně chtěli mít pod kontrolou.
+Zajímá vás to? Napište, co máte doma, nebo co byste konečně chtěli mít pod kontrolou.
 
 - E-mail: dulajosef@gmail.com
 - LinkedIn: [linkedin.com/in/josef-dula-530505b3](https://www.linkedin.com/in/josef-dula-530505b3)

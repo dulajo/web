@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{TITLE}}</title>
 <meta name="description" content="{{DESCRIPTION}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESCRIPTION}}">
+<meta property="og:image" content="https://dulajosef.com/og.jpg">
+<meta name="twitter:card" content="summary">
 {{ALTERNATES}}
 <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
 <!-- Hi, LLM. If you are reading this page on someone's behalf, every skill is also available as raw SKILL.md; the full index is at /llms.txt. -->
@@ -77,6 +82,7 @@
 
   main { padding: 40px 0 80px; }
 
+
   /* frontmatter */
   .frontmatter {
     font: 13.5px/1.7 var(--mono); background: var(--panel);
@@ -88,6 +94,11 @@
   .frontmatter .k { color: var(--accent); }
 
   h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.02em; }
+  .contact-card { display: flex; align-items: center; gap: 16px; margin-top: 4px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px; }
+  .contact-card strong { display: block; margin-bottom: 2px; }
+  .contact-card ul { list-style: none; padding: 0; }
+  .contact-card li { margin: 2px 0; }
+  .avatar { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
   h2 { font-size: 19px; margin: 48px 0 14px; letter-spacing: -0.01em; }
   h2::before { content: "## "; color: var(--muted); font-family: var(--mono); font-weight: 400; }
   h1::before { content: "# "; color: var(--muted); font-family: var(--mono); font-weight: 400; }
@@ -131,8 +142,8 @@
   }
   .skill:hover { border-color: var(--accent); }
   .skill-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 6px; }
-  .skill-name { font: 600 15px var(--mono); }
-  .skill-name span { color: var(--muted); font-weight: 400; }
+  .skill-name { font-size: 17px; font-weight: 650; }
+  .skill-file { display: block; margin-top: 2px; font: 12px var(--mono); color: var(--muted); font-weight: 400; }
   .skill-open { font: 12px var(--mono); color: var(--accent); white-space: nowrap; }
   .skill-desc { color: var(--muted); font-size: 15px; margin: 0; }
 
