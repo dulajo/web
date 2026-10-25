@@ -7,5 +7,7 @@
     "directory": "./site",
     // /work and /work/ both serve /work/index.html
     "html_handling": "auto-trailing-slash"
-  }
+  },
+  // Needed for branch previews (`wrangler preview`); empty means same settings as production.
+  "previews": {}
 }
