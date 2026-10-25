@@ -12,9 +12,8 @@ Excel is a great tool. Just not for spending your Sundays in. I'm a programmer a
 - You keep doing the same steps over and over, just with different data
 - You retype, check or keep an eye on things a computer would handle better, and without complaining
 - Every month you put together the same overview, invoice or report by hand
-- You want practical, human help with AI on your actual work, not a stiff paid training where you learn nothing
+- You want to start using AI and see it work on your own concrete tasks
 - Not sure whether it calls for AI or automation? Ask. I don't bite.
-- Dealing with paperwork around your home? That's what [smart-home](/smart-home/) is for.
 
 ## Examples
 
@@ -36,6 +35,7 @@ Excel is a great tool. Just not for spending your Sundays in. I'm a programmer a
 ## Not a fit
 
 - Large companies with hundreds of people and long projects.
+- Paperwork around your home, like warranties, insurance and servicing. That's what [smart-home](/smart-home/) is for.
 
 ## Get in touch
 

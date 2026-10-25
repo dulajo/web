@@ -18,6 +18,15 @@ I'm a programmer, and we run our house on Loxone, extended with Home Assistant. 
 
 ## Examples
 
+**Input:** In one room I want to clean, elsewhere I want to wind down in the evening.
+**Output:** The Cleaning scene sets the room to full brightness and white light. The evening mode for the whole house makes every light that turns on glow at just 40 % and warm yellow.
+
+**Input:** We're leaving the house and don't want to check everything.
+**Output:** One button by the door arms the alarm in 30 seconds and switches on away mode, which among other things turns off the hot water circulation. If a window is still open, a notification arrives and, more importantly, the hall light blinks, because you usually notice the notification too late. Coming back, the fingerprint reader on the door turns the alarm and away mode off again.
+
+**Input:** In summer our new-build house struggled with high humidity, and it was properly hot too.
+**Output:** The ventilation has a summer mode: when it's humid indoors and full power will bring the humidity down, it runs at full power. When it would instead bring in more humid air from outside, it doesn't go to full power, not even in boost mode.
+
 **Input:** Finding a warranty card or a contract meant digging through drawers and folders.
 **Output:** Documents live in our home document manager, and the assistant finds them in seconds.
 
@@ -27,16 +36,13 @@ I'm a programmer, and we run our house on Loxone, extended with Home Assistant. 
 
 It could book the service on its own, but for now we want to have the last word.
 
-**Input:** The hot water circulation pump kept running even when nobody needed hot water.
-**Output:** It's driven by a mix of presence, house mode and the cycle length actually needed. On top of that, the assistant checks it really runs only as much as it should, and speaks up when it doesn't. The analysis right below shows what that looks like.
-
 **You:** Analyse the heat pump over the last month.
 **Assistant:** The heat pump is fine; I found no faults in the last 30 days and it heats efficiently. The savings are elsewhere: the night program heats to 22 °C while the day setting is only 21 °C, and the hot water circulation still runs about 1.5 hours a day. Fixing both, and trying to heat in the afternoon instead, could save roughly CZK 1,000–2,000 a year. I haven't changed anything.
 
 ## What you need
 
 - Nothing special. You don't need Loxone, Home Assistant or your own server.
-- The assistant can run on your computer, on a separate older computer, or on your own hardware where the data never leaves the house. We'll pick what fits your needs.
+- Where the assistant runs and where it sends data are two different questions. It can run on your computer or on a separate home computer. But if it uses AI in the cloud, it sends part of the data there. If you don't want anything to leave the house, it needs its own AI model on more powerful home hardware. We'll pick what fits your needs.
 - You control what the assistant sees. Don't want it in your email? It gets its own mailbox and you forward only what it should see. Don't want to give it your whole Google Drive? It gets its own account and you share just the folders you choose.
 
 ## How I work

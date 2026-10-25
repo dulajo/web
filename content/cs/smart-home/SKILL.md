@@ -18,6 +18,15 @@ Jsem programátor a náš dům řídíme přes Loxone doplněný o Home Assistan
 
 ## Příklady
 
+**Vstup:** V jedné místnosti chci uklízet, jinde večer odpočívat.
+**Výstup:** Scéna Úklid pustí v místnosti plný jas a bílé světlo. Večerní režim pro celý dům zařídí, že všechna světla, která se rozsvítí, svítí jen na 40 % a teple žlutě.
+
+**Vstup:** Odcházíme z domu a nechceme nic hlídat.
+**Výstup:** Jedno tlačítko u dveří za 30 sekund zapne alarm a režim nepřítomnosti, který mimo jiné vypne cirkulaci teplé vody. Když zůstalo otevřené okno, přijde notifikace a hlavně zabliká světlo v zádveří, protože notifikace si člověk většinou všimne až pozdě. Při návratu čtečka otisků na dveřích alarm i režim nepřítomnosti zase vypne.
+
+**Vstup:** V létě jsme v novostavbě bojovali s vysokou vlhkostí a k tomu byla vedra.
+**Výstup:** Rekuperace má letní režim: když je doma vlhko a plný výkon pomůže vlhkost snížit, rozjede se naplno. Když by naopak přivedla vlhčí vzduch zvenku, naplno se nepustí ani v režimu boost.
+
 **Vstup:** Hledání záručního listu nebo smlouvy znamenalo přehrabovat šuplíky a složky.
 **Výstup:** Dokumenty jsou v domácím správci dokumentů a asistent je najde za pár vteřin.
 
@@ -27,16 +36,13 @@ Jsem programátor a náš dům řídíme přes Loxone doplněný o Home Assistan
 
 Objednat by to zvládl i sám, ale poslední slovo zatím chceme mít my.
 
-**Vstup:** Cirkulační čerpadlo teplé vody běželo pořád, i když teplou vodu nikdo nepotřeboval.
-**Výstup:** Řídí ho kombinace přítomnosti, režimu domu a potřebné délky cyklu. Asistent navíc hlídá, jestli opravdu běží jen tolik, kolik má, a když ne, ozve se. Jak to vypadá, je hned v rozboru pod tím.
-
 **Ty:** Udělej analýzu tepelka za poslední měsíc.
 **Asistent:** Tepelné čerpadlo je v pořádku, za posledních 30 dní jsem nenašel žádnou poruchu a topí úsporně. Prostor pro úsporu vidím jinde: noční program topí na 22 °C, přes den jen na 21 °C, a cirkulace teplé vody pořád běží asi 1,5 hodiny denně. Úprava obojího a pokus topit spíš odpoledne by mohly ušetřit zhruba 1 000–2 000 Kč ročně. Nic jsem neměnil.
 
 ## Co k tomu potřebujete
 
 - Nic speciálního. Loxone, Home Assistant ani vlastní server mít nemusíte.
-- Asistent může běžet na vašem počítači, na samostatném starším počítači, nebo na vlastním hardwaru, ze kterého data vůbec neodcházejí. Vybereme podle toho, co potřebujete.
+- Kde asistent běží a kam posílá data, jsou dvě různé věci. Běžet může na vašem počítači nebo na samostatném domácím počítači. Pokud ale používá AI v cloudu, část dat jí posílá. Kdo nechce, aby cokoli opustilo dům, potřebuje vlastní AI model na silnějším domácím hardwaru. Vybereme podle toho, co potřebujete.
 - Co asistent uvidí, máte pod kontrolou. Nechcete, aby vám lezl do e-mailu? Dostane vlastní schránku a přepošlete mu jen to, co má vidět. Nechcete mu dát celý Google Drive? Dostane vlastní účet a nasdílíte mu jen vybrané složky.
 
 ## Jak pracuju

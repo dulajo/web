@@ -12,9 +12,8 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem p
 - Děláte pořád dokola stejné kroky, jen s jinými daty
 - Přepisujete, kontrolujete nebo hlídáte věci, které by počítač pohlídal líp a bez reptání
 - Každý měsíc ručně skládáte stejný přehled, fakturu nebo hlášení
-- Chcete s AI pomoct lidsky a na vaší skutečné práci, ne zaplatit strojené školení, ze kterého si nic neodnesete
+- Chcete začít používat AI a ukázat si to rovnou na svých konkrétních úkolech
 - Nevíte, jestli na to jít přes AI, nebo to zautomatizovat. Zeptejte se, nekoušu.
-- Řešíte papíry kolem domácnosti? Na to je [chytrá domácnost](/cs/smart-home/).
 
 ## Příklady
 
@@ -36,6 +35,7 @@ Excel je skvělý nástroj. Jen ne na to, abyste v něm trávili neděle. Jsem p
 ## Na co se nehodím
 
 - Velké firmy se stovkami lidí a dlouhými projekty.
+- Papíry kolem domácnosti, jako záruky, pojistky a servis. Na to je [chytrá domácnost](/cs/smart-home/).
 
 ## Ozvěte se
 
